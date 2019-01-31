@@ -23,7 +23,7 @@ au='Bearer '+ this.service.getToken();
     const token =this.service.getToken();
     const tokenPayload = decode(token);
     this.id=tokenPayload._id; 
-this.url='http://198.211.109.205:3001/api/upload/'+tokenPayload._id; 
+this.url='http://localhost:3001/api/upload/'+tokenPayload._id; 
 console.log(this.url)
     this.FileService.showFileNames(this.id).subscribe(response => {console.log(response)
       for (let i = 0; i < response.json().length; i++) {
