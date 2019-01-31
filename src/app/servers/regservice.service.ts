@@ -9,7 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class RegserviceService {
-  url="http://localhost:3001/api";
+  url="http://198.211.109.205:3001/api";
  noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };  
   
   constructor(private http: HttpClient) {}

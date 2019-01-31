@@ -9,34 +9,34 @@ export class FilesService {
   constructor(private http: Http) { }
 
     downloadPDF(filename, filetype): any {
-    return this.http.get('http://localhost:3001/api/file/' + filename,
+    return this.http.get('http://198.211.109.205:3001/api/file/' + filename,
     { responseType: ResponseContentType.Blob });
   }
 
   admindownloadPDF(filename, filetype): any {
-    return this.http.get('http://localhost:3001/api/adminfile/' + filename,
+    return this.http.get('http://198.211.109.205:3001/api/adminfile/' + filename,
     { responseType: ResponseContentType.Blob });
   }
 
   showFileNames() {
-    return this.http.get('http://localhost:3001/api/userfiles');
+    return this.http.get('http://198.211.109.205:3001/api/userfiles');
   }
 
   adminsent(){
-    return this.http.get('http://localhost:3001/api/admindoc');
+    return this.http.get('http://198.211.109.205:3001/api/admindoc');
   }
 
   recevefile(id){
-    return this.http.get('http://localhost:3001/api/rfiles/'+id);
+    return this.http.get('http://198.211.109.205:3001/api/rfiles/'+id);
   }
 
   readmsg(file){console.log(file)
-    return this.http.get('http://localhost:3001/api/readmsg/'+file);
+    return this.http.get('http://198.211.109.205:3001/api/readmsg/'+file);
   }
 
   message(){
-    return this.http.get('http://localhost:3001/api/messages');
+    return this.http.get('http://198.211.109.205:3001/api/messages');
 
-    // 'http://localhost:3001/api/messages
+    // 'http://198.211.109.205:3001/api/messages
   }
 }

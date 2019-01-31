@@ -174,7 +174,7 @@ var AdminuploadsComponent = /** @class */ (function () {
         var token = this.service.getToken();
         var tokenPayload = jwt_decode__WEBPACK_IMPORTED_MODULE_4___default()(token);
         this.id = tokenPayload._id;
-        this.url = 'http://localhost:3001/api/upload/' + this.service.getid() + '/' + this.service.getuserid();
+        this.url = 'http://198.211.109.205:3001/api/upload/' + this.service.getid() + '/' + this.service.getuserid();
         console.log(this.url);
         this.uploader = new ng2_file_upload__WEBPACK_IMPORTED_MODULE_1__["FileUploader"]({ url: this.url, itemAlias: 'photo' });
     };
@@ -612,27 +612,27 @@ var FilesService = /** @class */ (function () {
         this.http = http;
     }
     FilesService.prototype.downloadPDF = function (filename, filetype) {
-        return this.http.get('http://localhost:3001/api/file/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
+        return this.http.get('http://198.211.109.205:3001/api/file/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
     };
     FilesService.prototype.admindownloadPDF = function (filename, filetype) {
-        return this.http.get('http://localhost:3001/api/adminfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
+        return this.http.get('http://198.211.109.205:3001/api/adminfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
     };
     FilesService.prototype.showFileNames = function () {
-        return this.http.get('http://localhost:3001/api/userfiles');
+        return this.http.get('http://198.211.109.205:3001/api/userfiles');
     };
     FilesService.prototype.adminsent = function () {
-        return this.http.get('http://localhost:3001/api/admindoc');
+        return this.http.get('http://198.211.109.205:3001/api/admindoc');
     };
     FilesService.prototype.recevefile = function (id) {
-        return this.http.get('http://localhost:3001/api/rfiles/' + id);
+        return this.http.get('http://198.211.109.205:3001/api/rfiles/' + id);
     };
     FilesService.prototype.readmsg = function (file) {
         console.log(file);
-        return this.http.get('http://localhost:3001/api/readmsg/' + file);
+        return this.http.get('http://198.211.109.205:3001/api/readmsg/' + file);
     };
     FilesService.prototype.message = function () {
-        return this.http.get('http://localhost:3001/api/messages');
-        // 'http://localhost:3001/api/messages
+        return this.http.get('http://198.211.109.205:3001/api/messages');
+        // 'http://198.211.109.205:3001/api/messages
     };
     FilesService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1169,7 +1169,7 @@ var FileUploadComponent = /** @class */ (function () {
         var token = this.service.getToken();
         var tokenPayload = jwt_decode__WEBPACK_IMPORTED_MODULE_5___default()(token);
         this.id = tokenPayload._id;
-        this.url = 'http://localhost:3001/api/upload/' + tokenPayload._id;
+        this.url = 'http://198.211.109.205:3001/api/upload/' + tokenPayload._id;
         console.log(this.url);
         this.FileService.showFileNames(this.id).subscribe(function (response) {
             console.log(response);
@@ -1640,13 +1640,13 @@ var FilesService = /** @class */ (function () {
         this.http = http;
     }
     FilesService.prototype.downloadPDF = function (filename, filetype) {
-        return this.http.get('http://localhost:3001/api/adminfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
+        return this.http.get('http://198.211.109.205:3001/api/adminfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
     };
     FilesService.prototype.showFileNames = function (id) {
-        return this.http.get('http://localhost:3001/api/files/' + id);
+        return this.http.get('http://198.211.109.205:3001/api/files/' + id);
     };
     FilesService.prototype.recevefile = function (id) {
-        return this.http.get('http://localhost:3001/api/rfiles/' + id);
+        return this.http.get('http://198.211.109.205:3001/api/rfiles/' + id);
     };
     FilesService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1692,7 +1692,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var RegserviceService = /** @class */ (function () {
     function RegserviceService(http) {
         this.http = http;
-        this.url = "http://localhost:3001/api";
+        this.url = "http://198.211.109.205:3001/api";
         this.noAuthHeader = { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpHeaders"]({ 'NoAuth': 'True' }) };
     }
     RegserviceService.prototype.storedetails = function (details) {
