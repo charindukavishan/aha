@@ -21,18 +21,20 @@ export class ReceiveComponent implements OnInit {
           originalname: response.json()[i].originalname,
           contentType: response.json()[i].mimetype,
           time:response.json()[i].time
-        };console.log(response.json()[i].mimetype)
+        };
+        // console.log(response.json()[i].mimetype)
       }
     });
 
   }
   downloadPdf(filename, contentType) {
     this.FileService.downloadPDF(filename, contentType).subscribe(
-      (res) => {console.log(res)
+      (res) => {
+        // console.log(res)
         const file = new Blob([res.blob()], { type: contentType });
-        console.log(file)
+        // console.log(file)
       const fileURL = URL.createObjectURL(file);
-      console.log(fileURL)
+      // console.log(fileURL)
       window.open(fileURL);
 
 

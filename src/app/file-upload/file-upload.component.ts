@@ -23,8 +23,8 @@ au='Bearer '+ this.service.getToken();
     const token =this.service.getToken();
     const tokenPayload = decode(token);
     this.id=tokenPayload._id; 
-this.url='http://198.211.109.205:3001/api/upload/'+tokenPayload._id; 
-console.log(this.url)
+this.url='http://node.exigoms.com/api/upload/'+tokenPayload._id; 
+// console.log(this.url)
     this.FileService.showFileNames(this.id).subscribe(response => {console.log(response)
       for (let i = 0; i < response.json().length; i++) {
         this.files[i] = {
@@ -32,7 +32,8 @@ console.log(this.url)
           originalname: response.json()[i].originalname,
           contentType: response.json()[i].mimetype,
           time:response.json()[i].time,
-        };console.log(response.json()[i].mimetype)
+        };
+        // console.log(response.json()[i].mimetype)
       }
     });
 
@@ -42,11 +43,12 @@ console.log(this.url)
 
   downloadPdf(filename, contentType) {
     this.FileService.downloadPDF(filename, contentType).subscribe(
-      (res) => {console.log(res)
+      (res) => {
+        // console.log(res)
         const file = new Blob([res.blob()], { type: contentType });
-        console.log(file)
+        // console.log(file)
       const fileURL = URL.createObjectURL(file);
-      console.log(fileURL)
+      // console.log(fileURL)
       window.open(fileURL);
 
 

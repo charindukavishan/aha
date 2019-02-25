@@ -23,9 +23,14 @@ export class LoginComponent implements OnInit {
   roll='';
   serverErrorMessages: string;
   ngOnInit() {
+          const token =this.service.getToken();
+          const tokenPayload = decode(token);
     if(this.service.isLoggedIn())
+    if(tokenPayload.role == "admin")
     this.router.navigateByUrl('/admin');
-    this.isAdmin=false;
+    else
+    this.router.navigateByUrl('/userprofile')
+    // this.isAdmin=false;
   }
  
   
@@ -35,14 +40,17 @@ export class LoginComponent implements OnInit {
           this.service.setToken(res['token']);
           const token =this.service.getToken();
           const tokenPayload = decode(token);
-          console.log(tokenPayload.role);
+          // console.log(tokenPayload.role);
         if(tokenPayload.role == "admin"){
          this.router.navigateByUrl('/admin');
-          this.state.state=true;}
+          this.state.state=true;
+        this.isAdmin=true}
           else{
             this.router.navigateByUrl('/userprofile');
             this.state.state=true;
+            this.isAdmin=false
           }
+          this.state.ngOnInit()
         },
         err => {
           this.serverErrorMessages = err.error.message;

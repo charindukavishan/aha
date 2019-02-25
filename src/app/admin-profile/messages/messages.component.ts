@@ -9,49 +9,58 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent implements OnInit {
-  constructor(private FileService: FilesService,private service:RegserviceService,public router:Router) { }
+  constructor(private FileService: FilesService, private service: RegserviceService, public router: Router) { }
   private files = [];
-filename='';
-  response:any;
+  filename = '';
+  response: any;
+  public name: any;
 
   ngOnInit() {
-        this.FileService.message().subscribe(res => {
-          this.response=res;
-          console.log(this.response)
+    this.FileService.message().subscribe(res => {
+      this.response = res;
+      let a: any
       for (let i = 0; i < this.response.json().length; i++) {
-        this.files[i] = {
-          filename: this.response.json()[i].filename,
-          originalname: this.response.json()[i].originalname,
-          contentType: this.response.json()[i].mimetype,
-          time:this.response.json()[i].time,
-          username:this.response.json()[i].firstName
-        };console.log(this.response.json()[i].mimetype)
+
+        this.service.getname(this.response.json()[i].userId).subscribe(res => {
+          this.name = res['user']
+          this.files[i] = {
+            filename: this.response.json()[i].filename,
+            originalname: this.response.json()[i].originalname,
+            contentType: this.response.json()[i].mimetype,
+            time: this.response.json()[i].time,
+            username: this.name
+          };
+        })
+
+        // console.log(this.files[i])
       }
     });
 
   }
-  read(name){console.log(name)
+  read(name) {
+    // console.log(name)
     this.FileService.readmsg(name).subscribe(res => {
-      
-});
+
+    });
   }
 
   downloadPdf(filename, contentType) {
     this.FileService.downloadPDF(filename, contentType).subscribe(
-      (res) => {console.log(res)
+      (res) => {
+        // console.log(res)
         const file = new Blob([res.blob()], { type: contentType });
-        console.log(file)
-      const fileURL = URL.createObjectURL(file);
-      console.log(fileURL)
-      window.open(fileURL);
+        // console.log(file)
+        const fileURL = URL.createObjectURL(file);
+        // console.log(fileURL)
+        window.open(fileURL);
 
 
-      // window.open('/download');
+        // window.open('/download');
       }
     );
   }
 
 
 
-  
+
 }

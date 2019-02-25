@@ -17,23 +17,49 @@ selectuser="fgjdfhxjx";
 this.users.getusers().subscribe(
       res => {
         this.response=res;
-        console.log(this.response[1]);
+        // console.log(this.response[1]);
         for (let i = 0; i < this.response.length; i++) {
         this.files[i] = {
           username: this.response[i].firstName,
           nic : this.response[i].nic,
           userid: this.response[i]._id,
-          
+          isblock:this.response[i].isblock
         };
+        
       }
       },
       err => { 
-        console.log(err);
+        // console.log(err);
         
       });
   }
 user(nic,id){
   this.users.setuser(nic,id);
   this.router.navigateByUrl('/admin/upload')
+}
+
+block(id){console.log("jfh")
+let data={
+  id:id
+}
+  this.users.block(data).subscribe(
+    res => {
+this.ngOnInit();
+    },
+    err => { 
+      
+    });
+}
+unblock(id){
+  let data={
+    id:id
+  }
+    this.users.unblock(data).subscribe(
+      res => {
+  this.ngOnInit()
+      },
+      err => { 
+        
+      });
 }
 }

@@ -12,39 +12,48 @@
                         <h4 class="m-b-5">{{userDetails.firstName}} {{userDetails.lastName}}</h4>
                         <p class="text-muted">@{{userDetails.firstName}}</p>
                     </div>
-                    
-                    <button type="button" class="btn btn-success btn-sm w-sm waves-effect m-t-10 waves-light">Follow</button>
-                    <button type="button" class="btn btn-danger btn-sm w-sm waves-effect m-t-10 waves-light">Message</button>
+
                     
                     <div class="text-left m-t-40">
-                        <p class="text-muted font-13"><strong>Full Name :</strong> <span class="m-l-15">{{userDetails.firstName}} {{userDetails.lastName}}</span></p>
-                        <p class="text-muted font-13"><strong>Mobile :</strong><span class="m-l-15">{{userDetails.tel}}</span></p>
-                        <p class="text-muted font-13"><strong>Email :</strong> <span class="m-l-15">{{userDetails.email}}</span></p>
-                        <p class="text-muted font-13"><strong>Location :</strong> <span class="m-l-15">{{userDetails.city}}</span></p>
+                        <p class="text-muted font-13">
+                            <strong>Full Name :</strong>
+                            <span class="m-l-15">{{userDetails.firstName}} {{userDetails.lastName}}</span>
+                        </p>
+                        <p class="text-muted font-13">
+                            <strong>Mobile :</strong>
+                            <span class="m-l-15">{{userDetails.tel}}</span>
+                        </p>
+                        <p class="text-muted font-13">
+                            <strong>Email :</strong>
+                            <span class="m-l-15">{{userDetails.email}}</span>
+                        </p>
+                        <p class="text-muted font-13">
+                            <strong>Location :</strong>
+                            <span class="m-l-15">{{userDetails.city}}</span>
+                        </p>
                     </div>
                 </div>
-            </div> <!-- end card-box -->
+            </div>
+            <!-- end card-box -->
 
 
-        </div> <!-- end col -->
+        </div>
+        <!-- end col -->
 
 
         <div class="col-md-8 col-lg-9">
             <div class="">
                 <div class="">
                     <ul class="nav nav-tabs navtab-custom" role="tabpanel">
-                        <li class="">
-                            <a role="tab" routerLink="/userprofile/userHome" data-toggle="tab" aria-expanded="false">
-                                <span class="visible-xs"><i class="fa fa-user"></i></span>
-                                <span class="hidden-xs">Send</span>
-                            </a>
+
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/userprofile/userHome">send</a>
                         </li>
-                        <li class="">
-                            <a routerLink="/userprofile/gallery" data-toggle="tab" aria-expanded="true">
-                                <span class="visible-xs"><i class="fa fa-photo"></i></span>
-                                <span class="hidden-xs">Receive </span>
-                            </a>
-                        </li>
+                            
+
+                        <li class="nav-item">
+                                <a class="nav-link" routerLink="/userprofile/gallery">Receive</a>
+                            </li>
                         <!-- <li class="">
                             <a routerLink="/userprofile/settings" data-toggle="tab" aria-expanded="false">
                                 <span class="visible-xs"><i class="fa fa-cog"></i></span>
@@ -53,13 +62,14 @@
                         </li> -->
                     </ul>
                     <div class="tab-content tab-pane">
-                        
-                      <router-outlet></router-outlet>
-                            <!-- <app-file-upload></app-file-upload> -->
+
+                        <router-outlet></router-outlet>
+                        <!-- <app-file-upload></app-file-upload> -->
                     </div>
                 </div>
             </div>
-        </div> <!-- end col -->
+        </div>
+        <!-- end col -->
     </div>
     <!-- end row -->
 </div>

@@ -19,10 +19,10 @@ export class UserProfileComponent implements OnInit {
         this.userId=this.userDetails._id;
         this.service.setid(this.userDetails._id);
         // console.log(this.userId);
-        console.log(this.userDetails)
+        // console.log(this.userDetails)
       },
       err => { 
-        console.log(err);
+        // console.log(err);
         
       });
   }

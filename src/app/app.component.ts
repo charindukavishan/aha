@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RegserviceService } from './servers/regservice.service';
 import * as $ from 'jquery';
+import decode from 'jwt-decode'
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,11 +10,14 @@ import * as $ from 'jquery';
 })
 export class AppComponent {
   state=false;
+  isAdmin=false
   constructor(private service:RegserviceService) {
   }
 click(){
   this.service.deleteToken();
   this.state=false;
+  this.isAdmin=false;
+  this.ngOnInit()
 }
 js(){
   
@@ -24,10 +29,23 @@ js(){
       });
 }
   ngOnInit() {
-      if(this.service.isLoggedIn())
+      if(this.service.isLoggedIn()){
       this.state=true;
-      
+      const token =this.service.getToken();
+          const tokenPayload = decode(token);
+    if(tokenPayload.role == "admin")
+    this.isAdmin=true}
 
   
   }
+
+  // isAdmin(){
+  //  let token= this.service.getToken();
+  //  let tokenPayload=decode(token)
+  //  if(tokenPayload.role=="admin")
+  //  return true;
+  //  return false
+
+  // }
+
 }

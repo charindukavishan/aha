@@ -23,8 +23,8 @@ au='Bearer '+ this.service.getToken();
     const token =this.service.getToken();
     const tokenPayload = decode(token);
     this.id=tokenPayload._id;
-this.url='http://198.211.109.205:3001/api/upload/'+this.service.getid()+'/'+this.service.getuserid(); 
-console.log(this.url)
+this.url='http://node.exigoms.com/api/upload/'+this.service.getid()+'/'+this.service.getuserid(); 
+//console.log(this.url)
     
     this.uploader = new FileUploader({url:this.url ,itemAlias: 'photo'});
 

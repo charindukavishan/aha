@@ -21,7 +21,9 @@ export const appRoutes: Routes = [
 
 
   // 1st Route
-{path: 'reg',  component: RegistrationComponent},
+{path: 'reg',  component: RegistrationComponent,canActivate:[RoleGuardServiceGuard],data: { 
+  expectedRole: 'admin'
+} ,},
   // 6th Route
 // { path: 'reg',  component: RegistraionComponent },
 {path: 'login', component: LoginComponent,},

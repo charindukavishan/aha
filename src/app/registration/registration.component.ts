@@ -39,7 +39,8 @@ export class RegistrationComponent implements OnInit {
                 
                 }
                 ,
-                (error)=>{console.log(error)
+                (error)=>{
+                  // console.log(error)
                 {if(error) this.serverErrorMessages='Your email is already exists';}}
               );
   }

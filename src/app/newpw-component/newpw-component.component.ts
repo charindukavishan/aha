@@ -25,11 +25,11 @@ export class NewpwComponentComponent implements OnInit {
        // console.log(res);
         this.emai=res['user'];
         this.model.email=this.emai.email;
-        console.log(this.model.email);
+        // console.log(this.model.email);
 
       },
       err => { 
-        console.log(err);
+        // console.log(err);
         
       });
   }
@@ -37,7 +37,7 @@ msg;
   onSubmit(){
     this.service.savepassword(this.model).subscribe(
       res => {
-        console.log(res);
+        // console.log(res);
         if(res['sucsess']==false){
           this.msg=res['message'];
           this.router.navigate(['login']);
@@ -50,7 +50,7 @@ msg;
         }
       },
       err => {
-        console.log(err);
+        // console.log(err);
         this.msg='';
       }
     );

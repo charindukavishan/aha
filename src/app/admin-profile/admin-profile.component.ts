@@ -20,11 +20,11 @@ export class AdminProfileComponent implements OnInit {
         this.userDetails = res['user'];
         this.userId=this.userDetails.id;
         this.service.setid(this.userDetails._id);
-        console.log(res);
-        console.log(this.userDetails)
+        // console.log(res);
+        // console.log(this.userDetails)
       },
       err => { 
-        console.log(err);
+        // console.log(err);
         
       });
   }

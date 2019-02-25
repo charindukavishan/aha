@@ -16,18 +16,17 @@
 
       <nav>
             <span id="brand">
-                  <a href="index.html">PARK HERE</a>
-            </span>
+                  <a href="www.exigo.ewebsolutionlk.com">EXIGO MANAGEMENT SERVICES</a>
+            </span> 
 
             <ul id="menu">
-                <li><a routerLink="" class="active">Home</a></li>
-                <li><a routerLink="/login">News</a></li>
-                <li><a routerLink="/comment">Comment</a></li>
+                        <!-- <li *ngIf="isAdmin() && state" ><a routerLink="/reg">Add user</a></li> -->
+                <li><a href="www.exigo.ewebsolutionlk.com" class="active">Home</a></li>
                 <!-- <li ><a routerLink="/resetpassword">forgotten password</a></li> -->
                 <li *ngIf="state" ><a (click)="click()" routerLink="/login">Signout</a></li>
                 <li *ngIf="state" ><a routerLink="/login">profile</a></li>
                 <li *ngIf="!state" ><a routerLink="/login">SignIn</a></li>
-                <li ><a routerLink="/reg">SignUp</a></li>
+                <li *ngIf="isAdmin"><a routerLink="/reg">Add user</a></li>
             </ul>
 
             <div (click)="js()" id="toggle">
@@ -39,14 +38,12 @@
 
       <div id="resize">
             <ul id="menu">
-                <li><a routerLink="/" class="active">Home</a></li>
-                <li><a routerLink="/login">News</a></li>
-                <li><a routerLink="/comment">Comment</a></li>
-                <!-- <li ><a routerLink="/resetpassword">forgotten password</a></li> -->
-                <li *ngIf="state" ><a (click)="click()" routerLink="/login">Signout</a></li>
-                <li *ngIf="state" ><a routerLink="/login">profile</a></li>
-                <li *ngIf="!state" ><a routerLink="/login">SignIn</a></li>
-                <li ><a routerLink="/reg">SignUp</a></li>
+                        <li><a href="www.exigo.ewebsolutionlk.com" class="active">Home</a></li>
+                        <!-- <li ><a routerLink="/resetpassword">forgotten password</a></li> -->
+                        <li *ngIf="state" ><a (click)="click()" routerLink="/login">Signout</a></li>
+                        <li *ngIf="state" ><a routerLink="/login">profile</a></li>
+                        <li *ngIf="!state" ><a routerLink="/login">SignIn</a></li>
+                        <li *ngIf="isAdmin"><a routerLink="/reg">Add user</a></li>
             </ul>
       </div>
 

@@ -9,15 +9,15 @@ export class FilesService {
   constructor(private http: Http) { }
 
     downloadPDF(filename, filetype): any {
-    return this.http.get('http://198.211.109.205:3001/api/adminfile/' + filename,
+    return this.http.get('http://node.exigoms.com/api/adminfile/' + filename,
     { responseType: ResponseContentType.Blob });
   }
 
   showFileNames(id) {
-    return this.http.get('http://198.211.109.205:3001/api/files/'+id);
+    return this.http.get('http://node.exigoms.com/api/files/'+id);
   }
 
   recevefile(id){
-    return this.http.get('http://198.211.109.205:3001/api/rfiles/'+id);
+    return this.http.get('http://node.exigoms.com/api/rfiles/'+id);
   }
 }

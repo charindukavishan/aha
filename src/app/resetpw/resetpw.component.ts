@@ -21,7 +21,7 @@ export class ResetpwComponent implements OnInit {
   onSubmit(form : NgForm){
     this.service.rstpw(form.value).subscribe(
       res => {
-        console.log(res);
+        // console.log(res);
         if(res['sucsess']==false){
           this.msg=res['message'];
           this.router.navigate(['newpassword']);
@@ -30,7 +30,7 @@ export class ResetpwComponent implements OnInit {
         }
       },
       err => {
-        console.log(err);
+        // console.log(err);
         this.msg='';
       }
     );

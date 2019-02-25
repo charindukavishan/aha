@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\" rel=\"stylesheet\">\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-lg-3 col-md-4\">\n            <div class=\"text-center card-box\">\n                <div class=\"member-card\">\n                    <div class=\"thumb-xl member-thumb m-b-10 center-block\">\n                        <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" class=\"img-circle img-thumbnail\" alt=\"profile-image\">\n                    </div>\n\n                    <div class=\"\">\n                        <h4 class=\"m-b-5\">{{userDetails.firstName}} {{userDetails.lastName}}</h4>\n                        <p class=\"text-muted\">@{{userDetails.firstName}}</p>\n                    </div>\n                    \n                    <button type=\"button\" class=\"btn btn-success btn-sm w-sm waves-effect m-t-10 waves-light\">Follow</button>\n                    <button type=\"button\" class=\"btn btn-danger btn-sm w-sm waves-effect m-t-10 waves-light\">Message</button>\n                    \n                    <div class=\"text-left m-t-40\">\n                        <p class=\"text-muted font-13\"><strong>Full Name :</strong> <span class=\"m-l-15\">{{userDetails.firstName}} {{userDetails.lastName}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Mobile :</strong><span class=\"m-l-15\">{{userDetails.tel}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Email :</strong> <span class=\"m-l-15\">{{userDetails.email}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Location :</strong> <span class=\"m-l-15\">{{userDetails.city}}</span></p>\n                    </div>\n                </div>\n            </div> <!-- end card-box -->\n\n\n        </div> <!-- end col -->\n\n\n        <div class=\"col-md-8 col-lg-9\">\n            <div class=\"\">\n                <div class=\"\">                    \n                    <ul class=\"nav nav-tabs\">\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link active\" routerLink=\"/admin/sentdocs\">Send</a>\n                        </li>\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link\" routerLink=\"/admin/messages\">Messages</a>\n                        </li>\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link\" routerLink=\"/admin/received\">received</a>\n                        </li>\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link disabled\" routerLink=\"/admin/allusers\">Users</a>\n                        </li>\n                      </ul>\n                    <div class=\"tab-content tab-pane\">\n                        \n                      <router-outlet></router-outlet>\n                      <!-- <app-messages></app-messages> -->\n                    </div>\n                </div>\n            </div>\n        </div> <!-- end col -->\n    </div>\n    <!-- end row -->\n</div>"
+module.exports = "<link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\" rel=\"stylesheet\">\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-lg-3 col-md-4\">\n            <div class=\"text-center card-box\">\n                <div class=\"member-card\">\n                    <div class=\"thumb-xl member-thumb m-b-10 center-block\">\n                        <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" class=\"img-circle img-thumbnail\" alt=\"profile-image\">\n                    </div>\n\n                    <div class=\"\">\n                        <h4 class=\"m-b-5\">{{userDetails.firstName}} {{userDetails.lastName}}</h4>\n                        <p class=\"text-muted\">@{{userDetails.firstName}}</p>\n                    </div>\n                    \n                      \n                    <div class=\"text-left m-t-40\">\n                        <p class=\"text-muted font-13\"><strong>Full Name :</strong> <span class=\"m-l-15\">{{userDetails.firstName}} {{userDetails.lastName}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Mobile :</strong><span class=\"m-l-15\">{{userDetails.tel}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Email :</strong> <span class=\"m-l-15\">{{userDetails.email}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Location :</strong> <span class=\"m-l-15\">{{userDetails.city}}</span></p>\n                    </div>\n                </div>\n            </div> <!-- end card-box -->\n\n\n        </div> <!-- end col -->\n\n\n        <div class=\"col-md-8 col-lg-9\">\n            <div class=\"\">\n                <div class=\"\">                    \n                    <ul class=\"nav nav-tabs\">\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link active\" routerLink=\"/admin/sentdocs\">Send</a>\n                        </li>\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link\" routerLink=\"/admin/messages\">Messages</a>\n                        </li>\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link\" routerLink=\"/admin/received\">received</a>\n                        </li>\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link disabled\" routerLink=\"/admin/allusers\">Users</a>\n                        </li>\n                      </ul>\n                    <div class=\"tab-content tab-pane\">\n                        \n                      <router-outlet></router-outlet>\n                      <!-- <app-messages></app-messages> -->\n                    </div>\n                </div>\n            </div>\n        </div> <!-- end col -->\n    </div>\n    <!-- end row -->\n</div>"
 
 /***/ }),
 
@@ -82,10 +82,10 @@ var AdminProfileComponent = /** @class */ (function () {
             _this.userDetails = res['user'];
             _this.userId = _this.userDetails.id;
             _this.service.setid(_this.userDetails._id);
-            console.log(res);
-            console.log(_this.userDetails);
+            // console.log(res);
+            // console.log(this.userDetails)
         }, function (err) {
-            console.log(err);
+            // console.log(err);
         });
     };
     AdminProfileComponent.prototype.onLogout = function () {
@@ -174,8 +174,8 @@ var AdminuploadsComponent = /** @class */ (function () {
         var token = this.service.getToken();
         var tokenPayload = jwt_decode__WEBPACK_IMPORTED_MODULE_4___default()(token);
         this.id = tokenPayload._id;
-        this.url = 'http://198.211.109.205:3001/api/upload/' + this.service.getid() + '/' + this.service.getuserid();
-        console.log(this.url);
+        this.url = 'http://node.exigoms.com/api/upload/' + this.service.getid() + '/' + this.service.getuserid();
+        //console.log(this.url)
         this.uploader = new ng2_file_upload__WEBPACK_IMPORTED_MODULE_1__["FileUploader"]({ url: this.url, itemAlias: 'photo' });
     };
     AdminuploadsComponent.prototype.clear = function () {
@@ -215,7 +215,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div *ngIf=\"b\" class=\"container\">\n    <table class=\"table table-hover\">\n        <thead>\n          <tr>\n            <th>User</th>\n            <th>NIC</th>\n            \n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let file of files\">\n            <td>{{ file.username }}</td>\n            <td>{{ file.nic }}</td>\n            \n            <td><button class=\"btn btn-primary button\" (click)=\"user(file.username,file.userid)\">Send</button></td>\n          </tr>   \n        </tbody>\n      </table>\n  </div>\n\n  <div *ngIf=\"!b\" class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-4\">\n            \n          <br>\n            <form>\n                <div class=\"form-group\">\n                    <label for=\"multiple\">Choose file(s)</label>\n                    <input type=\"file\" class=\"form-control\" name=\"multiple\" ng2FileSelect [uploader]=\"uploader\" multiple  />\n                </div>            \n            </form>\n        </div>\n        </div>\n        <br>\n        <div class=\"col-md-8\">\n             File(s) Selected: {{ uploader?.queue?.length }}\n            <table class=\"table\">\n                <thead>\n                <tr>\n                    <th width=\"50%\">Name</th>\n                    <th>Size</th>\n                    <th>Progress</th>\n                    <th>Status</th>\n                    <th>Actions</th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr *ngFor=\"let item of uploader.queue\">\n                    <td><strong>{{ item.file.name }}</strong></td>\n                    <td nowrap>{{ item.file.size/1024/1024 | number:'.2' }} MB</td>\n                    <td>\n                        <div class=\"progress\" style=\"margin-bottom: 0;\">\n                            <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': item.progress + '%' }\"></div>\n                        </div>\n                    </td>\n                    <td class=\"text-center\">\n                        <span *ngIf=\"item.isSuccess\"><i class=\"fa fa-check\"></i></span>\n                        <span *ngIf=\"item.isCancel\"><i class=\"fa fa-ban\"></i></span>\n                        <span *ngIf=\"item.isError\"><i class=\"fa fa-times\"></i></span>\n                    </td>\n                    <td nowrap>\n                        <button type=\"button\" class=\"btn btn-success btn-xs\"\n                                (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">\n                            <span class=\"fa fa-upload\"></span> Upload\n                        </button>\n                        <button type=\"button\" class=\"btn btn-warning btn-xs\"\n                                (click)=\"item.cancel()\" [disabled]=\"!item.isUploading\">\n                            <span class=\"fa fa-ban\"></span> Cancel\n                        </button>\n                        <button type=\"button\" class=\"btn btn-danger btn-xs\"\n                                (click)=\"item.remove()\">\n                            <span class=\"fa fa-trash\"></span> Remove\n                        </button>\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n  \n            <div>\n                <hr>\n                <div>\n                    Total progress:\n                    <div class=\"progress\">\n                        <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': uploader.progress + '%' }\"></div>\n                    </div>\n                    <hr>\n                </div>\n                <button type=\"button\" class=\"btn btn-success btn-s\"\n                        (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">\n                    <span class=\"fa fa-upload\"></span> Upload all\n                </button>\n                <button type=\"button\" class=\"btn btn-warning btn-s\"\n                        (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">\n                    <span class=\"fa fa-ban\"></span> Cancel all\n                </button>\n                <button type=\"button\" class=\"btn btn-danger btn-s\"\n                        (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">\n                    <span class=\"fa fa-trash\"></span> Remove all\n                </button>\n            </div>\n        </div>\n  </div>\n  <hr>\n  "
+module.exports = "\n<div *ngIf=\"b\" class=\"container\">\n    <table class=\"table table-hover\">\n        <thead>\n          <tr>\n            <th>User</th>\n            <th>NIC</th>\n            \n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let file of files\">\n            <td>{{ file.username }}</td>\n            <td>{{ file.nic }}</td>\n            \n            <td><button class=\"btn btn-primary button\" (click)=\"user(file.username,file.userid)\">Send</button></td>\n            <td *ngIf=\"file.isblock==0\"><button class=\"btn btn-danger button\" (click)=\"block(file.userid)\">Block</button></td>\n            <td *ngIf=\"file.isblock!=0\"><button class=\"btn btn-primary button\" (click)=\"unblock(file.userid)\">Unblock</button></td>\n          </tr>   \n        </tbody>\n      </table>\n  </div>\n\n  <div *ngIf=\"!b\" class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-4\">\n            \n          <br>\n            <form>\n                <div class=\"form-group\">\n                    <label for=\"multiple\">Choose file(s)</label>\n                    <input type=\"file\" class=\"form-control\" name=\"multiple\" ng2FileSelect [uploader]=\"uploader\" multiple  />\n                </div>            \n            </form>\n        </div>\n        </div>\n        <br>\n        <div class=\"col-md-8\">\n             File(s) Selected: {{ uploader?.queue?.length }}\n            <table class=\"table\">\n                <thead>\n                <tr>\n                    <th width=\"50%\">Name</th>\n                    <th>Size</th>\n                    <th>Progress</th>\n                    <th>Status</th>\n                    <th>Actions</th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr *ngFor=\"let item of uploader.queue\">\n                    <td><strong>{{ item.file.name }}</strong></td>\n                    <td nowrap>{{ item.file.size/1024/1024 | number:'.2' }} MB</td>\n                    <td>\n                        <div class=\"progress\" style=\"margin-bottom: 0;\">\n                            <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': item.progress + '%' }\"></div>\n                        </div>\n                    </td>\n                    <td class=\"text-center\">\n                        <span *ngIf=\"item.isSuccess\"><i class=\"fa fa-check\"></i></span>\n                        <span *ngIf=\"item.isCancel\"><i class=\"fa fa-ban\"></i></span>\n                        <span *ngIf=\"item.isError\"><i class=\"fa fa-times\"></i></span>\n                    </td>\n                    <td nowrap>\n                        <button type=\"button\" class=\"btn btn-success btn-xs\"\n                                (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">\n                            <span class=\"fa fa-upload\"></span> Upload\n                        </button>\n                        <button type=\"button\" class=\"btn btn-warning btn-xs\"\n                                (click)=\"item.cancel()\" [disabled]=\"!item.isUploading\">\n                            <span class=\"fa fa-ban\"></span> Cancel\n                        </button>\n                        <button type=\"button\" class=\"btn btn-danger btn-xs\"\n                                (click)=\"item.remove()\">\n                            <span class=\"fa fa-trash\"></span> Remove\n                        </button>\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n  \n            <div>\n                <hr>\n                <div>\n                    Total progress:\n                    <div class=\"progress\">\n                        <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': uploader.progress + '%' }\"></div>\n                    </div>\n                    <hr>\n                </div>\n                <button type=\"button\" class=\"btn btn-success btn-s\"\n                        (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">\n                    <span class=\"fa fa-upload\"></span> Upload all\n                </button>\n                <button type=\"button\" class=\"btn btn-warning btn-s\"\n                        (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">\n                    <span class=\"fa fa-ban\"></span> Cancel all\n                </button>\n                <button type=\"button\" class=\"btn btn-danger btn-s\"\n                        (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">\n                    <span class=\"fa fa-trash\"></span> Remove all\n                </button>\n            </div>\n        </div>\n  </div>\n  <hr>\n  "
 
 /***/ }),
 
@@ -256,21 +256,43 @@ var AllusersComponent = /** @class */ (function () {
         var _this = this;
         this.users.getusers().subscribe(function (res) {
             _this.response = res;
-            console.log(_this.response[1]);
+            // console.log(this.response[1]);
             for (var i = 0; i < _this.response.length; i++) {
                 _this.files[i] = {
                     username: _this.response[i].firstName,
                     nic: _this.response[i].nic,
                     userid: _this.response[i]._id,
+                    isblock: _this.response[i].isblock
                 };
             }
         }, function (err) {
-            console.log(err);
+            // console.log(err);
         });
     };
     AllusersComponent.prototype.user = function (nic, id) {
         this.users.setuser(nic, id);
         this.router.navigateByUrl('/admin/upload');
+    };
+    AllusersComponent.prototype.block = function (id) {
+        var _this = this;
+        console.log("jfh");
+        var data = {
+            id: id
+        };
+        this.users.block(data).subscribe(function (res) {
+            _this.ngOnInit();
+        }, function (err) {
+        });
+    };
+    AllusersComponent.prototype.unblock = function (id) {
+        var _this = this;
+        var data = {
+            id: id
+        };
+        this.users.unblock(data).subscribe(function (res) {
+            _this.ngOnInit();
+        }, function (err) {
+        });
     };
     AllusersComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -348,31 +370,37 @@ var MessagesComponent = /** @class */ (function () {
         var _this = this;
         this.FileService.message().subscribe(function (res) {
             _this.response = res;
-            console.log(_this.response);
+            var a;
+            var _loop_1 = function (i) {
+                _this.service.getname(_this.response.json()[i].userId).subscribe(function (res) {
+                    _this.name = res['user'];
+                    _this.files[i] = {
+                        filename: _this.response.json()[i].filename,
+                        originalname: _this.response.json()[i].originalname,
+                        contentType: _this.response.json()[i].mimetype,
+                        time: _this.response.json()[i].time,
+                        username: _this.name
+                    };
+                });
+                // console.log(this.files[i])
+            };
             for (var i = 0; i < _this.response.json().length; i++) {
-                _this.files[i] = {
-                    filename: _this.response.json()[i].filename,
-                    originalname: _this.response.json()[i].originalname,
-                    contentType: _this.response.json()[i].mimetype,
-                    time: _this.response.json()[i].time,
-                    username: _this.response.json()[i].firstName
-                };
-                console.log(_this.response.json()[i].mimetype);
+                _loop_1(i);
             }
         });
     };
     MessagesComponent.prototype.read = function (name) {
-        console.log(name);
+        // console.log(name)
         this.FileService.readmsg(name).subscribe(function (res) {
         });
     };
     MessagesComponent.prototype.downloadPdf = function (filename, contentType) {
         this.FileService.downloadPDF(filename, contentType).subscribe(function (res) {
-            console.log(res);
+            // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
-            console.log(file);
+            // console.log(file)
             var fileURL = URL.createObjectURL(file);
-            console.log(fileURL);
+            // console.log(fileURL)
             window.open(fileURL);
             // window.open('/download');
         });
@@ -449,26 +477,32 @@ var ReceivedComponent = /** @class */ (function () {
         var _this = this;
         this.FileService.showFileNames().subscribe(function (res) {
             _this.response = res;
-            console.log(_this.response);
+            var _loop_1 = function (i) {
+                _this.service.getname(_this.response.json()[i].userId).subscribe(function (res) {
+                    _this.name = res['user'];
+                    _this.files[i] = {
+                        filename: _this.response.json()[i].filename,
+                        originalname: _this.response.json()[i].originalname,
+                        contentType: _this.response.json()[i].mimetype,
+                        time: _this.response.json()[i].time,
+                        username: _this.name
+                    };
+                });
+                // console.log(this.response.json()[i].mimetype)
+            };
+            // console.log(this.response)
             for (var i = 0; i < _this.response.json().length; i++) {
-                _this.files[i] = {
-                    filename: _this.response.json()[i].filename,
-                    originalname: _this.response.json()[i].originalname,
-                    contentType: _this.response.json()[i].mimetype,
-                    time: _this.response.json()[i].time,
-                    username: _this.response.json()[i].firstName
-                };
-                console.log(_this.response.json()[i].mimetype);
+                _loop_1(i);
             }
         });
     };
     ReceivedComponent.prototype.downloadPdf = function (filename, contentType) {
         this.FileService.downloadPDF(filename, contentType).subscribe(function (res) {
-            console.log(res);
+            // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
-            console.log(file);
+            // console.log(file)
             var fileURL = URL.createObjectURL(file);
-            console.log(fileURL);
+            // console.log(fileURL)
             window.open(fileURL);
             // window.open('/download');
         });
@@ -545,7 +579,7 @@ var SentdocsComponent = /** @class */ (function () {
         var _this = this;
         this.FileService.adminsent().subscribe(function (res) {
             _this.response = res;
-            console.log(_this.response);
+            // console.log(this.response)
             for (var i = 0; i < _this.response.json().length; i++) {
                 _this.files[i] = {
                     filename: _this.response.json()[i].filename,
@@ -554,17 +588,17 @@ var SentdocsComponent = /** @class */ (function () {
                     time: _this.response.json()[i].time,
                     username: _this.response.json()[i].firstName
                 };
-                console.log(_this.response.json()[i].mimetype);
+                // console.log(this.response.json()[i].mimetype)
             }
         });
     };
     SentdocsComponent.prototype.downloadPdf = function (filename, contentType) {
         this.FileService.admindownloadPDF(filename, contentType).subscribe(function (res) {
-            console.log(res);
+            // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
-            console.log(file);
+            // console.log(file)
             var fileURL = URL.createObjectURL(file);
-            console.log(fileURL);
+            // console.log(fileURL)
             window.open(fileURL);
             // window.open('/download');
         });
@@ -612,27 +646,26 @@ var FilesService = /** @class */ (function () {
         this.http = http;
     }
     FilesService.prototype.downloadPDF = function (filename, filetype) {
-        return this.http.get('http://198.211.109.205:3001/api/file/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
+        return this.http.get('http://node.exigoms.com/api/file/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
     };
     FilesService.prototype.admindownloadPDF = function (filename, filetype) {
-        return this.http.get('http://198.211.109.205:3001/api/adminfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
+        return this.http.get('http://node.exigoms.com/api/adminfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
     };
     FilesService.prototype.showFileNames = function () {
-        return this.http.get('http://198.211.109.205:3001/api/userfiles');
+        return this.http.get('http://node.exigoms.com/api/userfiles');
     };
     FilesService.prototype.adminsent = function () {
-        return this.http.get('http://198.211.109.205:3001/api/admindoc');
+        return this.http.get('http://node.exigoms.com/api/admindoc');
     };
     FilesService.prototype.recevefile = function (id) {
-        return this.http.get('http://198.211.109.205:3001/api/rfiles/' + id);
+        return this.http.get('http://node.exigoms.com/api/rfiles/' + id);
     };
     FilesService.prototype.readmsg = function (file) {
-        console.log(file);
-        return this.http.get('http://198.211.109.205:3001/api/readmsg/' + file);
+        return this.http.get('http://node.exigoms.com/api/readmsg/' + file);
     };
     FilesService.prototype.message = function () {
-        return this.http.get('http://198.211.109.205:3001/api/messages');
-        // 'http://198.211.109.205:3001/api/messages
+        return this.http.get('http://node.exigoms.com/api/messages');
+        // 'http://node.exigoms.com/api/messages
     };
     FilesService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -700,7 +733,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var appRoutes = [
     // 1st Route
-    { path: 'reg', component: _registration_registration_component__WEBPACK_IMPORTED_MODULE_2__["RegistrationComponent"] },
+    { path: 'reg', component: _registration_registration_component__WEBPACK_IMPORTED_MODULE_2__["RegistrationComponent"], canActivate: [_auth_role_guard_service_guard__WEBPACK_IMPORTED_MODULE_16__["RoleGuardServiceGuard"]], data: {
+            expectedRole: 'admin'
+        }, },
     // 6th Route
     // { path: 'reg',  component: RegistraionComponent },
     { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"], },
@@ -750,7 +785,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    text-decoration: none;\r\n    list-style: none;\r\n}\r\n\r\nbody {\r\n    width: 100%;\r\n    height: 100vh;\r\n    /* background: url(Hero.jpg) no-repeat 50% 50%; */\r\n    background-size: cover;\r\n    display: table;\r\n}\r\n\r\n.content {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\r\n}\r\n\r\n.content h1 {\r\n    color: #fff;\r\n    font-family: \"Poppins\";\r\n    font-weight: 200;\r\n    font-size: 40px;\r\n}\r\n\r\nnav {\r\n    width: 100%;\r\n    background: rgb(77, 63, 201);\r\n    height: 70px;\r\n    position: static;\r\n    z-index: 1;\r\n}\r\n\r\nnav #brand {\r\n    float: left;\r\n    display: block;\r\n    margin-left: 84px;\r\n    font-size: 30px;\r\n    line-height: 70px;\r\n    font-weight: bold;\r\n}\r\n\r\nnav #brand a {\r\n    color: #fff;\r\n    transition: all 0.3s ease-out;\r\n    font-family: \"Poppins\";\r\n    font-weight: 300;\r\n}\r\n\r\nnav #menu {\r\n    float: left;\r\n    left: 50%;\r\n    position: relative;\r\n}\r\n\r\nnav #menu li {\r\n    display: inline-block;\r\n    padding: 0px 30px;\r\n    cursor: pointer;\r\n    line-height: 70px;\r\n    position: relative;\r\n    transition: all 0.3s ease-out;\r\n}\r\n\r\nnav #menu li a {\r\n    color: #fff;\r\n    font-family: \"Poppins\";\r\n    font-weight: 200;\r\n}\r\n\r\n#toggle {\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 14px;\r\n    z-index: 999;\r\n    width: 40px;\r\n    height: 40px;\r\n    cursor: pointer;\r\n    float: right;\r\n    transition: all 0.3s ease-out;\r\n    visibility: hidden;\r\n    opacity: 0;\r\n}\r\n\r\n#toggle .span {\r\n    height: 3px;\r\n    background: #fff;\r\n    transition: all 0.3s ease-out;\r\n    -webkit-backface-visibility: hidden;\r\n            backface-visibility: hidden;\r\n    margin: 5px auto;\r\n}\r\n\r\n#toggle.on #one {\r\n    -webkit-transform: rotate(45deg) translateX(2px) translateY(4px);\r\n            transform: rotate(45deg) translateX(2px) translateY(4px);\r\n}\r\n\r\n#toggle.on #two {\r\n    opacity: 0;\r\n}\r\n\r\n#toggle.on #three {\r\n    -webkit-transform: rotate(-45deg) translateX(8px) translateY(-10px);\r\n            transform: rotate(-45deg) translateX(8px) translateY(-10px);\r\n}\r\n\r\n#resize {\r\n    z-index: 1;\r\n    top: 0px;\r\n    position: absolute;\r\n    background: #000;\r\n    width: 100%;\r\n    height: 100%;\r\n    visibility: hidden;\r\n    opacity: 0;\r\n    transition: all 1s ease-out;\r\n    display: table;\r\n}\r\n\r\n#resize #menu {\r\n    height: 90px;\r\n    display: table-cell;\r\n    vertical-align: center;\r\n}\r\n\r\n#resize #menu li {\r\n    display: block;\r\n    text-align: center;\r\n    padding: 20px 0;\r\n    font-size: 50px;\r\n    min-height: 50px;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n    transition: all 0.3s ease-out;\r\n}\r\n\r\n#resize li:nth-child(1) {\r\n    margin-top:140px;\r\n}\r\n\r\n#resize #menu li a {\r\n    color: #fff;\r\n}\r\n\r\n#resize.active {\r\n    visibility: visible;\r\n    opacity: 0.99;\r\n}\r\n\r\n@media(max-width: 768px) {\r\n    #toggle {\r\n          visibility: visible;\r\n          opacity: 1;\r\n          margin-top: 6px;\r\n    }\r\n\r\n    nav #brand {\r\n          margin-left: 18px;\r\n    }\r\n\r\n    #menu a {\r\n          font-family: \"Poppins\";\r\n          font-weight: 200;\r\n          font-size: 20px;\r\n    }\r\n\r\n    nav #menu {\r\n          display: none;\r\n    }\r\n}\r\n\r\n@media(min-width: 768px) {\r\n    #resize {\r\n          visibility: hidden !important;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0lBQ1YsV0FBVztJQUNYLHNCQUFzQjtJQUN0QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osY0FBYztJQUNkLGtEQUFrRDtJQUNsRCx1QkFBdUI7SUFDdkIsZUFBZTtDQUNsQjs7QUFFRDtJQUNJLG1CQUFtQjtJQUNuQixTQUFTO0lBQ1QsVUFBVTtJQUNWLHlDQUFpQztZQUFqQyxpQ0FBaUM7Q0FDcEM7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixnQkFBZ0I7Q0FDbkI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osNkJBQTZCO0lBQzdCLGFBQWE7SUFDYixpQkFBaUI7SUFDakIsV0FBVztDQUNkOztBQUVEO0lBQ0ksWUFBWTtJQUNaLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixrQkFBa0I7Q0FDckI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osOEJBQThCO0lBQzlCLHVCQUF1QjtJQUN2QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osVUFBVTtJQUNWLG1CQUFtQjtDQUN0Qjs7QUFFRDtJQUNJLHNCQUFzQjtJQUN0QixrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsOEJBQThCO0NBQ2pDOztBQUVEO0lBQ0ksWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLFVBQVU7SUFDVixhQUFhO0lBQ2IsWUFBWTtJQUNaLGFBQWE7SUFDYixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsV0FBVztDQUNkOztBQUVEO0lBQ0ksWUFBWTtJQUNaLGlCQUFpQjtJQUNqQiw4QkFBOEI7SUFDOUIsb0NBQTRCO1lBQTVCLDRCQUE0QjtJQUM1QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxpRUFBeUQ7WUFBekQseURBQXlEO0NBQzVEOztBQUVEO0lBQ0ksV0FBVztDQUNkOztBQUVEO0lBQ0ksb0VBQTREO1lBQTVELDREQUE0RDtDQUMvRDs7QUFFRDtJQUNJLFdBQVc7SUFDWCxTQUFTO0lBQ1QsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixZQUFZO0lBQ1osYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsNEJBQTRCO0lBQzVCLGVBQWU7Q0FDbEI7O0FBRUQ7SUFDSSxhQUFhO0lBQ2Isb0JBQW9CO0lBQ3BCLHVCQUF1QjtDQUMxQjs7QUFFRDtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQiw4QkFBOEI7Q0FDakM7O0FBRUQ7SUFDSSxpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxZQUFZO0NBQ2Y7O0FBRUQ7SUFDSSxvQkFBb0I7SUFDcEIsY0FBYztDQUNqQjs7QUFHRDtJQUNJO1VBQ00sb0JBQW9CO1VBQ3BCLFdBQVc7VUFDWCxnQkFBZ0I7S0FDckI7O0lBRUQ7VUFDTSxrQkFBa0I7S0FDdkI7O0lBRUQ7VUFDTSx1QkFBdUI7VUFDdkIsaUJBQWlCO1VBQ2pCLGdCQUFnQjtLQUNyQjs7SUFFRDtVQUNNLGNBQWM7S0FDbkI7Q0FDSjs7QUFFRDtJQUNJO1VBQ00sOEJBQThCO0tBQ25DO0NBQ0oiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIioge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbn1cclxuXHJcbmJvZHkge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMHZoO1xyXG4gICAgLyogYmFja2dyb3VuZDogdXJsKEhlcm8uanBnKSBuby1yZXBlYXQgNTAlIDUwJTsgKi9cclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgICBkaXNwbGF5OiB0YWJsZTtcclxufVxyXG5cclxuLmNvbnRlbnQge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiA1MCU7XHJcbiAgICBsZWZ0OiA1MCU7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxufVxyXG5cclxuLmNvbnRlbnQgaDEge1xyXG4gICAgY29sb3I6ICNmZmY7XHJcbiAgICBmb250LWZhbWlseTogXCJQb3BwaW5zXCI7XHJcbiAgICBmb250LXdlaWdodDogMjAwO1xyXG4gICAgZm9udC1zaXplOiA0MHB4O1xyXG59XHJcblxyXG5uYXYge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2IoNzcsIDYzLCAyMDEpO1xyXG4gICAgaGVpZ2h0OiA3MHB4O1xyXG4gICAgcG9zaXRpb246IHN0YXRpYztcclxuICAgIHotaW5kZXg6IDE7XHJcbn1cclxuXHJcbm5hdiAjYnJhbmQge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIG1hcmdpbi1sZWZ0OiA4NHB4O1xyXG4gICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDcwcHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG5cclxubmF2ICNicmFuZCBhIHtcclxuICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbiAgICBmb250LWZhbWlseTogXCJQb3BwaW5zXCI7XHJcbiAgICBmb250LXdlaWdodDogMzAwO1xyXG59XHJcblxyXG5uYXYgI21lbnUge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBsZWZ0OiA1MCU7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbm5hdiAjbWVudSBsaSB7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICBwYWRkaW5nOiAwcHggMzBweDtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGxpbmUtaGVpZ2h0OiA3MHB4O1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbn1cclxuXHJcbm5hdiAjbWVudSBsaSBhIHtcclxuICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgZm9udC1mYW1pbHk6IFwiUG9wcGluc1wiO1xyXG4gICAgZm9udC13ZWlnaHQ6IDIwMDtcclxufVxyXG5cclxuI3RvZ2dsZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICByaWdodDogMjBweDtcclxuICAgIHRvcDogMTRweDtcclxuICAgIHotaW5kZXg6IDk5OTtcclxuICAgIHdpZHRoOiA0MHB4O1xyXG4gICAgaGVpZ2h0OiA0MHB4O1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XHJcbiAgICBvcGFjaXR5OiAwO1xyXG59XHJcblxyXG4jdG9nZ2xlIC5zcGFuIHtcclxuICAgIGhlaWdodDogM3B4O1xyXG4gICAgYmFja2dyb3VuZDogI2ZmZjtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2Utb3V0O1xyXG4gICAgYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgbWFyZ2luOiA1cHggYXV0bztcclxufVxyXG5cclxuI3RvZ2dsZS5vbiAjb25lIHtcclxuICAgIHRyYW5zZm9ybTogcm90YXRlKDQ1ZGVnKSB0cmFuc2xhdGVYKDJweCkgdHJhbnNsYXRlWSg0cHgpO1xyXG59XHJcblxyXG4jdG9nZ2xlLm9uICN0d28ge1xyXG4gICAgb3BhY2l0eTogMDtcclxufVxyXG5cclxuI3RvZ2dsZS5vbiAjdGhyZWUge1xyXG4gICAgdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKSB0cmFuc2xhdGVYKDhweCkgdHJhbnNsYXRlWSgtMTBweCk7XHJcbn1cclxuXHJcbiNyZXNpemUge1xyXG4gICAgei1pbmRleDogMTtcclxuICAgIHRvcDogMHB4O1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgYmFja2dyb3VuZDogIzAwMDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICAgIHRyYW5zaXRpb246IGFsbCAxcyBlYXNlLW91dDtcclxuICAgIGRpc3BsYXk6IHRhYmxlO1xyXG59XHJcblxyXG4jcmVzaXplICNtZW51IHtcclxuICAgIGhlaWdodDogOTBweDtcclxuICAgIGRpc3BsYXk6IHRhYmxlLWNlbGw7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4jcmVzaXplICNtZW51IGxpIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgcGFkZGluZzogMjBweCAwO1xyXG4gICAgZm9udC1zaXplOiA1MHB4O1xyXG4gICAgbWluLWhlaWdodDogNTBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbn1cclxuXHJcbiNyZXNpemUgbGk6bnRoLWNoaWxkKDEpIHtcclxuICAgIG1hcmdpbi10b3A6MTQwcHg7XHJcbn1cclxuXHJcbiNyZXNpemUgI21lbnUgbGkgYSB7XHJcbiAgICBjb2xvcjogI2ZmZjtcclxufVxyXG5cclxuI3Jlc2l6ZS5hY3RpdmUge1xyXG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcclxuICAgIG9wYWNpdHk6IDAuOTk7XHJcbn1cclxuXHJcblxyXG5AbWVkaWEobWF4LXdpZHRoOiA3NjhweCkge1xyXG4gICAgI3RvZ2dsZSB7XHJcbiAgICAgICAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xyXG4gICAgICAgICAgb3BhY2l0eTogMTtcclxuICAgICAgICAgIG1hcmdpbi10b3A6IDZweDtcclxuICAgIH1cclxuXHJcbiAgICBuYXYgI2JyYW5kIHtcclxuICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxOHB4O1xyXG4gICAgfVxyXG5cclxuICAgICNtZW51IGEge1xyXG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiUG9wcGluc1wiO1xyXG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDIwMDtcclxuICAgICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIH1cclxuXHJcbiAgICBuYXYgI21lbnUge1xyXG4gICAgICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhKG1pbi13aWR0aDogNzY4cHgpIHtcclxuICAgICNyZXNpemUge1xyXG4gICAgICAgICAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcbn0iXX0= */"
+module.exports = "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    text-decoration: none;\r\n    list-style: none;\r\n}\r\n\r\nbody {\r\n    width: 100%;\r\n    height: 100vh;\r\n    /* background: url(Hero.jpg) no-repeat 50% 50%; */\r\n    background-size: cover;\r\n    display: table;\r\n}\r\n\r\n.content {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\r\n}\r\n\r\n.content h1 {\r\n    color: #fff;\r\n    font-family: \"Poppins\";\r\n    font-weight: 200;\r\n    font-size: 40px;\r\n}\r\n\r\nnav {\r\n    width: 100%;\r\n    background: #094978;\r\n    height: 70px;\r\n    position: static;\r\n    z-index: 1;\r\n}\r\n\r\nnav #brand {\r\n    float: left;\r\n    display: block;\r\n    margin-left: 84px;\r\n    font-size: 30px;\r\n    line-height: 70px;\r\n    font-weight: bold;\r\n}\r\n\r\nnav #brand a {\r\n    color: #fff;\r\n    transition: all 0.3s ease-out;\r\n    font-family: \"Poppins\";\r\n    font-weight: 300;\r\n}\r\n\r\nnav #menu {\r\n    float: left;\r\n    left: 35%;\r\n    position: relative;\r\n}\r\n\r\nnav #menu li {\r\n    display: inline-block;\r\n    padding: 0px 30px;\r\n    cursor: pointer;\r\n    line-height: 70px;\r\n    position: relative;\r\n    transition: all 0.3s ease-out;\r\n}\r\n\r\nnav #menu li a {\r\n    color: #fff;\r\n    font-family: \"Poppins\";\r\n    font-weight: 200;\r\n}\r\n\r\n#toggle {\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 14px;\r\n    z-index: 999;\r\n    width: 40px;\r\n    height: 40px;\r\n    cursor: pointer;\r\n    float: right;\r\n    transition: all 0.3s ease-out;\r\n    visibility: hidden;\r\n    opacity: 0;\r\n}\r\n\r\n#toggle .span {\r\n    height: 3px;\r\n    background: #fff;\r\n    transition: all 0.3s ease-out;\r\n    -webkit-backface-visibility: hidden;\r\n            backface-visibility: hidden;\r\n    margin: 5px auto;\r\n}\r\n\r\n#toggle.on #one {\r\n    -webkit-transform: rotate(45deg) translateX(2px) translateY(4px);\r\n            transform: rotate(45deg) translateX(2px) translateY(4px);\r\n}\r\n\r\n#toggle.on #two {\r\n    opacity: 0;\r\n}\r\n\r\n#toggle.on #three {\r\n    -webkit-transform: rotate(-45deg) translateX(8px) translateY(-10px);\r\n            transform: rotate(-45deg) translateX(8px) translateY(-10px);\r\n}\r\n\r\n#resize {\r\n    z-index: 1;\r\n    top: 0px;\r\n    position: absolute;\r\n    background: #000;\r\n    width: 100%;\r\n    height: 100%;\r\n    visibility: hidden;\r\n    opacity: 0;\r\n    transition: all 1s ease-out;\r\n    display: table;\r\n}\r\n\r\n#resize #menu {\r\n    height: 90px;\r\n    display: table-cell;\r\n    vertical-align: center;\r\n}\r\n\r\n#resize #menu li {\r\n    display: block;\r\n    text-align: center;\r\n    padding: 20px 0;\r\n    font-size: 50px;\r\n    min-height: 50px;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n    transition: all 0.3s ease-out;\r\n}\r\n\r\n#resize li:nth-child(1) {\r\n    margin-top:140px;\r\n}\r\n\r\n#resize #menu li a {\r\n    color: #fff;\r\n}\r\n\r\n#resize.active {\r\n    visibility: visible;\r\n    opacity: 0.99;\r\n}\r\n\r\n@media(max-width: 768px) {\r\n    #toggle {\r\n          visibility: visible;\r\n          opacity: 1;\r\n          margin-top: 6px;\r\n    }\r\n\r\n    nav #brand {\r\n          margin-left: 18px;\r\n    }\r\n\r\n    #menu a {\r\n          font-family: \"Poppins\";\r\n          font-weight: 200;\r\n          font-size: 20px;\r\n    }\r\n\r\n    nav #menu {\r\n          display: none;\r\n    }\r\n}\r\n\r\n@media(min-width: 768px) {\r\n    #resize {\r\n          visibility: hidden !important;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0lBQ1YsV0FBVztJQUNYLHNCQUFzQjtJQUN0QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osY0FBYztJQUNkLGtEQUFrRDtJQUNsRCx1QkFBdUI7SUFDdkIsZUFBZTtDQUNsQjs7QUFFRDtJQUNJLG1CQUFtQjtJQUNuQixTQUFTO0lBQ1QsVUFBVTtJQUNWLHlDQUFpQztZQUFqQyxpQ0FBaUM7Q0FDcEM7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixnQkFBZ0I7Q0FDbkI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osb0JBQW9CO0lBQ3BCLGFBQWE7SUFDYixpQkFBaUI7SUFDakIsV0FBVztDQUNkOztBQUVEO0lBQ0ksWUFBWTtJQUNaLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixrQkFBa0I7Q0FDckI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osOEJBQThCO0lBQzlCLHVCQUF1QjtJQUN2QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osVUFBVTtJQUNWLG1CQUFtQjtDQUN0Qjs7QUFFRDtJQUNJLHNCQUFzQjtJQUN0QixrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsOEJBQThCO0NBQ2pDOztBQUVEO0lBQ0ksWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLFVBQVU7SUFDVixhQUFhO0lBQ2IsWUFBWTtJQUNaLGFBQWE7SUFDYixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsV0FBVztDQUNkOztBQUVEO0lBQ0ksWUFBWTtJQUNaLGlCQUFpQjtJQUNqQiw4QkFBOEI7SUFDOUIsb0NBQTRCO1lBQTVCLDRCQUE0QjtJQUM1QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxpRUFBeUQ7WUFBekQseURBQXlEO0NBQzVEOztBQUVEO0lBQ0ksV0FBVztDQUNkOztBQUVEO0lBQ0ksb0VBQTREO1lBQTVELDREQUE0RDtDQUMvRDs7QUFFRDtJQUNJLFdBQVc7SUFDWCxTQUFTO0lBQ1QsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixZQUFZO0lBQ1osYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsNEJBQTRCO0lBQzVCLGVBQWU7Q0FDbEI7O0FBRUQ7SUFDSSxhQUFhO0lBQ2Isb0JBQW9CO0lBQ3BCLHVCQUF1QjtDQUMxQjs7QUFFRDtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQiw4QkFBOEI7Q0FDakM7O0FBRUQ7SUFDSSxpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxZQUFZO0NBQ2Y7O0FBRUQ7SUFDSSxvQkFBb0I7SUFDcEIsY0FBYztDQUNqQjs7QUFHRDtJQUNJO1VBQ00sb0JBQW9CO1VBQ3BCLFdBQVc7VUFDWCxnQkFBZ0I7S0FDckI7O0lBRUQ7VUFDTSxrQkFBa0I7S0FDdkI7O0lBRUQ7VUFDTSx1QkFBdUI7VUFDdkIsaUJBQWlCO1VBQ2pCLGdCQUFnQjtLQUNyQjs7SUFFRDtVQUNNLGNBQWM7S0FDbkI7Q0FDSjs7QUFFRDtJQUNJO1VBQ00sOEJBQThCO0tBQ25DO0NBQ0oiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIioge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbn1cclxuXHJcbmJvZHkge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMHZoO1xyXG4gICAgLyogYmFja2dyb3VuZDogdXJsKEhlcm8uanBnKSBuby1yZXBlYXQgNTAlIDUwJTsgKi9cclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgICBkaXNwbGF5OiB0YWJsZTtcclxufVxyXG5cclxuLmNvbnRlbnQge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiA1MCU7XHJcbiAgICBsZWZ0OiA1MCU7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxufVxyXG5cclxuLmNvbnRlbnQgaDEge1xyXG4gICAgY29sb3I6ICNmZmY7XHJcbiAgICBmb250LWZhbWlseTogXCJQb3BwaW5zXCI7XHJcbiAgICBmb250LXdlaWdodDogMjAwO1xyXG4gICAgZm9udC1zaXplOiA0MHB4O1xyXG59XHJcblxyXG5uYXYge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDk0OTc4O1xyXG4gICAgaGVpZ2h0OiA3MHB4O1xyXG4gICAgcG9zaXRpb246IHN0YXRpYztcclxuICAgIHotaW5kZXg6IDE7XHJcbn1cclxuXHJcbm5hdiAjYnJhbmQge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIG1hcmdpbi1sZWZ0OiA4NHB4O1xyXG4gICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDcwcHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG5cclxubmF2ICNicmFuZCBhIHtcclxuICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbiAgICBmb250LWZhbWlseTogXCJQb3BwaW5zXCI7XHJcbiAgICBmb250LXdlaWdodDogMzAwO1xyXG59XHJcblxyXG5uYXYgI21lbnUge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBsZWZ0OiAzNSU7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbm5hdiAjbWVudSBsaSB7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICBwYWRkaW5nOiAwcHggMzBweDtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGxpbmUtaGVpZ2h0OiA3MHB4O1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbn1cclxuXHJcbm5hdiAjbWVudSBsaSBhIHtcclxuICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgZm9udC1mYW1pbHk6IFwiUG9wcGluc1wiO1xyXG4gICAgZm9udC13ZWlnaHQ6IDIwMDtcclxufVxyXG5cclxuI3RvZ2dsZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICByaWdodDogMjBweDtcclxuICAgIHRvcDogMTRweDtcclxuICAgIHotaW5kZXg6IDk5OTtcclxuICAgIHdpZHRoOiA0MHB4O1xyXG4gICAgaGVpZ2h0OiA0MHB4O1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XHJcbiAgICBvcGFjaXR5OiAwO1xyXG59XHJcblxyXG4jdG9nZ2xlIC5zcGFuIHtcclxuICAgIGhlaWdodDogM3B4O1xyXG4gICAgYmFja2dyb3VuZDogI2ZmZjtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2Utb3V0O1xyXG4gICAgYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgbWFyZ2luOiA1cHggYXV0bztcclxufVxyXG5cclxuI3RvZ2dsZS5vbiAjb25lIHtcclxuICAgIHRyYW5zZm9ybTogcm90YXRlKDQ1ZGVnKSB0cmFuc2xhdGVYKDJweCkgdHJhbnNsYXRlWSg0cHgpO1xyXG59XHJcblxyXG4jdG9nZ2xlLm9uICN0d28ge1xyXG4gICAgb3BhY2l0eTogMDtcclxufVxyXG5cclxuI3RvZ2dsZS5vbiAjdGhyZWUge1xyXG4gICAgdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKSB0cmFuc2xhdGVYKDhweCkgdHJhbnNsYXRlWSgtMTBweCk7XHJcbn1cclxuXHJcbiNyZXNpemUge1xyXG4gICAgei1pbmRleDogMTtcclxuICAgIHRvcDogMHB4O1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgYmFja2dyb3VuZDogIzAwMDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICAgIHRyYW5zaXRpb246IGFsbCAxcyBlYXNlLW91dDtcclxuICAgIGRpc3BsYXk6IHRhYmxlO1xyXG59XHJcblxyXG4jcmVzaXplICNtZW51IHtcclxuICAgIGhlaWdodDogOTBweDtcclxuICAgIGRpc3BsYXk6IHRhYmxlLWNlbGw7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4jcmVzaXplICNtZW51IGxpIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgcGFkZGluZzogMjBweCAwO1xyXG4gICAgZm9udC1zaXplOiA1MHB4O1xyXG4gICAgbWluLWhlaWdodDogNTBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbn1cclxuXHJcbiNyZXNpemUgbGk6bnRoLWNoaWxkKDEpIHtcclxuICAgIG1hcmdpbi10b3A6MTQwcHg7XHJcbn1cclxuXHJcbiNyZXNpemUgI21lbnUgbGkgYSB7XHJcbiAgICBjb2xvcjogI2ZmZjtcclxufVxyXG5cclxuI3Jlc2l6ZS5hY3RpdmUge1xyXG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcclxuICAgIG9wYWNpdHk6IDAuOTk7XHJcbn1cclxuXHJcblxyXG5AbWVkaWEobWF4LXdpZHRoOiA3NjhweCkge1xyXG4gICAgI3RvZ2dsZSB7XHJcbiAgICAgICAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xyXG4gICAgICAgICAgb3BhY2l0eTogMTtcclxuICAgICAgICAgIG1hcmdpbi10b3A6IDZweDtcclxuICAgIH1cclxuXHJcbiAgICBuYXYgI2JyYW5kIHtcclxuICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxOHB4O1xyXG4gICAgfVxyXG5cclxuICAgICNtZW51IGEge1xyXG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiUG9wcGluc1wiO1xyXG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDIwMDtcclxuICAgICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIH1cclxuXHJcbiAgICBuYXYgI21lbnUge1xyXG4gICAgICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhKG1pbi13aWR0aDogNzY4cHgpIHtcclxuICAgICNyZXNpemUge1xyXG4gICAgICAgICAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -761,7 +796,7 @@ module.exports = "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    text-decoratio
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n      <meta charset=\"UTF-8\">\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n      <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n      <title>Smooth Fade-Up Responsive Navigation</title>\n      <!-- <link rel=\"stylesheet\" href=\"style.css\"> -->\n      <script src=\"http://code.jquery.com/jquery-3.3.1.js\"></script>\n      <link href=\"https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900\" rel=\"stylesheet\">\n      <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.5.0/css/all.css\" integrity=\"sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU\" crossorigin=\"anonymous\">\n</head>\n<body>\n    <!-- <script src=\"http://maps.googleapis.com/maps/api/js?key=AIzaSyDySdsZG3tJO4FJqgu24ujKy8kIdlexmsE&v=3.exp&libraries=places\" async defer></script> -->\n\n      <nav>\n            <span id=\"brand\">\n                  <a href=\"index.html\">PARK HERE</a>\n            </span>\n\n            <ul id=\"menu\">\n                <li><a routerLink=\"\" class=\"active\">Home</a></li>\n                <li><a routerLink=\"/login\">News</a></li>\n                <li><a routerLink=\"/comment\">Comment</a></li>\n                <!-- <li ><a routerLink=\"/resetpassword\">forgotten password</a></li> -->\n                <li *ngIf=\"state\" ><a (click)=\"click()\" routerLink=\"/login\">Signout</a></li>\n                <li *ngIf=\"state\" ><a routerLink=\"/login\">profile</a></li>\n                <li *ngIf=\"!state\" ><a routerLink=\"/login\">SignIn</a></li>\n                <li ><a routerLink=\"/reg\">SignUp</a></li>\n            </ul>\n\n            <div (click)=\"js()\" id=\"toggle\">\n                  <div class=\"span\" id=\"one\"></div>\n                  <div class=\"span\" id=\"two\"></div>\n                  <div class=\"span\" id=\"three\"></div>\n            </div>\n      </nav>\n\n      <div id=\"resize\">\n            <ul id=\"menu\">\n                <li><a routerLink=\"/\" class=\"active\">Home</a></li>\n                <li><a routerLink=\"/login\">News</a></li>\n                <li><a routerLink=\"/comment\">Comment</a></li>\n                <!-- <li ><a routerLink=\"/resetpassword\">forgotten password</a></li> -->\n                <li *ngIf=\"state\" ><a (click)=\"click()\" routerLink=\"/login\">Signout</a></li>\n                <li *ngIf=\"state\" ><a routerLink=\"/login\">profile</a></li>\n                <li *ngIf=\"!state\" ><a routerLink=\"/login\">SignIn</a></li>\n                <li ><a routerLink=\"/reg\">SignUp</a></li>\n            </ul>\n      </div>\n\n      <div style=\"padding:0 16px;\">\n          <router-outlet></router-outlet>\n          <!-- <app-file-upload></app-file-upload> -->\n      </div>\n\n    \n</body>\n</html>"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n      <meta charset=\"UTF-8\">\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n      <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n      <title>Smooth Fade-Up Responsive Navigation</title>\n      <!-- <link rel=\"stylesheet\" href=\"style.css\"> -->\n      <script src=\"http://code.jquery.com/jquery-3.3.1.js\"></script>\n      <link href=\"https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900\" rel=\"stylesheet\">\n      <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.5.0/css/all.css\" integrity=\"sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU\" crossorigin=\"anonymous\">\n</head>\n<body>\n    <!-- <script src=\"http://maps.googleapis.com/maps/api/js?key=AIzaSyDySdsZG3tJO4FJqgu24ujKy8kIdlexmsE&v=3.exp&libraries=places\" async defer></script> -->\n\n      <nav>\n            <span id=\"brand\">\n                  <a href=\"www.exigo.ewebsolutionlk.com\">EXIGO MANAGEMENT SERVICES</a>\n            </span> \n\n            <ul id=\"menu\">\n                        <!-- <li *ngIf=\"isAdmin() && state\" ><a routerLink=\"/reg\">Add user</a></li> -->\n                <li><a href=\"www.exigo.ewebsolutionlk.com\" class=\"active\">Home</a></li>\n                <!-- <li ><a routerLink=\"/resetpassword\">forgotten password</a></li> -->\n                <li *ngIf=\"state\" ><a (click)=\"click()\" routerLink=\"/login\">Signout</a></li>\n                <li *ngIf=\"state\" ><a routerLink=\"/login\">profile</a></li>\n                <li *ngIf=\"!state\" ><a routerLink=\"/login\">SignIn</a></li>\n                <li *ngIf=\"isAdmin\"><a routerLink=\"/reg\">Add user</a></li>\n            </ul>\n\n            <div (click)=\"js()\" id=\"toggle\">\n                  <div class=\"span\" id=\"one\"></div>\n                  <div class=\"span\" id=\"two\"></div>\n                  <div class=\"span\" id=\"three\"></div>\n            </div>\n      </nav>\n\n      <div id=\"resize\">\n            <ul id=\"menu\">\n                        <li><a href=\"www.exigo.ewebsolutionlk.com\" class=\"active\">Home</a></li>\n                        <!-- <li ><a routerLink=\"/resetpassword\">forgotten password</a></li> -->\n                        <li *ngIf=\"state\" ><a (click)=\"click()\" routerLink=\"/login\">Signout</a></li>\n                        <li *ngIf=\"state\" ><a routerLink=\"/login\">profile</a></li>\n                        <li *ngIf=\"!state\" ><a routerLink=\"/login\">SignIn</a></li>\n                        <li *ngIf=\"isAdmin\"><a routerLink=\"/reg\">Add user</a></li>\n            </ul>\n      </div>\n\n      <div style=\"padding:0 16px;\">\n          <router-outlet></router-outlet>\n          <!-- <app-file-upload></app-file-upload> -->\n      </div>\n\n    \n</body>\n</html>"
 
 /***/ }),
 
@@ -779,6 +814,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _servers_regservice_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./servers/regservice.service */ "./src/app/servers/regservice.service.ts");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jwt-decode */ "./node_modules/jwt-decode/lib/index.js");
+/* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jwt_decode__WEBPACK_IMPORTED_MODULE_3__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -791,14 +828,18 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var AppComponent = /** @class */ (function () {
     function AppComponent(service) {
         this.service = service;
         this.state = false;
+        this.isAdmin = false;
     }
     AppComponent.prototype.click = function () {
         this.service.deleteToken();
         this.state = false;
+        this.isAdmin = false;
+        this.ngOnInit();
     };
     AppComponent.prototype.js = function () {
         jquery__WEBPACK_IMPORTED_MODULE_2__("#toggle").click(function () {
@@ -808,8 +849,13 @@ var AppComponent = /** @class */ (function () {
         });
     };
     AppComponent.prototype.ngOnInit = function () {
-        if (this.service.isLoggedIn())
+        if (this.service.isLoggedIn()) {
             this.state = true;
+            var token = this.service.getToken();
+            var tokenPayload = jwt_decode__WEBPACK_IMPORTED_MODULE_3___default()(token);
+            if (tokenPayload.role == "admin")
+                this.isAdmin = true;
+        }
     };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1169,8 +1215,8 @@ var FileUploadComponent = /** @class */ (function () {
         var token = this.service.getToken();
         var tokenPayload = jwt_decode__WEBPACK_IMPORTED_MODULE_5___default()(token);
         this.id = tokenPayload._id;
-        this.url = 'http://198.211.109.205:3001/api/upload/' + tokenPayload._id;
-        console.log(this.url);
+        this.url = 'http://node.exigoms.com/api/upload/' + tokenPayload._id;
+        // console.log(this.url)
         this.FileService.showFileNames(this.id).subscribe(function (response) {
             console.log(response);
             for (var i = 0; i < response.json().length; i++) {
@@ -1180,18 +1226,18 @@ var FileUploadComponent = /** @class */ (function () {
                     contentType: response.json()[i].mimetype,
                     time: response.json()[i].time,
                 };
-                console.log(response.json()[i].mimetype);
+                // console.log(response.json()[i].mimetype)
             }
         });
         this.uploader = new ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__["FileUploader"]({ url: this.url, itemAlias: 'photo' });
     };
     FileUploadComponent.prototype.downloadPdf = function (filename, contentType) {
         this.FileService.downloadPDF(filename, contentType).subscribe(function (res) {
-            console.log(res);
+            // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
-            console.log(file);
+            // console.log(file)
             var fileURL = URL.createObjectURL(file);
-            console.log(fileURL);
+            // console.log(fileURL)
             window.open(fileURL);
             // window.open('/download');
         });
@@ -1279,9 +1325,14 @@ var LoginComponent = /** @class */ (function () {
         this.roll = '';
     }
     LoginComponent.prototype.ngOnInit = function () {
+        var token = this.service.getToken();
+        var tokenPayload = jwt_decode__WEBPACK_IMPORTED_MODULE_4___default()(token);
         if (this.service.isLoggedIn())
-            this.router.navigateByUrl('/admin');
-        this.isAdmin = false;
+            if (tokenPayload.role == "admin")
+                this.router.navigateByUrl('/admin');
+            else
+                this.router.navigateByUrl('/userprofile');
+        // this.isAdmin=false;
     };
     LoginComponent.prototype.onSubmit = function (form) {
         var _this = this;
@@ -1289,15 +1340,18 @@ var LoginComponent = /** @class */ (function () {
             _this.service.setToken(res['token']);
             var token = _this.service.getToken();
             var tokenPayload = jwt_decode__WEBPACK_IMPORTED_MODULE_4___default()(token);
-            console.log(tokenPayload.role);
+            // console.log(tokenPayload.role);
             if (tokenPayload.role == "admin") {
                 _this.router.navigateByUrl('/admin');
                 _this.state.state = true;
+                _this.isAdmin = true;
             }
             else {
                 _this.router.navigateByUrl('/userprofile');
                 _this.state.state = true;
+                _this.isAdmin = false;
             }
+            _this.state.ngOnInit();
         }, function (err) {
             _this.serverErrorMessages = err.error.message;
         });
@@ -1384,15 +1438,15 @@ var NewpwComponentComponent = /** @class */ (function () {
             // console.log(res);
             _this.emai = res['user'];
             _this.model.email = _this.emai.email;
-            console.log(_this.model.email);
+            // console.log(this.model.email);
         }, function (err) {
-            console.log(err);
+            // console.log(err);
         });
     };
     NewpwComponentComponent.prototype.onSubmit = function () {
         var _this = this;
         this.service.savepassword(this.model).subscribe(function (res) {
-            console.log(res);
+            // console.log(res);
             if (res['sucsess'] == false) {
                 _this.msg = res['message'];
                 _this.router.navigate(['login']);
@@ -1403,7 +1457,7 @@ var NewpwComponentComponent = /** @class */ (function () {
                 _this.msg = res['message'];
             }
         }, function (err) {
-            console.log(err);
+            // console.log(err);
             _this.msg = '';
         });
     };
@@ -1501,7 +1555,7 @@ var RegistrationComponent = /** @class */ (function () {
                 }
             }
         }, function (error) {
-            console.log(error);
+            // console.log(error)
             {
                 if (error)
                     _this.serverErrorMessages = 'Your email is already exists';
@@ -1584,7 +1638,7 @@ var ResetpwComponent = /** @class */ (function () {
     ResetpwComponent.prototype.onSubmit = function (form) {
         var _this = this;
         this.service.rstpw(form.value).subscribe(function (res) {
-            console.log(res);
+            // console.log(res);
             if (res['sucsess'] == false) {
                 _this.msg = res['message'];
                 _this.router.navigate(['newpassword']);
@@ -1593,7 +1647,7 @@ var ResetpwComponent = /** @class */ (function () {
                 _this.msg = res['message'];
             }
         }, function (err) {
-            console.log(err);
+            // console.log(err);
             _this.msg = '';
         });
     };
@@ -1640,13 +1694,13 @@ var FilesService = /** @class */ (function () {
         this.http = http;
     }
     FilesService.prototype.downloadPDF = function (filename, filetype) {
-        return this.http.get('http://198.211.109.205:3001/api/adminfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
+        return this.http.get('http://node.exigoms.com/api/adminfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
     };
     FilesService.prototype.showFileNames = function (id) {
-        return this.http.get('http://198.211.109.205:3001/api/files/' + id);
+        return this.http.get('http://node.exigoms.com/api/files/' + id);
     };
     FilesService.prototype.recevefile = function (id) {
-        return this.http.get('http://198.211.109.205:3001/api/rfiles/' + id);
+        return this.http.get('http://node.exigoms.com/api/rfiles/' + id);
     };
     FilesService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1692,14 +1746,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var RegserviceService = /** @class */ (function () {
     function RegserviceService(http) {
         this.http = http;
-        this.url = "http://198.211.109.205:3001/api";
+        this.url = "http://node.exigoms.com/api";
         this.noAuthHeader = { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpHeaders"]({ 'NoAuth': 'True' }) };
     }
     RegserviceService.prototype.storedetails = function (details) {
         return this.http.post(this.url + '/register', details, this.noAuthHeader);
     };
     RegserviceService.prototype.login = function (authCredentials) {
-        console.log(authCredentials);
         return this.http.post(this.url + '/authenticate', authCredentials, this.noAuthHeader);
     };
     RegserviceService.prototype.getUserProfile = function () {
@@ -1767,11 +1820,24 @@ var RegserviceService = /** @class */ (function () {
         console.log('getuser');
         return this.http.get(this.url + '/users');
     };
+    RegserviceService.prototype.block = function (id) {
+        console.log(id);
+        return this.http.post(this.url + '/block', id);
+    };
+    RegserviceService.prototype.unblock = function (id) {
+        return this.http.post(this.url + '/unblock', id);
+    };
     RegserviceService.prototype.newpost = function (post) {
         return this.http.post(this.url + '/newPost', post);
     };
     RegserviceService.prototype.getAllPosts = function () {
         return this.http.get(this.url + '/getPosts');
+    };
+    RegserviceService.prototype.getname = function (id) {
+        var data = {
+            id: id
+        };
+        return this.http.post(this.url + '/username', data);
     };
     RegserviceService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1854,17 +1920,17 @@ var ReceiveComponent = /** @class */ (function () {
                     contentType: response.json()[i].mimetype,
                     time: response.json()[i].time
                 };
-                console.log(response.json()[i].mimetype);
+                // console.log(response.json()[i].mimetype)
             }
         });
     };
     ReceiveComponent.prototype.downloadPdf = function (filename, contentType) {
         this.FileService.downloadPDF(filename, contentType).subscribe(function (res) {
-            console.log(res);
+            // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
-            console.log(file);
+            // console.log(file)
             var fileURL = URL.createObjectURL(file);
-            console.log(fileURL);
+            // console.log(fileURL)
             window.open(fileURL);
             // window.open('/download');
         });
@@ -1902,7 +1968,7 @@ module.exports = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nbody{\r\n    margin-top:20px;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\" rel=\"stylesheet\">\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-lg-3 col-md-4\">\n            <div class=\"text-center card-box\">\n                <div class=\"member-card\">\n                    <div class=\"thumb-xl member-thumb m-b-10 center-block\">\n                        <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" class=\"img-circle img-thumbnail\" alt=\"profile-image\">\n                    </div>\n\n                    <div class=\"\">\n                        <h4 class=\"m-b-5\">{{userDetails.firstName}} {{userDetails.lastName}}</h4>\n                        <p class=\"text-muted\">@{{userDetails.firstName}}</p>\n                    </div>\n                    \n                    <button type=\"button\" class=\"btn btn-success btn-sm w-sm waves-effect m-t-10 waves-light\">Follow</button>\n                    <button type=\"button\" class=\"btn btn-danger btn-sm w-sm waves-effect m-t-10 waves-light\">Message</button>\n                    \n                    <div class=\"text-left m-t-40\">\n                        <p class=\"text-muted font-13\"><strong>Full Name :</strong> <span class=\"m-l-15\">{{userDetails.firstName}} {{userDetails.lastName}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Mobile :</strong><span class=\"m-l-15\">{{userDetails.tel}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Email :</strong> <span class=\"m-l-15\">{{userDetails.email}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Location :</strong> <span class=\"m-l-15\">{{userDetails.city}}</span></p>\n                    </div>\n                </div>\n            </div> <!-- end card-box -->\n\n\n        </div> <!-- end col -->\n\n\n        <div class=\"col-md-8 col-lg-9\">\n            <div class=\"\">\n                <div class=\"\">\n                    <ul class=\"nav nav-tabs navtab-custom\" role=\"tabpanel\">\n                        <li class=\"\">\n                            <a role=\"tab\" routerLink=\"/userprofile/userHome\" data-toggle=\"tab\" aria-expanded=\"false\">\n                                <span class=\"visible-xs\"><i class=\"fa fa-user\"></i></span>\n                                <span class=\"hidden-xs\">Send</span>\n                            </a>\n                        </li>\n                        <li class=\"\">\n                            <a routerLink=\"/userprofile/gallery\" data-toggle=\"tab\" aria-expanded=\"true\">\n                                <span class=\"visible-xs\"><i class=\"fa fa-photo\"></i></span>\n                                <span class=\"hidden-xs\">Receive </span>\n                            </a>\n                        </li>\n                        <!-- <li class=\"\">\n                            <a routerLink=\"/userprofile/settings\" data-toggle=\"tab\" aria-expanded=\"false\">\n                                <span class=\"visible-xs\"><i class=\"fa fa-cog\"></i></span>\n                                <span class=\"hidden-xs\">SETTINGS</span>\n                            </a>\n                        </li> -->\n                    </ul>\n                    <div class=\"tab-content tab-pane\">\n                        \n                      <router-outlet></router-outlet>\n                            <!-- <app-file-upload></app-file-upload> -->\n                    </div>\n                </div>\n            </div>\n        </div> <!-- end col -->\n    </div>\n    <!-- end row -->\n</div>"
+module.exports = "<link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\" rel=\"stylesheet\">\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-lg-3 col-md-4\">\n            <div class=\"text-center card-box\">\n                <div class=\"member-card\">\n                    <div class=\"thumb-xl member-thumb m-b-10 center-block\">\n                        <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" class=\"img-circle img-thumbnail\" alt=\"profile-image\">\n                    </div>\n\n                    <div class=\"\">\n                        <h4 class=\"m-b-5\">{{userDetails.firstName}} {{userDetails.lastName}}</h4>\n                        <p class=\"text-muted\">@{{userDetails.firstName}}</p>\n                    </div>\n\n                    \n                    <div class=\"text-left m-t-40\">\n                        <p class=\"text-muted font-13\">\n                            <strong>Full Name :</strong>\n                            <span class=\"m-l-15\">{{userDetails.firstName}} {{userDetails.lastName}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>Mobile :</strong>\n                            <span class=\"m-l-15\">{{userDetails.tel}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>Email :</strong>\n                            <span class=\"m-l-15\">{{userDetails.email}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>Location :</strong>\n                            <span class=\"m-l-15\">{{userDetails.city}}</span>\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!-- end card-box -->\n\n\n        </div>\n        <!-- end col -->\n\n\n        <div class=\"col-md-8 col-lg-9\">\n            <div class=\"\">\n                <div class=\"\">\n                    <ul class=\"nav nav-tabs navtab-custom\" role=\"tabpanel\">\n\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" routerLink=\"/userprofile/userHome\">send</a>\n                        </li>\n                            \n\n                        <li class=\"nav-item\">\n                                <a class=\"nav-link\" routerLink=\"/userprofile/gallery\">Receive</a>\n                            </li>\n                        <!-- <li class=\"\">\n                            <a routerLink=\"/userprofile/settings\" data-toggle=\"tab\" aria-expanded=\"false\">\n                                <span class=\"visible-xs\"><i class=\"fa fa-cog\"></i></span>\n                                <span class=\"hidden-xs\">SETTINGS</span>\n                            </a>\n                        </li> -->\n                    </ul>\n                    <div class=\"tab-content tab-pane\">\n\n                        <router-outlet></router-outlet>\n                        <!-- <app-file-upload></app-file-upload> -->\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- end col -->\n    </div>\n    <!-- end row -->\n</div>"
 
 /***/ }),
 
@@ -1944,9 +2010,9 @@ var UserProfileComponent = /** @class */ (function () {
             _this.userId = _this.userDetails._id;
             _this.service.setid(_this.userDetails._id);
             // console.log(this.userId);
-            console.log(_this.userDetails);
+            // console.log(this.userDetails)
         }, function (err) {
-            console.log(err);
+            // console.log(err);
         });
     };
     UserProfileComponent.prototype.onLogout = function () {
