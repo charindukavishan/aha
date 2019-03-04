@@ -3,6 +3,7 @@ import { RegserviceService } from '../../servers/regservice.service';
 import { Router } from '@angular/router';
 import { FilesService } from '../../servers/files.service';
 import { UserProfileComponent } from '../user-profile.component';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-receive',
@@ -10,35 +11,37 @@ import { UserProfileComponent } from '../user-profile.component';
   styleUrls: ['./receive.component.css']
 })
 export class ReceiveComponent implements OnInit {
-  constructor(private FileService: FilesService,private service:RegserviceService,public user:UserProfileComponent) { }
+  constructor(private FileService: FilesService, private service: RegserviceService, public user: UserProfileComponent) { }
   private files = [];
-  id=this.user.userId;
+  id = this.user.userId;
+  loading = true
   ngOnInit() {
-    this.FileService.recevefile(this.service.getid()).subscribe(response => {console.log(response)
+    this.FileService.recevefile(this.service.getid()).subscribe(response => {
+      console.log(response)
       for (let i = 0; i < response.json().length; i++) {
         this.files[i] = {
           filename: response.json()[i].filename,
           originalname: response.json()[i].originalname,
           contentType: response.json()[i].mimetype,
-          time:response.json()[i].time
+          time: response.json()[i].time
         };
         // console.log(response.json()[i].mimetype)
       }
     });
-
+    this.loading = false
   }
-  downloadPdf(filename, contentType) {
+  downloadPdf(filename, contentType,originalname) {
     this.FileService.downloadPDF(filename, contentType).subscribe(
       (res) => {
         // console.log(res)
         const file = new Blob([res.blob()], { type: contentType });
         // console.log(file)
-      const fileURL = URL.createObjectURL(file);
-      // console.log(fileURL)
-      window.open(fileURL);
+        const fileURL = URL.createObjectURL(file);
+        // console.log(fileURL)
+        // window.open(fileURL);
+        saveAs(file, originalname);
 
-
-      // window.open('/download');
+        // window.open('/download');
       }
     );
   }

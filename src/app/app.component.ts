@@ -48,4 +48,18 @@ js(){
 
   // }
 
+  w3_open() {
+    if (document.getElementById("mySidebar").style.display === 'block') {
+      document.getElementById("mySidebar").style.display = 'none';
+    } else {
+      document.getElementById("mySidebar").style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+  }
+  onClick(element) {
+  }
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FilesService } from '../servers/files.service';
 import { RegserviceService } from '../../servers/regservice.service';
+import { saveAs } from 'file-saver';
+
 @Component({
   selector: 'app-received',
   templateUrl: './received.component.html',
@@ -13,6 +15,7 @@ export class ReceivedComponent implements OnInit {
 
   response:any;
   public name:any
+  loading=true
 
   ngOnInit() {
         this.FileService.showFileNames().subscribe(res => {
@@ -31,10 +34,11 @@ export class ReceivedComponent implements OnInit {
         })
         // console.log(this.response.json()[i].mimetype)
       }
+      this.loading=false
     });
 
   }
-  downloadPdf(filename, contentType) {
+  downloadPdf(filename, contentType,originalname) {
     this.FileService.downloadPDF(filename, contentType).subscribe(
       (res) => {
         // console.log(res)
@@ -42,8 +46,8 @@ export class ReceivedComponent implements OnInit {
         // console.log(file)
       const fileURL = URL.createObjectURL(file);
       // console.log(fileURL)
-      window.open(fileURL);
-
+      // window.open(fileURL);
+      saveAs(file, originalname);
 
       // window.open('/download');
       }

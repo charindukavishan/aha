@@ -1,4 +1,4 @@
-
+<i *ngIf="loading" class="fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom"></i> 
 <div *ngIf="b" class="container">
     <table class="table table-hover">
         <thead>
@@ -13,9 +13,10 @@
             <td>{{ file.username }}</td>
             <td>{{ file.nic }}</td>
             
-            <td><button class="btn btn-primary button" (click)="user(file.username,file.userid)">Send</button></td>
-            <td *ngIf="file.isblock==0"><button class="btn btn-danger button" (click)="block(file.userid)">Block</button></td>
-            <td *ngIf="file.isblock!=0"><button class="btn btn-primary button" (click)="unblock(file.userid)">Unblock</button></td>
+            <td><button class="btn btn-primary button" (click)="user(file.username,file.userid)"><i class="fa fa-paper-plane fa-fw w3-margin-right"></i> Send</button></td>
+            <td><button class="btn btn-info button" (click)="profile(file.userid)"><i class="fa fa-info fa-fw w3-margin-right"></i>Profile</button></td>
+            <td *ngIf="file.isblock==0"><button class="btn btn-danger button" (click)="block(file.userid)"><i class="fa fa-ban fa-fw w3-margin-right"></i> Block</button></td>
+            <td *ngIf="file.isblock!=0"><button class="btn btn-warning button" (click)="unblock(file.userid)"><i class="fa fa-unlock fa-fw w3-margin-right"></i>Unblock</button></td>
           </tr>   
         </tbody>
       </table>

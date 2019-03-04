@@ -13,6 +13,8 @@ private files = [];
 response:any;
 b=true;
 selectuser="fgjdfhxjx";
+loading=true
+
   ngOnInit() {
 this.users.getusers().subscribe(
       res => {
@@ -27,6 +29,7 @@ this.users.getusers().subscribe(
         };
         
       }
+      this.loading=false
       },
       err => { 
         // console.log(err);
@@ -61,5 +64,9 @@ unblock(id){
       err => { 
         
       });
+}
+
+profile(id){console.log(id)
+  this.router.navigateByUrl('/user/'+id);
 }
 }

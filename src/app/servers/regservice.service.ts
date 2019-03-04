@@ -24,6 +24,9 @@ export class RegserviceService {
   getUserProfile() {
     return this.http.get(this.url + '/userProfile');
   }
+  getUser(id){
+    return this.http.get(this.url+'/user/'+id)
+  }
   rstpw(email) {
     return this.http.put(this.url + '/rstpw', email);
   }

@@ -4,6 +4,7 @@ import { FileUploader } from 'ng2-file-upload';
 import { RegserviceService } from '../servers/regservice.service';
 import { UserProfileComponent } from '../user-profile/user-profile.component';
 import decode from 'jwt-decode';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-file-upload',
@@ -41,7 +42,7 @@ this.url='http://node.exigoms.com/api/upload/'+tokenPayload._id;
 
   }
 
-  downloadPdf(filename, contentType) {
+  downloadPdf(filename, contentType,originalname) {
     this.FileService.downloadPDF(filename, contentType).subscribe(
       (res) => {
         // console.log(res)
@@ -49,8 +50,8 @@ this.url='http://node.exigoms.com/api/upload/'+tokenPayload._id;
         // console.log(file)
       const fileURL = URL.createObjectURL(file);
       // console.log(fileURL)
-      window.open(fileURL);
-
+      // window.open(fileURL);
+ saveAs(file, originalname);
 
       // window.open('/download');
       }

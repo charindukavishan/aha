@@ -23,6 +23,7 @@ import { ReceiveComponent } from './user-profile/receive/receive.component';
 import { AdminuploadsComponent } from './admin-profile/adminuploads/adminuploads.component';
 import { ReceivedComponent } from './admin-profile/received/received.component';
 import { MessagesComponent } from './admin-profile/messages/messages.component';
+import { ProfileViewComponent } from './admin-profile/profile-view/profile-view.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { MessagesComponent } from './admin-profile/messages/messages.component';
     ReceiveComponent,
     AdminuploadsComponent,
     ReceivedComponent,
-    MessagesComponent
+    MessagesComponent,
+    ProfileViewComponent
     
   ],
   imports: [

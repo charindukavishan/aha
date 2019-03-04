@@ -15,7 +15,8 @@ export class RegistrationComponent implements OnInit {
     tel: '',
     nic:'',
     password:'',
-    confirmPassword:''
+    confirmPassword:'',
+    companyname:''
 
   }
   res:boolean;

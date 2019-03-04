@@ -22,7 +22,10 @@ export class LoginComponent implements OnInit {
   isAdmin:boolean;
   roll='';
   serverErrorMessages: string;
+loading=false
+
   ngOnInit() {
+    this.loading=false
           const token =this.service.getToken();
           const tokenPayload = decode(token);
     if(this.service.isLoggedIn())
@@ -35,11 +38,13 @@ export class LoginComponent implements OnInit {
  
   
     onSubmit(form : NgForm){
+      this.loading=true
       this.service.login(form.value).subscribe(
         res => {
           this.service.setToken(res['token']);
           const token =this.service.getToken();
           const tokenPayload = decode(token);
+          this.loading=false
           // console.log(tokenPayload.role);
         if(tokenPayload.role == "admin"){
          this.router.navigateByUrl('/admin');
@@ -54,6 +59,9 @@ export class LoginComponent implements OnInit {
         },
         err => {
           this.serverErrorMessages = err.error.message;
+          this.loading=false
+          // setTimeout(this.serverErrorMessages = '', 3000);
+          // this.serverErrorMessages=''
         }
       );
     }

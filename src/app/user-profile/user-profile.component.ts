@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
 })
 export class UserProfileComponent implements OnInit {
 
-  userDetails;
+  userDetails; 
   userId='';
   constructor(private service: RegserviceService, private router: Router) { }
 
@@ -30,4 +30,14 @@ export class UserProfileComponent implements OnInit {
     this.service.deleteToken();
     this.router.navigate(['/login']);
   }
+
+  w3_open() {
+    document.getElementById("mySidebarprofile").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+w3_close() {
+    document.getElementById("mySidebarprofile").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
 }

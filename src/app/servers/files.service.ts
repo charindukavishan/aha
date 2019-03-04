@@ -12,7 +12,10 @@ export class FilesService {
     return this.http.get('http://node.exigoms.com/api/adminfile/' + filename,
     { responseType: ResponseContentType.Blob });
   }
-
+  downloaduserPDF(filename, filetype): any {
+    return this.http.get('http://node.exigoms.com/api/userfile/' + filename,
+    { responseType: ResponseContentType.Blob });
+  }
   showFileNames(id) {
     return this.http.get('http://node.exigoms.com/api/files/'+id);
   }

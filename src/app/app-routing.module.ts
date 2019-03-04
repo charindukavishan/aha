@@ -15,41 +15,57 @@ import { ReceivedComponent } from './admin-profile/received/received.component';
 import { MessagesComponent } from './admin-profile/messages/messages.component';
 import { AdminuploadsComponent } from './admin-profile/adminuploads/adminuploads.component';
 import { RoleGuardServiceGuard } from './auth/role-guard-service.guard';
+import { ProfileViewComponent } from './admin-profile/profile-view/profile-view.component';
 
 
 export const appRoutes: Routes = [
 
 
   // 1st Route
-{path: 'reg',  component: RegistrationComponent,canActivate:[RoleGuardServiceGuard],data: { 
-  expectedRole: 'admin'
-} ,},
-  // 6th Route
-// { path: 'reg',  component: RegistraionComponent },
-{path: 'login', component: LoginComponent,},
-{path:'admin', component:AdminProfileComponent,canActivate:[RoleGuardServiceGuard],data: { 
-  expectedRole: 'admin'
-} ,
-children:[
-  {path:'allusers',component:AllusersComponent},
-  {path:'sentdocs',component:SentdocsComponent},
-  {path:'received',component:ReceivedComponent},
-  {path:'messages',component:MessagesComponent},
-  {path:'upload',component:AdminuploadsComponent},
-  { path: '**',   redirectTo: 'allusers', pathMatch: 'full' },
-]},
- {path: 'userprofile', component: UserProfileComponent,canActivate:[AuthGuard]
-,children:[
-  {path: 'userHome', component: FileUploadComponent},
-//   {path: 'settings', component: SettingsComponent},
-  {path: 'gallery', component: ReceiveComponent},
-  { path: '',   redirectTo: 'userHome', pathMatch: 'full' },
-]
-},
-{path: 'resetpassword', component: ResetpwComponent},
-{path: 'newpassword/:token', component: NewpwComponentComponent},
+  {
+    path: 'reg', component: RegistrationComponent, canActivate: [RoleGuardServiceGuard], data: {
+      expectedRole: 'admin'
+    },
+  },
+  
+  { path: 'login', component: LoginComponent },
 
-{ path: '**', component: LoginComponent }
+  {
+    path: 'admin', component: AdminProfileComponent, canActivate: [RoleGuardServiceGuard], data: {
+      expectedRole: 'admin'
+    },
+    children: [
+      { path: 'allusers', component: AllusersComponent },
+      { path: 'sentdocs', component: SentdocsComponent },
+      { path: 'received', component: ReceivedComponent },
+      { path: 'messages', component: MessagesComponent },
+      { path: 'upload', component: AdminuploadsComponent },
+
+      { path: '**', redirectTo: 'allusers', pathMatch: 'full' },
+    ]
+  },
+
+  { path: 'user/:id', component: ProfileViewComponent, canActivate: [RoleGuardServiceGuard], data: {
+    expectedRole: 'admin'
+  } },
+
+  {
+    path: 'userprofile', component: UserProfileComponent, canActivate: [RoleGuardServiceGuard], data: {
+      expectedRole: 'user'
+    }
+    , children: [
+      { path: 'userHome', component: FileUploadComponent },
+      //   {path: 'settings', component: SettingsComponent},
+      { path: 'gallery', component: ReceiveComponent },
+      { path: '', redirectTo: 'userHome', pathMatch: 'full' },
+    ]
+  },
+
+  { path: 'resetpassword', component: ResetpwComponent },
+
+  { path: 'newpassword/:token', component: NewpwComponentComponent },
+
+  { path: '**', component: LoginComponent }
 ];
 
 @NgModule({

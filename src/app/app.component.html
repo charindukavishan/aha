@@ -1,57 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Smooth Fade-Up Responsive Navigation</title>
-      <!-- <link rel="stylesheet" href="style.css"> -->
-      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-</head>
 <body>
-    <!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDySdsZG3tJO4FJqgu24ujKy8kIdlexmsE&v=3.exp&libraries=places" async defer></script> -->
+      <!-- Navbar (sit on top) -->
+      <div class="w3-top">
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+                  <a href="#home" class="w3-bar-item w3-button w3-wide">EXIGO MANAGEMENT SERVICES</a>
+                  <!-- Right-sided navbar links -->
+                  <div class="w3-right w3-hide-small">
+                        <a href="www.exigo.ewebsolutionlk.com" class="w3-bar-item w3-button">
+                              <i class="fa fa-th"></i> HOME</a>
+                        <a *ngIf="state" routerLink="/login" class="w3-bar-item w3-button">
+                              <i class="fa fa-user"></i> PROFILE</a>
+                        <a *ngIf="!state" routerLink="/login" class="w3-bar-item w3-button">
+                              <i class="fa fa-sign-in"></i> Sign In</a>
+                        <a *ngIf="isAdmin" routerLink="/reg" class="w3-bar-item w3-button">
+                              <i class="fa fa-plus-square"></i> ADD USERS</a>
+                        <a *ngIf="state" (click)="click()" routerLink="/login" class="w3-bar-item w3-button">
+                              <i class="fa fa-sign-out"></i> Sign Out</a>
 
-      <nav>
-            <span id="brand">
-                  <a href="www.exigo.ewebsolutionlk.com">EXIGO MANAGEMENT SERVICES</a>
-            </span> 
 
-            <ul id="menu">
-                        <!-- <li *ngIf="isAdmin() && state" ><a routerLink="/reg">Add user</a></li> -->
-                <li><a href="www.exigo.ewebsolutionlk.com" class="active">Home</a></li>
-                <!-- <li ><a routerLink="/resetpassword">forgotten password</a></li> -->
-                <li *ngIf="state" ><a (click)="click()" routerLink="/login">Signout</a></li>
-                <li *ngIf="state" ><a routerLink="/login">profile</a></li>
-                <li *ngIf="!state" ><a routerLink="/login">SignIn</a></li>
-                <li *ngIf="isAdmin"><a routerLink="/reg">Add user</a></li>
-            </ul>
+                  </div>
+                  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-            <div (click)="js()" id="toggle">
-                  <div class="span" id="one"></div>
-                  <div class="span" id="two"></div>
-                  <div class="span" id="three"></div>
+                  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" (click)="w3_open()">
+                        <i class="fa fa-bars"></i>
+                  </a>
             </div>
+      </div>
+
+      <!-- Sidebar on small screens when clicking the menu icon -->
+      <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+            <a href="www.exigo.ewebsolutionlk.com" class="w3-bar-item w3-button">HOME</a>
+
+            <a (click)="w3_close()" *ngIf="state" routerLink="/login" class="w3-bar-item w3-button">
+                  <i class="fa fa-user"></i> PROFILE</a>
+            <a (click)="w3_close()" *ngIf="!state" routerLink="/login" class="w3-bar-item w3-button">
+                  <i class="fa fa-sign-in"></i> Sign In</a>
+            <a (click)="w3_close()" *ngIf="isAdmin" routerLink="/reg" class="w3-bar-item w3-button">
+                  <i class="fa fa-plus-square"></i>ADD USERS</a>
+            <a (click)="w3_close()" *ngIf="state" (click)="click()" routerLink="/login" class="w3-bar-item w3-button">
+                  <i class="fa fa-sign-out"></i> Sign Out</a>
+
+
       </nav>
 
-      <div id="resize">
-            <ul id="menu">
-                        <li><a href="www.exigo.ewebsolutionlk.com" class="active">Home</a></li>
-                        <!-- <li ><a routerLink="/resetpassword">forgotten password</a></li> -->
-                        <li *ngIf="state" ><a (click)="click()" routerLink="/login">Signout</a></li>
-                        <li *ngIf="state" ><a routerLink="/login">profile</a></li>
-                        <li *ngIf="!state" ><a routerLink="/login">SignIn</a></li>
-                        <li *ngIf="isAdmin"><a routerLink="/reg">Add user</a></li>
-            </ul>
+
+
+      <!-- About Section -->
+      <div class="w3-container w3-center" style="padding:60px 16px;align-content: center;" id="about">
+            <router-outlet></router-outlet>
       </div>
 
-      <div style="padding:0 16px;">
-          <router-outlet></router-outlet>
-          <!-- <app-file-upload></app-file-upload> -->
-      </div>
 
-    
 </body>
-</html>

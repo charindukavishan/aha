@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluLXByb2ZpbGUvYWRtaW4tcHJvZmlsZS5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "body,h1,h2,h3,h4,h5,h6 {font-family: \"Raleway\", sans-serif}\r\n\r\n#loading {\r\n    /* background: #f4f4f2 url(\"img/page-bg.png\") repeat scroll 0 0; */\r\n    height: 100%;\r\n    left: 0;\r\n    margin: auto;\r\n    position: fixed;\r\n    top: 0;\r\n    width: 100%;\r\n}\r\n\r\n.bokeh {\r\n    border: 0.01em solid rgba(150, 150, 150, 0.1);\r\n    border-radius: 50%;\r\n    font-size: 100px;\r\n    height: 1em;\r\n    list-style: outside none none;\r\n    margin: 0 auto;\r\n    position: relative;\r\n    top: 35%;\r\n    width: 1em;\r\n    z-index: 2147483647;\r\n}\r\n\r\n.bokeh li {\r\n    border-radius: 50%;\r\n    height: 0.2em;\r\n    position: absolute;\r\n    width: 0.2em;\r\n}\r\n\r\n.bokeh li:nth-child(1) {\r\n    -webkit-animation: 1.13s linear 0s normal none infinite running rota, 3.67s ease-in-out 0s alternate none infinite running opa;\r\n            animation: 1.13s linear 0s normal none infinite running rota, 3.67s ease-in-out 0s alternate none infinite running opa;\r\n    background: #00c176 none repeat scroll 0 0;\r\n    left: 50%;\r\n    margin: 0 0 0 -0.1em;\r\n    top: 0;\r\n    -webkit-transform-origin: 50% 250% 0;\r\n            transform-origin: 50% 250% 0;\r\n}\r\n\r\n.bokeh li:nth-child(2) {\r\n    -webkit-animation: 1.86s linear 0s normal none infinite running rota, 4.29s ease-in-out 0s alternate none infinite running opa;\r\n            animation: 1.86s linear 0s normal none infinite running rota, 4.29s ease-in-out 0s alternate none infinite running opa;\r\n    background: #ff003c none repeat scroll 0 0;\r\n    margin: -0.1em 0 0;\r\n    right: 0;\r\n    top: 50%;\r\n    -webkit-transform-origin: -150% 50% 0;\r\n            transform-origin: -150% 50% 0;\r\n}\r\n\r\n.bokeh li:nth-child(3) {\r\n    -webkit-animation: 1.45s linear 0s normal none infinite running rota, 5.12s ease-in-out 0s alternate none infinite running opa;\r\n            animation: 1.45s linear 0s normal none infinite running rota, 5.12s ease-in-out 0s alternate none infinite running opa;\r\n    background: #fabe28 none repeat scroll 0 0;\r\n    bottom: 0;\r\n    left: 50%;\r\n    margin: 0 0 0 -0.1em;\r\n    -webkit-transform-origin: 50% -150% 0;\r\n            transform-origin: 50% -150% 0;\r\n}\r\n\r\n.bokeh li:nth-child(4) {\r\n    -webkit-animation: 1.72s linear 0s normal none infinite running rota, 5.25s ease-in-out 0s alternate none infinite running opa;\r\n            animation: 1.72s linear 0s normal none infinite running rota, 5.25s ease-in-out 0s alternate none infinite running opa;\r\n    background: #88c100 none repeat scroll 0 0;\r\n    margin: -0.1em 0 0;\r\n    top: 50%;\r\n    -webkit-transform-origin: 250% 50% 0;\r\n            transform-origin: 250% 50% 0;\r\n}\r\n\r\n@-webkit-keyframes opa {\r\n12% {\r\n    opacity: 0.8;\r\n}\r\n19.5% {\r\n    opacity: 0.88;\r\n}\r\n37.2% {\r\n    opacity: 0.64;\r\n}\r\n40.5% {\r\n    opacity: 0.52;\r\n}\r\n52.7% {\r\n    opacity: 0.69;\r\n}\r\n60.2% {\r\n    opacity: 0.6;\r\n}\r\n66.6% {\r\n    opacity: 0.52;\r\n}\r\n70% {\r\n    opacity: 0.63;\r\n}\r\n79.9% {\r\n    opacity: 0.6;\r\n}\r\n84.2% {\r\n    opacity: 0.75;\r\n}\r\n91% {\r\n    opacity: 0.87;\r\n}\r\n}\r\n\r\n@keyframes opa {\r\n12% {\r\n    opacity: 0.8;\r\n}\r\n19.5% {\r\n    opacity: 0.88;\r\n}\r\n37.2% {\r\n    opacity: 0.64;\r\n}\r\n40.5% {\r\n    opacity: 0.52;\r\n}\r\n52.7% {\r\n    opacity: 0.69;\r\n}\r\n60.2% {\r\n    opacity: 0.6;\r\n}\r\n66.6% {\r\n    opacity: 0.52;\r\n}\r\n70% {\r\n    opacity: 0.63;\r\n}\r\n79.9% {\r\n    opacity: 0.6;\r\n}\r\n84.2% {\r\n    opacity: 0.75;\r\n}\r\n91% {\r\n    opacity: 0.87;\r\n}\r\n}\r\n\r\n@-webkit-keyframes rota {\r\n100% {\r\n    -webkit-transform: rotate(360deg);\r\n            transform: rotate(360deg);\r\n}\r\n}\r\n\r\n@keyframes rota {\r\n100% {\r\n    -webkit-transform: rotate(360deg);\r\n            transform: rotate(360deg);\r\n}\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4tcHJvZmlsZS9hZG1pbi1wcm9maWxlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsd0JBQXdCLGtDQUFrQyxDQUFDOztBQUUzRDtJQUNJLG1FQUFtRTtJQUNuRSxhQUFhO0lBQ2IsUUFBUTtJQUNSLGFBQWE7SUFDYixnQkFBZ0I7SUFDaEIsT0FBTztJQUNQLFlBQVk7Q0FDZjs7QUFDRDtJQUNJLDhDQUE4QztJQUM5QyxtQkFBbUI7SUFDbkIsaUJBQWlCO0lBQ2pCLFlBQVk7SUFDWiw4QkFBOEI7SUFDOUIsZUFBZTtJQUNmLG1CQUFtQjtJQUNuQixTQUFTO0lBQ1QsV0FBVztJQUNYLG9CQUFvQjtDQUN2Qjs7QUFDRDtJQUNJLG1CQUFtQjtJQUNuQixjQUFjO0lBQ2QsbUJBQW1CO0lBQ25CLGFBQWE7Q0FDaEI7O0FBQ0Q7SUFDSSwrSEFBdUg7WUFBdkgsdUhBQXVIO0lBQ3ZILDJDQUEyQztJQUMzQyxVQUFVO0lBQ1YscUJBQXFCO0lBQ3JCLE9BQU87SUFDUCxxQ0FBNkI7WUFBN0IsNkJBQTZCO0NBQ2hDOztBQUNEO0lBQ0ksK0hBQXVIO1lBQXZILHVIQUF1SDtJQUN2SCwyQ0FBMkM7SUFDM0MsbUJBQW1CO0lBQ25CLFNBQVM7SUFDVCxTQUFTO0lBQ1Qsc0NBQThCO1lBQTlCLDhCQUE4QjtDQUNqQzs7QUFDRDtJQUNJLCtIQUF1SDtZQUF2SCx1SEFBdUg7SUFDdkgsMkNBQTJDO0lBQzNDLFVBQVU7SUFDVixVQUFVO0lBQ1YscUJBQXFCO0lBQ3JCLHNDQUE4QjtZQUE5Qiw4QkFBOEI7Q0FDakM7O0FBQ0Q7SUFDSSwrSEFBdUg7WUFBdkgsdUhBQXVIO0lBQ3ZILDJDQUEyQztJQUMzQyxtQkFBbUI7SUFDbkIsU0FBUztJQUNULHFDQUE2QjtZQUE3Qiw2QkFBNkI7Q0FDaEM7O0FBQ0Q7QUFDQTtJQUNJLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7Q0FDQTs7QUFsQ0Q7QUFDQTtJQUNJLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7Q0FDQTs7QUFFRDtBQUNBO0lBQ0ksa0NBQTBCO1lBQTFCLDBCQUEwQjtDQUM3QjtDQUNBOztBQUpEO0FBQ0E7SUFDSSxrQ0FBMEI7WUFBMUIsMEJBQTBCO0NBQzdCO0NBQ0EiLCJmaWxlIjoic3JjL2FwcC9hZG1pbi1wcm9maWxlL2FkbWluLXByb2ZpbGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHksaDEsaDIsaDMsaDQsaDUsaDYge2ZvbnQtZmFtaWx5OiBcIlJhbGV3YXlcIiwgc2Fucy1zZXJpZn1cclxuXHJcbiNsb2FkaW5nIHtcclxuICAgIC8qIGJhY2tncm91bmQ6ICNmNGY0ZjIgdXJsKFwiaW1nL3BhZ2UtYmcucG5nXCIpIHJlcGVhdCBzY3JvbGwgMCAwOyAqL1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIG1hcmdpbjogYXV0bztcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIHRvcDogMDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbi5ib2tlaCB7XHJcbiAgICBib3JkZXI6IDAuMDFlbSBzb2xpZCByZ2JhKDE1MCwgMTUwLCAxNTAsIDAuMSk7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgICBmb250LXNpemU6IDEwMHB4O1xyXG4gICAgaGVpZ2h0OiAxZW07XHJcbiAgICBsaXN0LXN0eWxlOiBvdXRzaWRlIG5vbmUgbm9uZTtcclxuICAgIG1hcmdpbjogMCBhdXRvO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgdG9wOiAzNSU7XHJcbiAgICB3aWR0aDogMWVtO1xyXG4gICAgei1pbmRleDogMjE0NzQ4MzY0NztcclxufVxyXG4uYm9rZWggbGkge1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gICAgaGVpZ2h0OiAwLjJlbTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHdpZHRoOiAwLjJlbTtcclxufVxyXG4uYm9rZWggbGk6bnRoLWNoaWxkKDEpIHtcclxuICAgIGFuaW1hdGlvbjogMS4xM3MgbGluZWFyIDBzIG5vcm1hbCBub25lIGluZmluaXRlIHJ1bm5pbmcgcm90YSwgMy42N3MgZWFzZS1pbi1vdXQgMHMgYWx0ZXJuYXRlIG5vbmUgaW5maW5pdGUgcnVubmluZyBvcGE7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDBjMTc2IG5vbmUgcmVwZWF0IHNjcm9sbCAwIDA7XHJcbiAgICBsZWZ0OiA1MCU7XHJcbiAgICBtYXJnaW46IDAgMCAwIC0wLjFlbTtcclxuICAgIHRvcDogMDtcclxuICAgIHRyYW5zZm9ybS1vcmlnaW46IDUwJSAyNTAlIDA7XHJcbn1cclxuLmJva2VoIGxpOm50aC1jaGlsZCgyKSB7XHJcbiAgICBhbmltYXRpb246IDEuODZzIGxpbmVhciAwcyBub3JtYWwgbm9uZSBpbmZpbml0ZSBydW5uaW5nIHJvdGEsIDQuMjlzIGVhc2UtaW4tb3V0IDBzIGFsdGVybmF0ZSBub25lIGluZmluaXRlIHJ1bm5pbmcgb3BhO1xyXG4gICAgYmFja2dyb3VuZDogI2ZmMDAzYyBub25lIHJlcGVhdCBzY3JvbGwgMCAwO1xyXG4gICAgbWFyZ2luOiAtMC4xZW0gMCAwO1xyXG4gICAgcmlnaHQ6IDA7XHJcbiAgICB0b3A6IDUwJTtcclxuICAgIHRyYW5zZm9ybS1vcmlnaW46IC0xNTAlIDUwJSAwO1xyXG59XHJcbi5ib2tlaCBsaTpudGgtY2hpbGQoMykge1xyXG4gICAgYW5pbWF0aW9uOiAxLjQ1cyBsaW5lYXIgMHMgbm9ybWFsIG5vbmUgaW5maW5pdGUgcnVubmluZyByb3RhLCA1LjEycyBlYXNlLWluLW91dCAwcyBhbHRlcm5hdGUgbm9uZSBpbmZpbml0ZSBydW5uaW5nIG9wYTtcclxuICAgIGJhY2tncm91bmQ6ICNmYWJlMjggbm9uZSByZXBlYXQgc2Nyb2xsIDAgMDtcclxuICAgIGJvdHRvbTogMDtcclxuICAgIGxlZnQ6IDUwJTtcclxuICAgIG1hcmdpbjogMCAwIDAgLTAuMWVtO1xyXG4gICAgdHJhbnNmb3JtLW9yaWdpbjogNTAlIC0xNTAlIDA7XHJcbn1cclxuLmJva2VoIGxpOm50aC1jaGlsZCg0KSB7XHJcbiAgICBhbmltYXRpb246IDEuNzJzIGxpbmVhciAwcyBub3JtYWwgbm9uZSBpbmZpbml0ZSBydW5uaW5nIHJvdGEsIDUuMjVzIGVhc2UtaW4tb3V0IDBzIGFsdGVybmF0ZSBub25lIGluZmluaXRlIHJ1bm5pbmcgb3BhO1xyXG4gICAgYmFja2dyb3VuZDogIzg4YzEwMCBub25lIHJlcGVhdCBzY3JvbGwgMCAwO1xyXG4gICAgbWFyZ2luOiAtMC4xZW0gMCAwO1xyXG4gICAgdG9wOiA1MCU7XHJcbiAgICB0cmFuc2Zvcm0tb3JpZ2luOiAyNTAlIDUwJSAwO1xyXG59XHJcbkBrZXlmcmFtZXMgb3BhIHtcclxuMTIlIHtcclxuICAgIG9wYWNpdHk6IDAuODtcclxufVxyXG4xOS41JSB7XHJcbiAgICBvcGFjaXR5OiAwLjg4O1xyXG59XHJcbjM3LjIlIHtcclxuICAgIG9wYWNpdHk6IDAuNjQ7XHJcbn1cclxuNDAuNSUge1xyXG4gICAgb3BhY2l0eTogMC41MjtcclxufVxyXG41Mi43JSB7XHJcbiAgICBvcGFjaXR5OiAwLjY5O1xyXG59XHJcbjYwLjIlIHtcclxuICAgIG9wYWNpdHk6IDAuNjtcclxufVxyXG42Ni42JSB7XHJcbiAgICBvcGFjaXR5OiAwLjUyO1xyXG59XHJcbjcwJSB7XHJcbiAgICBvcGFjaXR5OiAwLjYzO1xyXG59XHJcbjc5LjklIHtcclxuICAgIG9wYWNpdHk6IDAuNjtcclxufVxyXG44NC4yJSB7XHJcbiAgICBvcGFjaXR5OiAwLjc1O1xyXG59XHJcbjkxJSB7XHJcbiAgICBvcGFjaXR5OiAwLjg3O1xyXG59XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgcm90YSB7XHJcbjEwMCUge1xyXG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTtcclxufVxyXG59XHJcblxyXG4iXX0= */"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\" rel=\"stylesheet\">\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-lg-3 col-md-4\">\n            <div class=\"text-center card-box\">\n                <div class=\"member-card\">\n                    <div class=\"thumb-xl member-thumb m-b-10 center-block\">\n                        <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" class=\"img-circle img-thumbnail\" alt=\"profile-image\">\n                    </div>\n\n                    <div class=\"\">\n                        <h4 class=\"m-b-5\">{{userDetails.firstName}} {{userDetails.lastName}}</h4>\n                        <p class=\"text-muted\">@{{userDetails.firstName}}</p>\n                    </div>\n                    \n                      \n                    <div class=\"text-left m-t-40\">\n                        <p class=\"text-muted font-13\"><strong>Full Name :</strong> <span class=\"m-l-15\">{{userDetails.firstName}} {{userDetails.lastName}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Mobile :</strong><span class=\"m-l-15\">{{userDetails.tel}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Email :</strong> <span class=\"m-l-15\">{{userDetails.email}}</span></p>\n                        <p class=\"text-muted font-13\"><strong>Location :</strong> <span class=\"m-l-15\">{{userDetails.city}}</span></p>\n                    </div>\n                </div>\n            </div> <!-- end card-box -->\n\n\n        </div> <!-- end col -->\n\n\n        <div class=\"col-md-8 col-lg-9\">\n            <div class=\"\">\n                <div class=\"\">                    \n                    <ul class=\"nav nav-tabs\">\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link active\" routerLink=\"/admin/sentdocs\">Send</a>\n                        </li>\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link\" routerLink=\"/admin/messages\">Messages</a>\n                        </li>\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link\" routerLink=\"/admin/received\">received</a>\n                        </li>\n                        <li class=\"nav-item\">\n                          <a class=\"nav-link disabled\" routerLink=\"/admin/allusers\">Users</a>\n                        </li>\n                      </ul>\n                    <div class=\"tab-content tab-pane\">\n                        \n                      <router-outlet></router-outlet>\n                      <!-- <app-messages></app-messages> -->\n                    </div>\n                </div>\n            </div>\n        </div> <!-- end col -->\n    </div>\n    <!-- end row -->\n</div>"
+module.exports = "<body class=\"w3-light-grey w3-content\" style=\"max-width:1600px\">\n\n    <!-- Sidebar/menu -->\n    <nav class=\"w3-sidebar w3-collapse w3-white w3-animate-left\" style=\"z-index:3;width:300px;\" id=\"mySidebarprofile\">\n        <br>\n        <div class=\"w3-container\">\n            <a (click)=\"w3_close()\" class=\"w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey\" title=\"close menu\">\n                <i class=\"fa fa-remove\"></i>\n            </a>\n            <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" style=\"width:45%;\" class=\"w3-round\">\n            <br>\n            <br>\n            <h4>\n                <b>{{userDetails.firstName}} {{userDetails.lastName}}</b>\n            </h4>\n            <p class=\"w3-text-grey\">EXIGO ADMINISTRATOR</p>\n        </div>\n        <div class=\"w3-bar-block\">\n            <a routerLink=\"/admin/sentdocs\" (click)=\"w3_close()\" class=\"w3-bar-item w3-button w3-padding w3-text-teal\">\n                <i class=\"fa fa-paper-plane fa-fw w3-margin-right\"></i>SEND</a>\n            <a routerLink=\"/admin/messages\" (click)=\"w3_close()\" class=\"w3-bar-item w3-button w3-padding\">\n                <i class=\"fa fa-envelope fa-fw w3-margin-right\"></i>MESSAGE</a>\n            <a routerLink=\"/admin/received\" (click)=\"w3_close()\" class=\"w3-bar-item w3-button w3-padding\">\n                <i class=\"fa fa-envelope-open fa-fw w3-margin-right\"></i>received</a>\n            <a routerLink=\"/admin/allusers\" (click)=\"w3_close()\" class=\"w3-bar-item w3-button w3-padding\">\n                <i class=\"fa fa-user fa-fw w3-margin-right\"></i>Users</a>\n\n        </div>\n    </nav>\n\n    <!-- Overlay effect when opening sidebar on small screens -->\n    <div class=\"w3-overlay w3-hide-large w3-animate-opacity\" (click)=\"w3_close()\" style=\"cursor:pointer\" title=\"close side menu\"\n        id=\"myOverlay\"></div>\n\n    <!-- !PAGE CONTENT! -->\n    <div class=\"w3-main\" style=\"margin-left:300px\">\n\n        <!-- Header -->\n        <header id=\"portfolio\">\n            <a href=\"#\">\n                <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" style=\"width:65px;\" class=\"w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity\">\n            </a>\n            <span class=\"w3-button w3-hide-large w3-xxlarge w3-hover-text-grey\" (click)=\"w3_open()\">\n                <i class=\"fa fa-bars\"></i>\n            </span>\n            <!-- <i *ngIf=\"loading\" class=\"fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom\"></i>  -->\n            <div class=\"w3-container\">\n                <h1>\n                    <b>{{userDetails.firstName}} {{userDetails.lastName}}</b>\n                </h1>\n                <div class=\"w3-section w3-bottombar w3-padding-16\">\n                    <!-- <span class=\"w3-margin-right\">Filter:</span>\n                    <button class=\"w3-button w3-black\">ALL</button>\n                    <button class=\"w3-button w3-white\">\n                        <i class=\"fa fa-diamond w3-margin-right\"></i>Design</button>\n                    <button class=\"w3-button w3-white w3-hide-small\">\n                        <i class=\"fa fa-photo w3-margin-right\"></i>Photos</button>\n                    <button class=\"w3-button w3-white w3-hide-small\">\n                        <i class=\"fa fa-map-pin w3-margin-right\"></i>Art</button> -->\n                </div>\n            </div>\n        </header>\n        <div class=\"w3-container\" style=\"margin-bottom:32px\">\n            \n            <router-outlet></router-outlet>\n        </div>\n        <!-- End page content -->\n    </div>\n\n\n\n</body>"
 
 /***/ }),
 
@@ -75,6 +75,7 @@ var AdminProfileComponent = /** @class */ (function () {
         this.service = service;
         this.router = router;
         this.userId = '';
+        this.loading = true;
     }
     AdminProfileComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -82,6 +83,7 @@ var AdminProfileComponent = /** @class */ (function () {
             _this.userDetails = res['user'];
             _this.userId = _this.userDetails.id;
             _this.service.setid(_this.userDetails._id);
+            _this.loading = false;
             // console.log(res);
             // console.log(this.userDetails)
         }, function (err) {
@@ -91,6 +93,14 @@ var AdminProfileComponent = /** @class */ (function () {
     AdminProfileComponent.prototype.onLogout = function () {
         this.service.deleteToken();
         this.router.navigate(['/login']);
+    };
+    AdminProfileComponent.prototype.w3_open = function () {
+        document.getElementById("mySidebarprofile").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    };
+    AdminProfileComponent.prototype.w3_close = function () {
+        document.getElementById("mySidebarprofile").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
     };
     AdminProfileComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -125,7 +135,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n      <div class=\"col-md-4\">\n        <br><h1>{{user}}</h1>\n          <form>\n              <div class=\"form-group\">\n                  <label for=\"multiple\">Choose file(s)</label>\n                  <input type=\"file\" class=\"form-control\" name=\"multiple\" ng2FileSelect [uploader]=\"uploader\" multiple  />\n              </div>            \n          </form>\n      </div>\n      </div>\n      <br>\n      <div class=\"col-md-8\">\n           File(s) Selected: {{ uploader?.queue?.length }}\n          <table class=\"table\">\n              <thead>\n              <tr>\n                  <th width=\"50%\">Name</th>\n                  <th>Size</th>\n                  <th>Progress</th>\n                  <th>Status</th>\n                  <th>Actions</th>\n              </tr>\n              </thead> \n              <tbody>\n              <tr *ngFor=\"let item of uploader.queue\">\n                  <td><strong>{{ item.file.name }}</strong></td>\n                  <td nowrap>{{ item.file.size/1024/1024 | number:'.2' }} MB</td>\n                  <td>\n                      <div class=\"progress\" style=\"margin-bottom: 0;\">\n                          <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': item.progress + '%' }\"></div>\n                      </div>\n                  </td>\n                  <td class=\"text-center\">\n                      <span *ngIf=\"item.isSuccess\"><i class=\"fa fa-check\"></i></span>\n                      <span *ngIf=\"item.isCancel\"><i class=\"fa fa-ban\"></i></span>\n                      <span *ngIf=\"item.isError\"><i class=\"fa fa-times\"></i></span>\n                  </td>\n                  <td nowrap>\n                      <button type=\"button\" class=\"btn btn-success btn-xs\"\n                              (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">\n                          <span class=\"fa fa-upload\"></span> Upload\n                      </button>\n                      <button type=\"button\" class=\"btn btn-warning btn-xs\"\n                              (click)=\"item.cancel()\" [disabled]=\"!item.isUploading\">\n                          <span class=\"fa fa-ban\"></span> Cancel\n                      </button>\n                      <button type=\"button\" class=\"btn btn-danger btn-xs\"\n                              (click)=\"item.remove()\">\n                          <span class=\"fa fa-trash\"></span> Remove\n                      </button>\n                  </td>\n              </tr>\n              </tbody>\n          </table>\n\n          <div>\n              <hr>\n              <div>\n                  Total progress:\n                  <div class=\"progress\">\n                      <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': uploader.progress + '%' }\"></div>\n                  </div>\n                  <hr>\n              </div>\n              <button type=\"button\" class=\"btn btn-success btn-s\"\n                      (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">\n                  <span class=\"fa fa-upload\"></span> Upload all\n              </button>\n              <button type=\"button\" class=\"btn btn-warning btn-s\"\n                      (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">\n                  <span class=\"fa fa-ban\"></span> Cancel all\n              </button>\n              <button type=\"button\" class=\"btn btn-danger btn-s\"\n                      (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">\n                  <span class=\"fa fa-trash\"></span> Remove all\n              </button>\n          </div>\n      </div>\n</div>\n<hr>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n      <div class=\"col-md-4\">\n        <br><h1>{{user}}</h1>\n          <form>\n              <div class=\"form-group\">\n                  <label for=\"multiple\">Choose file(s)</label>\n                  <input type=\"file\" class=\"form-control\" name=\"multiple\" ng2FileSelect [uploader]=\"uploader\" multiple  />\n              </div>            \n          </form>\n      </div>\n      </div>\n      <br>\n      <div class=\"col-md-8\">\n           File(s) Selected: {{ uploader?.queue?.length }}\n          <table class=\"table\">\n              <thead>\n              <tr>\n                  <th >Name</th>\n                  <th>Size</th>\n                  <th>Progress</th>\n                  <th>Status</th>\n                  <th>Actions</th>\n              </tr>\n              </thead> \n              <tbody>\n              <tr *ngFor=\"let item of uploader.queue\">\n                  <td><strong>{{ item.file.name }}</strong></td>\n                  <td nowrap>{{ item.file.size/1024/1024 | number:'.2' }} MB</td>\n                  <td>\n                      <div class=\"progress\" style=\"margin-bottom: 0;\">\n                          <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': item.progress + '%' }\"></div>\n                      </div>\n                  </td>\n                  <td class=\"text-center\">\n                      <span *ngIf=\"item.isSuccess\"><i class=\"fa fa-check\"></i></span>\n                      <span *ngIf=\"item.isCancel\"><i class=\"fa fa-ban\"></i></span>\n                      <span *ngIf=\"item.isError\"><i class=\"fa fa-times\"></i></span>\n                  </td>\n                  <td nowrap>\n                      <button type=\"button\" class=\"btn btn-success btn-xs\"\n                              (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">\n                          <span class=\"fa fa-upload\"></span> Upload\n                      </button>\n                      <button type=\"button\" class=\"btn btn-warning btn-xs\"\n                              (click)=\"item.cancel()\" [disabled]=\"!item.isUploading\">\n                          <span class=\"fa fa-ban\"></span> Cancel\n                      </button>\n                      <button type=\"button\" class=\"btn btn-danger btn-xs\"\n                              (click)=\"item.remove()\">\n                          <span class=\"fa fa-trash\"></span> Remove\n                      </button>\n                  </td>\n              </tr>\n              </tbody>\n          </table>\n\n          <div>\n              <hr>\n              <div>\n                  Total progress:\n                  <div class=\"progress\">\n                      <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': uploader.progress + '%' }\"></div>\n                  </div>\n                  <hr>\n              </div>\n              <button type=\"button\" class=\"btn btn-success btn-s\"\n                      (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">\n                  <span class=\"fa fa-upload\"></span> Upload all\n              </button>\n              <button type=\"button\" class=\"btn btn-warning btn-s\"\n                      (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">\n                  <span class=\"fa fa-ban\"></span> Cancel all\n              </button>\n              <button type=\"button\" class=\"btn btn-danger btn-s\"\n                      (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">\n                  <span class=\"fa fa-trash\"></span> Remove all\n              </button>\n          </div>\n      </div>\n</div>\n<hr>\n"
 
 /***/ }),
 
@@ -215,7 +225,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div *ngIf=\"b\" class=\"container\">\n    <table class=\"table table-hover\">\n        <thead>\n          <tr>\n            <th>User</th>\n            <th>NIC</th>\n            \n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let file of files\">\n            <td>{{ file.username }}</td>\n            <td>{{ file.nic }}</td>\n            \n            <td><button class=\"btn btn-primary button\" (click)=\"user(file.username,file.userid)\">Send</button></td>\n            <td *ngIf=\"file.isblock==0\"><button class=\"btn btn-danger button\" (click)=\"block(file.userid)\">Block</button></td>\n            <td *ngIf=\"file.isblock!=0\"><button class=\"btn btn-primary button\" (click)=\"unblock(file.userid)\">Unblock</button></td>\n          </tr>   \n        </tbody>\n      </table>\n  </div>\n\n  <div *ngIf=\"!b\" class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-4\">\n            \n          <br>\n            <form>\n                <div class=\"form-group\">\n                    <label for=\"multiple\">Choose file(s)</label>\n                    <input type=\"file\" class=\"form-control\" name=\"multiple\" ng2FileSelect [uploader]=\"uploader\" multiple  />\n                </div>            \n            </form>\n        </div>\n        </div>\n        <br>\n        <div class=\"col-md-8\">\n             File(s) Selected: {{ uploader?.queue?.length }}\n            <table class=\"table\">\n                <thead>\n                <tr>\n                    <th width=\"50%\">Name</th>\n                    <th>Size</th>\n                    <th>Progress</th>\n                    <th>Status</th>\n                    <th>Actions</th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr *ngFor=\"let item of uploader.queue\">\n                    <td><strong>{{ item.file.name }}</strong></td>\n                    <td nowrap>{{ item.file.size/1024/1024 | number:'.2' }} MB</td>\n                    <td>\n                        <div class=\"progress\" style=\"margin-bottom: 0;\">\n                            <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': item.progress + '%' }\"></div>\n                        </div>\n                    </td>\n                    <td class=\"text-center\">\n                        <span *ngIf=\"item.isSuccess\"><i class=\"fa fa-check\"></i></span>\n                        <span *ngIf=\"item.isCancel\"><i class=\"fa fa-ban\"></i></span>\n                        <span *ngIf=\"item.isError\"><i class=\"fa fa-times\"></i></span>\n                    </td>\n                    <td nowrap>\n                        <button type=\"button\" class=\"btn btn-success btn-xs\"\n                                (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">\n                            <span class=\"fa fa-upload\"></span> Upload\n                        </button>\n                        <button type=\"button\" class=\"btn btn-warning btn-xs\"\n                                (click)=\"item.cancel()\" [disabled]=\"!item.isUploading\">\n                            <span class=\"fa fa-ban\"></span> Cancel\n                        </button>\n                        <button type=\"button\" class=\"btn btn-danger btn-xs\"\n                                (click)=\"item.remove()\">\n                            <span class=\"fa fa-trash\"></span> Remove\n                        </button>\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n  \n            <div>\n                <hr>\n                <div>\n                    Total progress:\n                    <div class=\"progress\">\n                        <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': uploader.progress + '%' }\"></div>\n                    </div>\n                    <hr>\n                </div>\n                <button type=\"button\" class=\"btn btn-success btn-s\"\n                        (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">\n                    <span class=\"fa fa-upload\"></span> Upload all\n                </button>\n                <button type=\"button\" class=\"btn btn-warning btn-s\"\n                        (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">\n                    <span class=\"fa fa-ban\"></span> Cancel all\n                </button>\n                <button type=\"button\" class=\"btn btn-danger btn-s\"\n                        (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">\n                    <span class=\"fa fa-trash\"></span> Remove all\n                </button>\n            </div>\n        </div>\n  </div>\n  <hr>\n  "
+module.exports = "<i *ngIf=\"loading\" class=\"fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom\"></i> \n<div *ngIf=\"b\" class=\"container\">\n    <table class=\"table table-hover\">\n        <thead>\n          <tr>\n            <th>User</th>\n            <th>NIC</th>\n            \n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let file of files\">\n            <td>{{ file.username }}</td>\n            <td>{{ file.nic }}</td>\n            \n            <td><button class=\"btn btn-primary button\" (click)=\"user(file.username,file.userid)\"><i class=\"fa fa-paper-plane fa-fw w3-margin-right\"></i> Send</button></td>\n            <td><button class=\"btn btn-info button\" (click)=\"profile(file.userid)\"><i class=\"fa fa-info fa-fw w3-margin-right\"></i>Profile</button></td>\n            <td *ngIf=\"file.isblock==0\"><button class=\"btn btn-danger button\" (click)=\"block(file.userid)\"><i class=\"fa fa-ban fa-fw w3-margin-right\"></i> Block</button></td>\n            <td *ngIf=\"file.isblock!=0\"><button class=\"btn btn-warning button\" (click)=\"unblock(file.userid)\"><i class=\"fa fa-unlock fa-fw w3-margin-right\"></i>Unblock</button></td>\n          </tr>   \n        </tbody>\n      </table>\n  </div>\n\n  <div *ngIf=\"!b\" class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-4\">\n            \n          <br>\n            <form>\n                <div class=\"form-group\">\n                    <label for=\"multiple\">Choose file(s)</label>\n                    <input type=\"file\" class=\"form-control\" name=\"multiple\" ng2FileSelect [uploader]=\"uploader\" multiple  />\n                </div>            \n            </form>\n        </div>\n        </div>\n        <br>\n        <div class=\"col-md-8\">\n             File(s) Selected: {{ uploader?.queue?.length }}\n            <table class=\"table\">\n                <thead>\n                <tr>\n                    <th width=\"50%\">Name</th>\n                    <th>Size</th>\n                    <th>Progress</th>\n                    <th>Status</th>\n                    <th>Actions</th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr *ngFor=\"let item of uploader.queue\">\n                    <td><strong>{{ item.file.name }}</strong></td>\n                    <td nowrap>{{ item.file.size/1024/1024 | number:'.2' }} MB</td>\n                    <td>\n                        <div class=\"progress\" style=\"margin-bottom: 0;\">\n                            <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': item.progress + '%' }\"></div>\n                        </div>\n                    </td>\n                    <td class=\"text-center\">\n                        <span *ngIf=\"item.isSuccess\"><i class=\"fa fa-check\"></i></span>\n                        <span *ngIf=\"item.isCancel\"><i class=\"fa fa-ban\"></i></span>\n                        <span *ngIf=\"item.isError\"><i class=\"fa fa-times\"></i></span>\n                    </td>\n                    <td nowrap>\n                        <button type=\"button\" class=\"btn btn-success btn-xs\"\n                                (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">\n                            <span class=\"fa fa-upload\"></span> Upload\n                        </button>\n                        <button type=\"button\" class=\"btn btn-warning btn-xs\"\n                                (click)=\"item.cancel()\" [disabled]=\"!item.isUploading\">\n                            <span class=\"fa fa-ban\"></span> Cancel\n                        </button>\n                        <button type=\"button\" class=\"btn btn-danger btn-xs\"\n                                (click)=\"item.remove()\">\n                            <span class=\"fa fa-trash\"></span> Remove\n                        </button>\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n  \n            <div>\n                <hr>\n                <div>\n                    Total progress:\n                    <div class=\"progress\">\n                        <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': uploader.progress + '%' }\"></div>\n                    </div>\n                    <hr>\n                </div>\n                <button type=\"button\" class=\"btn btn-success btn-s\"\n                        (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">\n                    <span class=\"fa fa-upload\"></span> Upload all\n                </button>\n                <button type=\"button\" class=\"btn btn-warning btn-s\"\n                        (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">\n                    <span class=\"fa fa-ban\"></span> Cancel all\n                </button>\n                <button type=\"button\" class=\"btn btn-danger btn-s\"\n                        (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">\n                    <span class=\"fa fa-trash\"></span> Remove all\n                </button>\n            </div>\n        </div>\n  </div>\n  <hr>\n  "
 
 /***/ }),
 
@@ -251,6 +261,7 @@ var AllusersComponent = /** @class */ (function () {
         this.files = [];
         this.b = true;
         this.selectuser = "fgjdfhxjx";
+        this.loading = true;
     }
     AllusersComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -265,6 +276,7 @@ var AllusersComponent = /** @class */ (function () {
                     isblock: _this.response[i].isblock
                 };
             }
+            _this.loading = false;
         }, function (err) {
             // console.log(err);
         });
@@ -293,6 +305,10 @@ var AllusersComponent = /** @class */ (function () {
             _this.ngOnInit();
         }, function (err) {
         });
+    };
+    AllusersComponent.prototype.profile = function (id) {
+        console.log(id);
+        this.router.navigateByUrl('/user/' + id);
     };
     AllusersComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -327,7 +343,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <table class=\"table table-hover\">\n      <thead>\n        <tr>\n          <th>File Name</th>\n          <th>User</th>\n          <th>Date</th>\n          <th>Time</th>\n          <th>Link</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let file of files\">\n          <td>{{ file.originalname }}</td>\n          <td>{{ file.username }}</td>\n          <td>{{file.time | date:'MMM dd, yyyy'}}</td>\n      <td>{{ file.time | date:'hh:mm' }}</td>\n      <!-- <td>{{ file.username }}</td> -->\n          <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType)\">Download</button></td>\n          <td><button class=\"btn btn-primary button\" routerLink=\"admin/messages\"  (click)=\"read(file.filename)\">Mark As Read</button></td>\n        </tr>   \n      </tbody>\n    </table>\n</div>\n"
+module.exports = "<i *ngIf=\"loading\" class=\"fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom\"></i> \n<div class=\"container\">\n\n  <table class=\"table table-hover\">\n      <thead>\n        <tr>\n          <th>File Name</th>\n          <th>User</th>\n          <th>Date</th>\n          <th>Time</th>\n          <th>Link</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let file of files\">\n          <td>{{ file.originalname }}</td>\n          <td>{{ file.username }}</td>\n          <td>{{file.time | date:'MMM dd, yyyy'}}</td>\n      <td>{{ file.time | date:'hh:mm' }}</td>\n      <!-- <td>{{ file.username }}</td> -->\n          <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType,file.originalname)\"><i class=\"fa fa-download\"></i> Download</button></td>\n          <td><button class=\"btn btn-primary button\" routerLink=\"admin/messages\"  (click)=\"read(file.filename)\">Mark As Read</button></td>\n        </tr>   \n      </tbody>\n    </table>\n</div>\n"
 
 /***/ }),
 
@@ -345,6 +361,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _servers_files_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../servers/files.service */ "./src/app/admin-profile/servers/files.service.ts");
 /* harmony import */ var _servers_regservice_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../servers/regservice.service */ "./src/app/servers/regservice.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(file_saver__WEBPACK_IMPORTED_MODULE_4__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -358,6 +376,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var MessagesComponent = /** @class */ (function () {
     function MessagesComponent(FileService, service, router) {
         this.FileService = FileService;
@@ -365,6 +384,7 @@ var MessagesComponent = /** @class */ (function () {
         this.router = router;
         this.files = [];
         this.filename = '';
+        this.loading = true;
     }
     MessagesComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -382,11 +402,11 @@ var MessagesComponent = /** @class */ (function () {
                         username: _this.name
                     };
                 });
-                // console.log(this.files[i])
             };
             for (var i = 0; i < _this.response.json().length; i++) {
                 _loop_1(i);
             }
+            _this.loading = false;
         });
     };
     MessagesComponent.prototype.read = function (name) {
@@ -394,14 +414,15 @@ var MessagesComponent = /** @class */ (function () {
         this.FileService.readmsg(name).subscribe(function (res) {
         });
     };
-    MessagesComponent.prototype.downloadPdf = function (filename, contentType) {
+    MessagesComponent.prototype.downloadPdf = function (filename, contentType, originalname) {
         this.FileService.downloadPDF(filename, contentType).subscribe(function (res) {
             // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
             // console.log(file)
             var fileURL = URL.createObjectURL(file);
             // console.log(fileURL)
-            window.open(fileURL);
+            // window.open(fileURL);
+            Object(file_saver__WEBPACK_IMPORTED_MODULE_4__["saveAs"])(file, originalname);
             // window.open('/download');
         });
     };
@@ -414,6 +435,186 @@ var MessagesComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_servers_files_service__WEBPACK_IMPORTED_MODULE_1__["FilesService"], _servers_regservice_service__WEBPACK_IMPORTED_MODULE_2__["RegserviceService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], MessagesComponent);
     return MessagesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin-profile/profile-view/profile-view.component.css":
+/*!***********************************************************************!*\
+  !*** ./src/app/admin-profile/profile-view/profile-view.component.css ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#loading {\r\n    /* background: #f4f4f2 url(\"img/page-bg.png\") repeat scroll 0 0; */\r\n    height: 100%;\r\n    left: 0;\r\n    margin: auto;\r\n    position: fixed;\r\n    top: 0;\r\n    width: 100%;\r\n}\r\n.bokeh {\r\n    border: 0.01em solid rgba(150, 150, 150, 0.1);\r\n    border-radius: 50%;\r\n    font-size: 100px;\r\n    height: 1em;\r\n    list-style: outside none none;\r\n    margin: 0 auto;\r\n    position: relative;\r\n    top: 35%;\r\n    width: 1em;\r\n    z-index: 2147483647;\r\n}\r\n.bokeh li {\r\n    border-radius: 50%;\r\n    height: 0.2em;\r\n    position: absolute;\r\n    width: 0.2em;\r\n}\r\n.bokeh li:nth-child(1) {\r\n    -webkit-animation: 1.13s linear 0s normal none infinite running rota, 3.67s ease-in-out 0s alternate none infinite running opa;\r\n            animation: 1.13s linear 0s normal none infinite running rota, 3.67s ease-in-out 0s alternate none infinite running opa;\r\n    background: #00c176 none repeat scroll 0 0;\r\n    left: 50%;\r\n    margin: 0 0 0 -0.1em;\r\n    top: 0;\r\n    -webkit-transform-origin: 50% 250% 0;\r\n            transform-origin: 50% 250% 0;\r\n}\r\n.bokeh li:nth-child(2) {\r\n    -webkit-animation: 1.86s linear 0s normal none infinite running rota, 4.29s ease-in-out 0s alternate none infinite running opa;\r\n            animation: 1.86s linear 0s normal none infinite running rota, 4.29s ease-in-out 0s alternate none infinite running opa;\r\n    background: #ff003c none repeat scroll 0 0;\r\n    margin: -0.1em 0 0;\r\n    right: 0;\r\n    top: 50%;\r\n    -webkit-transform-origin: -150% 50% 0;\r\n            transform-origin: -150% 50% 0;\r\n}\r\n.bokeh li:nth-child(3) {\r\n    -webkit-animation: 1.45s linear 0s normal none infinite running rota, 5.12s ease-in-out 0s alternate none infinite running opa;\r\n            animation: 1.45s linear 0s normal none infinite running rota, 5.12s ease-in-out 0s alternate none infinite running opa;\r\n    background: #fabe28 none repeat scroll 0 0;\r\n    bottom: 0;\r\n    left: 50%;\r\n    margin: 0 0 0 -0.1em;\r\n    -webkit-transform-origin: 50% -150% 0;\r\n            transform-origin: 50% -150% 0;\r\n}\r\n.bokeh li:nth-child(4) {\r\n    -webkit-animation: 1.72s linear 0s normal none infinite running rota, 5.25s ease-in-out 0s alternate none infinite running opa;\r\n            animation: 1.72s linear 0s normal none infinite running rota, 5.25s ease-in-out 0s alternate none infinite running opa;\r\n    background: #88c100 none repeat scroll 0 0;\r\n    margin: -0.1em 0 0;\r\n    top: 50%;\r\n    -webkit-transform-origin: 250% 50% 0;\r\n            transform-origin: 250% 50% 0;\r\n}\r\n@-webkit-keyframes opa {\r\n12% {\r\n    opacity: 0.8;\r\n}\r\n19.5% {\r\n    opacity: 0.88;\r\n}\r\n37.2% {\r\n    opacity: 0.64;\r\n}\r\n40.5% {\r\n    opacity: 0.52;\r\n}\r\n52.7% {\r\n    opacity: 0.69;\r\n}\r\n60.2% {\r\n    opacity: 0.6;\r\n}\r\n66.6% {\r\n    opacity: 0.52;\r\n}\r\n70% {\r\n    opacity: 0.63;\r\n}\r\n79.9% {\r\n    opacity: 0.6;\r\n}\r\n84.2% {\r\n    opacity: 0.75;\r\n}\r\n91% {\r\n    opacity: 0.87;\r\n}\r\n}\r\n@keyframes opa {\r\n12% {\r\n    opacity: 0.8;\r\n}\r\n19.5% {\r\n    opacity: 0.88;\r\n}\r\n37.2% {\r\n    opacity: 0.64;\r\n}\r\n40.5% {\r\n    opacity: 0.52;\r\n}\r\n52.7% {\r\n    opacity: 0.69;\r\n}\r\n60.2% {\r\n    opacity: 0.6;\r\n}\r\n66.6% {\r\n    opacity: 0.52;\r\n}\r\n70% {\r\n    opacity: 0.63;\r\n}\r\n79.9% {\r\n    opacity: 0.6;\r\n}\r\n84.2% {\r\n    opacity: 0.75;\r\n}\r\n91% {\r\n    opacity: 0.87;\r\n}\r\n}\r\n@-webkit-keyframes rota {\r\n100% {\r\n    -webkit-transform: rotate(360deg);\r\n            transform: rotate(360deg);\r\n}\r\n}\r\n@keyframes rota {\r\n100% {\r\n    -webkit-transform: rotate(360deg);\r\n            transform: rotate(360deg);\r\n}\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4tcHJvZmlsZS9wcm9maWxlLXZpZXcvcHJvZmlsZS12aWV3LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxtRUFBbUU7SUFDbkUsYUFBYTtJQUNiLFFBQVE7SUFDUixhQUFhO0lBQ2IsZ0JBQWdCO0lBQ2hCLE9BQU87SUFDUCxZQUFZO0NBQ2Y7QUFDRDtJQUNJLDhDQUE4QztJQUM5QyxtQkFBbUI7SUFDbkIsaUJBQWlCO0lBQ2pCLFlBQVk7SUFDWiw4QkFBOEI7SUFDOUIsZUFBZTtJQUNmLG1CQUFtQjtJQUNuQixTQUFTO0lBQ1QsV0FBVztJQUNYLG9CQUFvQjtDQUN2QjtBQUNEO0lBQ0ksbUJBQW1CO0lBQ25CLGNBQWM7SUFDZCxtQkFBbUI7SUFDbkIsYUFBYTtDQUNoQjtBQUNEO0lBQ0ksK0hBQXVIO1lBQXZILHVIQUF1SDtJQUN2SCwyQ0FBMkM7SUFDM0MsVUFBVTtJQUNWLHFCQUFxQjtJQUNyQixPQUFPO0lBQ1AscUNBQTZCO1lBQTdCLDZCQUE2QjtDQUNoQztBQUNEO0lBQ0ksK0hBQXVIO1lBQXZILHVIQUF1SDtJQUN2SCwyQ0FBMkM7SUFDM0MsbUJBQW1CO0lBQ25CLFNBQVM7SUFDVCxTQUFTO0lBQ1Qsc0NBQThCO1lBQTlCLDhCQUE4QjtDQUNqQztBQUNEO0lBQ0ksK0hBQXVIO1lBQXZILHVIQUF1SDtJQUN2SCwyQ0FBMkM7SUFDM0MsVUFBVTtJQUNWLFVBQVU7SUFDVixxQkFBcUI7SUFDckIsc0NBQThCO1lBQTlCLDhCQUE4QjtDQUNqQztBQUNEO0lBQ0ksK0hBQXVIO1lBQXZILHVIQUF1SDtJQUN2SCwyQ0FBMkM7SUFDM0MsbUJBQW1CO0lBQ25CLFNBQVM7SUFDVCxxQ0FBNkI7WUFBN0IsNkJBQTZCO0NBQ2hDO0FBQ0Q7QUFDQTtJQUNJLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7QUFDRDtJQUNJLGNBQWM7Q0FDakI7Q0FDQTtBQWxDRDtBQUNBO0lBQ0ksYUFBYTtDQUNoQjtBQUNEO0lBQ0ksY0FBYztDQUNqQjtBQUNEO0lBQ0ksY0FBYztDQUNqQjtBQUNEO0lBQ0ksY0FBYztDQUNqQjtBQUNEO0lBQ0ksY0FBYztDQUNqQjtBQUNEO0lBQ0ksYUFBYTtDQUNoQjtBQUNEO0lBQ0ksY0FBYztDQUNqQjtBQUNEO0lBQ0ksY0FBYztDQUNqQjtBQUNEO0lBQ0ksYUFBYTtDQUNoQjtBQUNEO0lBQ0ksY0FBYztDQUNqQjtBQUNEO0lBQ0ksY0FBYztDQUNqQjtDQUNBO0FBRUQ7QUFDQTtJQUNJLGtDQUEwQjtZQUExQiwwQkFBMEI7Q0FDN0I7Q0FDQTtBQUpEO0FBQ0E7SUFDSSxrQ0FBMEI7WUFBMUIsMEJBQTBCO0NBQzdCO0NBQ0EiLCJmaWxlIjoic3JjL2FwcC9hZG1pbi1wcm9maWxlL3Byb2ZpbGUtdmlldy9wcm9maWxlLXZpZXcuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNsb2FkaW5nIHtcclxuICAgIC8qIGJhY2tncm91bmQ6ICNmNGY0ZjIgdXJsKFwiaW1nL3BhZ2UtYmcucG5nXCIpIHJlcGVhdCBzY3JvbGwgMCAwOyAqL1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIG1hcmdpbjogYXV0bztcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIHRvcDogMDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbi5ib2tlaCB7XHJcbiAgICBib3JkZXI6IDAuMDFlbSBzb2xpZCByZ2JhKDE1MCwgMTUwLCAxNTAsIDAuMSk7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgICBmb250LXNpemU6IDEwMHB4O1xyXG4gICAgaGVpZ2h0OiAxZW07XHJcbiAgICBsaXN0LXN0eWxlOiBvdXRzaWRlIG5vbmUgbm9uZTtcclxuICAgIG1hcmdpbjogMCBhdXRvO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgdG9wOiAzNSU7XHJcbiAgICB3aWR0aDogMWVtO1xyXG4gICAgei1pbmRleDogMjE0NzQ4MzY0NztcclxufVxyXG4uYm9rZWggbGkge1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gICAgaGVpZ2h0OiAwLjJlbTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHdpZHRoOiAwLjJlbTtcclxufVxyXG4uYm9rZWggbGk6bnRoLWNoaWxkKDEpIHtcclxuICAgIGFuaW1hdGlvbjogMS4xM3MgbGluZWFyIDBzIG5vcm1hbCBub25lIGluZmluaXRlIHJ1bm5pbmcgcm90YSwgMy42N3MgZWFzZS1pbi1vdXQgMHMgYWx0ZXJuYXRlIG5vbmUgaW5maW5pdGUgcnVubmluZyBvcGE7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDBjMTc2IG5vbmUgcmVwZWF0IHNjcm9sbCAwIDA7XHJcbiAgICBsZWZ0OiA1MCU7XHJcbiAgICBtYXJnaW46IDAgMCAwIC0wLjFlbTtcclxuICAgIHRvcDogMDtcclxuICAgIHRyYW5zZm9ybS1vcmlnaW46IDUwJSAyNTAlIDA7XHJcbn1cclxuLmJva2VoIGxpOm50aC1jaGlsZCgyKSB7XHJcbiAgICBhbmltYXRpb246IDEuODZzIGxpbmVhciAwcyBub3JtYWwgbm9uZSBpbmZpbml0ZSBydW5uaW5nIHJvdGEsIDQuMjlzIGVhc2UtaW4tb3V0IDBzIGFsdGVybmF0ZSBub25lIGluZmluaXRlIHJ1bm5pbmcgb3BhO1xyXG4gICAgYmFja2dyb3VuZDogI2ZmMDAzYyBub25lIHJlcGVhdCBzY3JvbGwgMCAwO1xyXG4gICAgbWFyZ2luOiAtMC4xZW0gMCAwO1xyXG4gICAgcmlnaHQ6IDA7XHJcbiAgICB0b3A6IDUwJTtcclxuICAgIHRyYW5zZm9ybS1vcmlnaW46IC0xNTAlIDUwJSAwO1xyXG59XHJcbi5ib2tlaCBsaTpudGgtY2hpbGQoMykge1xyXG4gICAgYW5pbWF0aW9uOiAxLjQ1cyBsaW5lYXIgMHMgbm9ybWFsIG5vbmUgaW5maW5pdGUgcnVubmluZyByb3RhLCA1LjEycyBlYXNlLWluLW91dCAwcyBhbHRlcm5hdGUgbm9uZSBpbmZpbml0ZSBydW5uaW5nIG9wYTtcclxuICAgIGJhY2tncm91bmQ6ICNmYWJlMjggbm9uZSByZXBlYXQgc2Nyb2xsIDAgMDtcclxuICAgIGJvdHRvbTogMDtcclxuICAgIGxlZnQ6IDUwJTtcclxuICAgIG1hcmdpbjogMCAwIDAgLTAuMWVtO1xyXG4gICAgdHJhbnNmb3JtLW9yaWdpbjogNTAlIC0xNTAlIDA7XHJcbn1cclxuLmJva2VoIGxpOm50aC1jaGlsZCg0KSB7XHJcbiAgICBhbmltYXRpb246IDEuNzJzIGxpbmVhciAwcyBub3JtYWwgbm9uZSBpbmZpbml0ZSBydW5uaW5nIHJvdGEsIDUuMjVzIGVhc2UtaW4tb3V0IDBzIGFsdGVybmF0ZSBub25lIGluZmluaXRlIHJ1bm5pbmcgb3BhO1xyXG4gICAgYmFja2dyb3VuZDogIzg4YzEwMCBub25lIHJlcGVhdCBzY3JvbGwgMCAwO1xyXG4gICAgbWFyZ2luOiAtMC4xZW0gMCAwO1xyXG4gICAgdG9wOiA1MCU7XHJcbiAgICB0cmFuc2Zvcm0tb3JpZ2luOiAyNTAlIDUwJSAwO1xyXG59XHJcbkBrZXlmcmFtZXMgb3BhIHtcclxuMTIlIHtcclxuICAgIG9wYWNpdHk6IDAuODtcclxufVxyXG4xOS41JSB7XHJcbiAgICBvcGFjaXR5OiAwLjg4O1xyXG59XHJcbjM3LjIlIHtcclxuICAgIG9wYWNpdHk6IDAuNjQ7XHJcbn1cclxuNDAuNSUge1xyXG4gICAgb3BhY2l0eTogMC41MjtcclxufVxyXG41Mi43JSB7XHJcbiAgICBvcGFjaXR5OiAwLjY5O1xyXG59XHJcbjYwLjIlIHtcclxuICAgIG9wYWNpdHk6IDAuNjtcclxufVxyXG42Ni42JSB7XHJcbiAgICBvcGFjaXR5OiAwLjUyO1xyXG59XHJcbjcwJSB7XHJcbiAgICBvcGFjaXR5OiAwLjYzO1xyXG59XHJcbjc5LjklIHtcclxuICAgIG9wYWNpdHk6IDAuNjtcclxufVxyXG44NC4yJSB7XHJcbiAgICBvcGFjaXR5OiAwLjc1O1xyXG59XHJcbjkxJSB7XHJcbiAgICBvcGFjaXR5OiAwLjg3O1xyXG59XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgcm90YSB7XHJcbjEwMCUge1xyXG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTtcclxufVxyXG59XHJcblxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/admin-profile/profile-view/profile-view.component.html":
+/*!************************************************************************!*\
+  !*** ./src/app/admin-profile/profile-view/profile-view.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\" rel=\"stylesheet\">\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-lg-3 col-md-4\">\n            <div class=\"text-center card-box\">\n                <div class=\"member-card\">\n                    <div class=\"thumb-xl member-thumb m-b-10 center-block\">\n                        <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" class=\"img-circle img-thumbnail\" alt=\"profile-image\">\n                    </div>\n                    <div class=\"\">\n                        <h4 class=\"m-b-5\">{{userDetails.firstName}} {{userDetails.lastName}}</h4>\n                        <p class=\"text-muted\">@{{userDetails.firstName}}</p>\n                    </div>\n\n\n                    <div class=\"text-left m-t-40\">\n                        <p class=\"text-muted font-13\">\n                            <strong>Full Name :</strong>\n                            <span class=\"m-l-15\">{{userDetails.firstName}} {{userDetails.lastName}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>Company :</strong>\n                            <span class=\"m-l-15\">{{userDetails.companyname}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>NIC :</strong>\n                            <span class=\"m-l-15\">{{userDetails.nic}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>Mobile :</strong>\n                            <span class=\"m-l-15\">{{userDetails.tel}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>Email :</strong>\n                            <span class=\"m-l-15\">{{userDetails.email}}</span>\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!-- end card-box -->\n\n\n        </div>\n        <!-- end col -->\n\n\n        <div class=\"col-md-8 col-lg-9\">\n            <div class=\"\">\n                <div class=\"\">\n                    <ul class=\"nav row\" role=\"tabpanel\">\n\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" (click)=\"sent()\">send</a>\n                        </li>\n\n\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" (click)=\"uploads()\">Admin uploads</a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" (click)=\"pw()\">Change Password</a>\n                        </li>\n                        <!-- <li class=\"\">\n                            <a routerLink=\"/userprofile/settings\" data-toggle=\"tab\" aria-expanded=\"false\">\n                                <span class=\"visible-xs\"><i class=\"fa fa-cog\"></i></span>\n                                <span class=\"hidden-xs\">SETTINGS</span>\n                            </a>\n                        </li> -->\n                    </ul>\n                    <div class=\"tab-content tab-pane\">\n                        <div class=\"text-left m-t-40\">\n                            <p class=\"text-muted font-13\">\n                                <span class=\"m-l-15\">{{userDetails.firstName}} {{userDetails.lastName}} -> {{state}}</span>\n                            </p>\n                        </div>\n                        <div class=\"container\">\n                            <table *ngIf=\"!changepw\" class=\"table table-hover\">\n                                <thead>\n                                    <tr >\n                                        <th style=\"text-align: center;width: 25%;\">File Name</th>\n                                        <th style=\"text-align: center\">Date</th>\n                                        <th style=\"text-align: center\">Time</th>\n                                        <th style=\"text-align: center\">Link</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr *ngFor=\"let file of files\">\n                                        <td style=\"width: 25%\">{{ file.originalname }}</td>\n                                        <td>{{file.time | date:'MMM dd, yyyy'}}</td>\n                                        <td>{{ file.time | date:'hh:mm' }}</td>\n                                        <td>\n                                            <button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType,file.originalname)\"><i class=\"fa fa-download\"></i> Download</button>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                            <form *ngIf=\"changepw\" #resetpw=\"ngForm\" (ngSubmit)=\"resetpw.valid && onSubmit()\">\n                                <div class=\"tab-pane fade in active\">\n                                    <div class='row'>\n                                        <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>\n                                            <div class=\"form-group\">\n                                                <label class=\"control-label\" for=\"newpassword\">New Password</label>\n                                                <input class=\"form-control input-md\" #newpassword=\"ngModel\" pattern=\".{6,}\" required id=\"newpassword\" name=\"newpassword\"\n                                                    type=\"password\" placeholder=\"Create newpassword\" [(ngModel)]=\"model.newpassword\">\n                                                <div class=\"alert alert-danger\" [hidden]=\"newpassword.valid\">Password must be at least 6 characters long</div>\n                                            </div>\n                                            <div class=\"form-group\">\n                                                <label class=\"control-label\" for=\"confirmnewPassword\">Repeat Password</label>\n                                                <input class=\"form-control input-md\" #confirmnewPassword=\"ngModel\" required id=\"confirmnewPassword\" name=\"confirmnewPassword\"\n                                                    type=\"password\" placeholder=\"Repeat newpassword\" [(ngModel)]=\"model.confirmnewPassword\">\n                                                <div class=\"alert alert-danger\" *ngIf=\"newpassword.value!=confirmnewPassword.value\">Password not match</div>\n                                            </div>\n                                            <input type=\"submit\" [disabled]=\"!resetpw.valid || (newpassword.value!=confirmnewPassword.value)\" class=\"btn btn-success btn-outline-rounded btn-info \"\n                                                value=\"confirm\">\n                                        </div>\n                                    </div>\n                                </div>\n\n                            </form>\n\n                        </div>\n                        <!-- <app-file-upload></app-file-upload> -->\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- end col -->\n    </div>\n    <!-- end row -->\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/admin-profile/profile-view/profile-view.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/admin-profile/profile-view/profile-view.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: ProfileViewComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileViewComponent", function() { return ProfileViewComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _servers_regservice_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../servers/regservice.service */ "./src/app/servers/regservice.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _servers_files_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../servers/files.service */ "./src/app/servers/files.service.ts");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(file_saver__WEBPACK_IMPORTED_MODULE_4__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var ProfileViewComponent = /** @class */ (function () {
+    function ProfileViewComponent(service, router, route, FileService) {
+        this.service = service;
+        this.router = router;
+        this.route = route;
+        this.FileService = FileService;
+        this.userId = '';
+        this.model = {
+            newpassword: '',
+            confirmnewPassword: '',
+            email: '',
+        };
+        this.files = [];
+        this.changepw = false;
+    }
+    ProfileViewComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.sub = this.route.params.subscribe(function (params) {
+            _this.id = params['id'];
+        });
+        this.service.getUser(this.id).subscribe(function (res) {
+            console.log(res);
+            _this.userDetails = res['user'];
+            _this.userId = _this.userDetails._id;
+            _this.service.setid(_this.userDetails._id);
+            _this.model.email = _this.userDetails.email;
+            // console.log(this.userId);
+            // console.log(this.userDetails)
+        }, function (err) {
+            // console.log(err);
+        });
+    };
+    ProfileViewComponent.prototype.sent = function () {
+        var _this = this;
+        this.state = 'Sent';
+        this.changepw = false;
+        this.FileService.showFileNames(this.id).subscribe(function (response) {
+            console.log(response);
+            for (var i = 0; i < response.json().length; i++) {
+                _this.files[i] = {
+                    filename: response.json()[i].filename,
+                    originalname: response.json()[i].originalname,
+                    contentType: response.json()[i].mimetype,
+                    time: response.json()[i].time,
+                };
+                // console.log(response.json()[i].mimetype)
+            }
+        });
+    };
+    ProfileViewComponent.prototype.uploads = function () {
+        var _this = this;
+        this.state = 'Admin Uploads';
+        this.changepw = false;
+        this.FileService.recevefile(this.id).subscribe(function (response) {
+            console.log(response);
+            for (var i = 0; i < response.json().length; i++) {
+                _this.files[i] = {
+                    filename: response.json()[i].filename,
+                    originalname: response.json()[i].originalname,
+                    contentType: response.json()[i].mimetype,
+                    time: response.json()[i].time,
+                };
+                // console.log(response.json()[i].mimetype)
+            }
+        });
+    };
+    ProfileViewComponent.prototype.pw = function () {
+        this.changepw = true;
+        this.state = 'Change password';
+    };
+    ProfileViewComponent.prototype.downloadPdf = function (filename, contentType, originalname) {
+        if (this.state == 'Admin Uploads') {
+            this.FileService.downloadPDF(filename, contentType).subscribe(function (res) {
+                // console.log(res)
+                var file = new Blob([res.blob()], { type: contentType });
+                // console.log(file)
+                var fileURL = URL.createObjectURL(file);
+                // console.log(fileURL)
+                // window.open(fileURL);
+                Object(file_saver__WEBPACK_IMPORTED_MODULE_4__["saveAs"])(file, originalname);
+            });
+        }
+        else {
+            this.FileService.downloaduserPDF(filename, contentType).subscribe(function (res) {
+                // console.log(res)
+                var file = new Blob([res.blob()], { type: contentType });
+                // console.log(file)
+                var fileURL = URL.createObjectURL(file);
+                // console.log(fileURL)
+                // window.open(fileURL);
+                Object(file_saver__WEBPACK_IMPORTED_MODULE_4__["saveAs"])(file, originalname);
+            });
+        }
+    };
+    ProfileViewComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.service.savepassword(this.model).subscribe(function (res) {
+            // console.log(res);
+            if (res['sucsess'] == false) {
+                _this.msg = res['message'];
+                _this.router.navigate(['login']);
+            }
+            else {
+                _this.model.newpassword = '';
+                _this.model.confirmnewPassword = '';
+                _this.msg = res['message'];
+                _this.changepw = false;
+            }
+        }, function (err) {
+            // console.log(err);
+            _this.msg = '';
+        });
+    };
+    ProfileViewComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-profile-view',
+            template: __webpack_require__(/*! ./profile-view.component.html */ "./src/app/admin-profile/profile-view/profile-view.component.html"),
+            styles: [__webpack_require__(/*! ./profile-view.component.css */ "./src/app/admin-profile/profile-view/profile-view.component.css")]
+        }),
+        __metadata("design:paramtypes", [_servers_regservice_service__WEBPACK_IMPORTED_MODULE_1__["RegserviceService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _servers_files_service__WEBPACK_IMPORTED_MODULE_3__["FilesService"]])
+    ], ProfileViewComponent);
+    return ProfileViewComponent;
 }());
 
 
@@ -438,7 +639,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <table class=\"table table-hover\">\n        <thead>\n          <tr>\n            <th>File Name</th>\n            <th>User</th>\n            <th>Date</th>\n            <th>Time</th>\n            <th>Link</th> \n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let file of files\">\n            <td>{{ file.originalname }}</td>\n            <td>{{ file.username }}</td>\n            <td>{{file.time | date:'MMM dd, yyyy'}}</td>\n        <td>{{ file.time | date:'hh:mm' }}</td>\n        <!-- <td>{{ file.username }}</td> -->\n            <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType)\">Download</button></td>\n          </tr>   \n        </tbody>\n      </table>\n  </div>\n  "
+module.exports = "<i *ngIf=\"loading\" class=\"fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom\"></i> \n<div class=\"container\">\n    <table class=\"table table-hover\">\n        <thead>\n          <tr>\n            <th>File Name</th>\n            <th>User</th>\n            <th>Date</th>\n            <th>Time</th>\n            <th>Link</th> \n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let file of files\">\n            <td>{{ file.originalname }}</td>\n            <td>{{ file.username }}</td>\n            <td>{{file.time | date:'MMM dd, yyyy'}}</td>\n        <td>{{ file.time | date:'hh:mm' }}</td>\n        <!-- <td>{{ file.username }}</td> -->\n            <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType,file.originalname)\"><i class=\"fa fa-download\"></i> Download</button></td>\n          </tr>   \n        </tbody>\n      </table>\n  </div>\n   "
 
 /***/ }),
 
@@ -455,6 +656,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _servers_files_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../servers/files.service */ "./src/app/admin-profile/servers/files.service.ts");
 /* harmony import */ var _servers_regservice_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../servers/regservice.service */ "./src/app/servers/regservice.service.ts");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(file_saver__WEBPACK_IMPORTED_MODULE_3__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -467,11 +670,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var ReceivedComponent = /** @class */ (function () {
     function ReceivedComponent(FileService, service) {
         this.FileService = FileService;
         this.service = service;
         this.files = [];
+        this.loading = true;
     }
     ReceivedComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -494,16 +699,18 @@ var ReceivedComponent = /** @class */ (function () {
             for (var i = 0; i < _this.response.json().length; i++) {
                 _loop_1(i);
             }
+            _this.loading = false;
         });
     };
-    ReceivedComponent.prototype.downloadPdf = function (filename, contentType) {
+    ReceivedComponent.prototype.downloadPdf = function (filename, contentType, originalname) {
         this.FileService.downloadPDF(filename, contentType).subscribe(function (res) {
             // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
             // console.log(file)
             var fileURL = URL.createObjectURL(file);
             // console.log(fileURL)
-            window.open(fileURL);
+            // window.open(fileURL);
+            Object(file_saver__WEBPACK_IMPORTED_MODULE_3__["saveAs"])(file, originalname);
             // window.open('/download');
         });
     };
@@ -540,7 +747,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <table class=\"table table-hover\">\n      <thead>\n        <tr>\n          <th>File Name</th>\n          <th>Sent To</th>\n          <th>Date</th>\n          <th>Time</th>\n          <th>Link</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let file of files\">\n          <td>{{ file.originalname }}</td>\n          <td>{{ file.username }}</td>\n          <td>{{file.time | date:'MMM dd, yyyy'}}</td>\n      <td>{{ file.time | date:'hh:mm' }}</td>\n      <!-- <td>{{ file.username }}</td> -->\n          <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType)\">Download</button></td>\n        </tr>   \n      </tbody>\n    </table>\n</div>\n"
+module.exports = "\n    <i *ngIf=\"loading\" class=\"fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom\"></i> \n    <table class=\"w3-table-all w3-card-4\">\n        <tr>\n            <th>File Name</th>\n            <th>Sent To</th>\n            <th>Date</th>\n            <th>Time</th>\n            <th>Link</th>\n        </tr>\n        <tr *ngFor=\"let file of files\">\n            <td>{{ file.originalname }}</td>\n            <td>{{ file.username }}</td>\n            <td>{{file.time | date:'MMM dd, yyyy'}}</td>\n        <td>{{ file.time | date:'hh:mm' }}</td>\n        <!-- <td>{{ file.username }}</td> -->\n            <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType,file.originalname)\"><i class=\"fa fa-download\"></i> Download</button></td>\n          </tr> \n        \n      </table>\n"
 
 /***/ }),
 
@@ -557,6 +764,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _servers_files_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../servers/files.service */ "./src/app/admin-profile/servers/files.service.ts");
 /* harmony import */ var _servers_regservice_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../servers/regservice.service */ "./src/app/servers/regservice.service.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(file_saver__WEBPACK_IMPORTED_MODULE_4__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -569,11 +779,15 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
 var SentdocsComponent = /** @class */ (function () {
-    function SentdocsComponent(FileService, service) {
+    function SentdocsComponent(FileService, service, sanitizer) {
         this.FileService = FileService;
         this.service = service;
+        this.sanitizer = sanitizer;
         this.files = [];
+        this.loading = true;
     }
     SentdocsComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -590,16 +804,23 @@ var SentdocsComponent = /** @class */ (function () {
                 };
                 // console.log(this.response.json()[i].mimetype)
             }
+            _this.loading = false;
         });
     };
-    SentdocsComponent.prototype.downloadPdf = function (filename, contentType) {
+    SentdocsComponent.prototype.downloadPdf = function (filename, contentType, originalname) {
+        var _this = this;
+        console.log(contentType);
         this.FileService.admindownloadPDF(filename, contentType).subscribe(function (res) {
             // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
             // console.log(file)
-            var fileURL = URL.createObjectURL(file);
+            // const fileURL = URL.createObjectURL(file);
             // console.log(fileURL)
-            window.open(fileURL);
+            // window.open(fileURL);
+            _this.fileUrl = _this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(file));
+            // window.open(this.fileUrl['changingThisBreaksApplicationSecurity']);
+            Object(file_saver__WEBPACK_IMPORTED_MODULE_4__["saveAs"])(file, originalname);
+            // console.log(this.fileUrl['changingThisBreaksApplicationSecurity'])
             // window.open('/download');
         });
     };
@@ -609,7 +830,7 @@ var SentdocsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./sentdocs.component.html */ "./src/app/admin-profile/sentdocs/sentdocs.component.html"),
             styles: [__webpack_require__(/*! ./sentdocs.component.css */ "./src/app/admin-profile/sentdocs/sentdocs.component.css")]
         }),
-        __metadata("design:paramtypes", [_servers_files_service__WEBPACK_IMPORTED_MODULE_1__["FilesService"], _servers_regservice_service__WEBPACK_IMPORTED_MODULE_2__["RegserviceService"]])
+        __metadata("design:paramtypes", [_servers_files_service__WEBPACK_IMPORTED_MODULE_1__["FilesService"], _servers_regservice_service__WEBPACK_IMPORTED_MODULE_2__["RegserviceService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]])
     ], SentdocsComponent);
     return SentdocsComponent;
 }());
@@ -698,16 +919,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _resetpw_resetpw_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./resetpw/resetpw.component */ "./src/app/resetpw/resetpw.component.ts");
 /* harmony import */ var _newpw_component_newpw_component_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./newpw-component/newpw-component.component */ "./src/app/newpw-component/newpw-component.component.ts");
 /* harmony import */ var _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./user-profile/user-profile.component */ "./src/app/user-profile/user-profile.component.ts");
-/* harmony import */ var _auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth/auth.guard */ "./src/app/auth/auth.guard.ts");
-/* harmony import */ var _file_upload_file_upload_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./file-upload/file-upload.component */ "./src/app/file-upload/file-upload.component.ts");
-/* harmony import */ var _admin_profile_admin_profile_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./admin-profile/admin-profile.component */ "./src/app/admin-profile/admin-profile.component.ts");
-/* harmony import */ var _admin_profile_allusers_allusers_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./admin-profile/allusers/allusers.component */ "./src/app/admin-profile/allusers/allusers.component.ts");
-/* harmony import */ var _admin_profile_sentdocs_sentdocs_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./admin-profile/sentdocs/sentdocs.component */ "./src/app/admin-profile/sentdocs/sentdocs.component.ts");
-/* harmony import */ var _user_profile_receive_receive_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./user-profile/receive/receive.component */ "./src/app/user-profile/receive/receive.component.ts");
-/* harmony import */ var _admin_profile_received_received_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./admin-profile/received/received.component */ "./src/app/admin-profile/received/received.component.ts");
-/* harmony import */ var _admin_profile_messages_messages_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./admin-profile/messages/messages.component */ "./src/app/admin-profile/messages/messages.component.ts");
-/* harmony import */ var _admin_profile_adminuploads_adminuploads_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./admin-profile/adminuploads/adminuploads.component */ "./src/app/admin-profile/adminuploads/adminuploads.component.ts");
-/* harmony import */ var _auth_role_guard_service_guard__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./auth/role-guard-service.guard */ "./src/app/auth/role-guard-service.guard.ts");
+/* harmony import */ var _file_upload_file_upload_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./file-upload/file-upload.component */ "./src/app/file-upload/file-upload.component.ts");
+/* harmony import */ var _admin_profile_admin_profile_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./admin-profile/admin-profile.component */ "./src/app/admin-profile/admin-profile.component.ts");
+/* harmony import */ var _admin_profile_allusers_allusers_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./admin-profile/allusers/allusers.component */ "./src/app/admin-profile/allusers/allusers.component.ts");
+/* harmony import */ var _admin_profile_sentdocs_sentdocs_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./admin-profile/sentdocs/sentdocs.component */ "./src/app/admin-profile/sentdocs/sentdocs.component.ts");
+/* harmony import */ var _user_profile_receive_receive_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./user-profile/receive/receive.component */ "./src/app/user-profile/receive/receive.component.ts");
+/* harmony import */ var _admin_profile_received_received_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./admin-profile/received/received.component */ "./src/app/admin-profile/received/received.component.ts");
+/* harmony import */ var _admin_profile_messages_messages_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./admin-profile/messages/messages.component */ "./src/app/admin-profile/messages/messages.component.ts");
+/* harmony import */ var _admin_profile_adminuploads_adminuploads_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./admin-profile/adminuploads/adminuploads.component */ "./src/app/admin-profile/adminuploads/adminuploads.component.ts");
+/* harmony import */ var _auth_role_guard_service_guard__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./auth/role-guard-service.guard */ "./src/app/auth/role-guard-service.guard.ts");
+/* harmony import */ var _admin_profile_profile_view_profile_view_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./admin-profile/profile-view/profile-view.component */ "./src/app/admin-profile/profile-view/profile-view.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -733,28 +954,36 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var appRoutes = [
     // 1st Route
-    { path: 'reg', component: _registration_registration_component__WEBPACK_IMPORTED_MODULE_2__["RegistrationComponent"], canActivate: [_auth_role_guard_service_guard__WEBPACK_IMPORTED_MODULE_16__["RoleGuardServiceGuard"]], data: {
+    {
+        path: 'reg', component: _registration_registration_component__WEBPACK_IMPORTED_MODULE_2__["RegistrationComponent"], canActivate: [_auth_role_guard_service_guard__WEBPACK_IMPORTED_MODULE_15__["RoleGuardServiceGuard"]], data: {
             expectedRole: 'admin'
-        }, },
-    // 6th Route
-    // { path: 'reg',  component: RegistraionComponent },
-    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"], },
-    { path: 'admin', component: _admin_profile_admin_profile_component__WEBPACK_IMPORTED_MODULE_9__["AdminProfileComponent"], canActivate: [_auth_role_guard_service_guard__WEBPACK_IMPORTED_MODULE_16__["RoleGuardServiceGuard"]], data: {
+        },
+    },
+    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"] },
+    {
+        path: 'admin', component: _admin_profile_admin_profile_component__WEBPACK_IMPORTED_MODULE_8__["AdminProfileComponent"], canActivate: [_auth_role_guard_service_guard__WEBPACK_IMPORTED_MODULE_15__["RoleGuardServiceGuard"]], data: {
             expectedRole: 'admin'
         },
         children: [
-            { path: 'allusers', component: _admin_profile_allusers_allusers_component__WEBPACK_IMPORTED_MODULE_10__["AllusersComponent"] },
-            { path: 'sentdocs', component: _admin_profile_sentdocs_sentdocs_component__WEBPACK_IMPORTED_MODULE_11__["SentdocsComponent"] },
-            { path: 'received', component: _admin_profile_received_received_component__WEBPACK_IMPORTED_MODULE_13__["ReceivedComponent"] },
-            { path: 'messages', component: _admin_profile_messages_messages_component__WEBPACK_IMPORTED_MODULE_14__["MessagesComponent"] },
-            { path: 'upload', component: _admin_profile_adminuploads_adminuploads_component__WEBPACK_IMPORTED_MODULE_15__["AdminuploadsComponent"] },
+            { path: 'allusers', component: _admin_profile_allusers_allusers_component__WEBPACK_IMPORTED_MODULE_9__["AllusersComponent"] },
+            { path: 'sentdocs', component: _admin_profile_sentdocs_sentdocs_component__WEBPACK_IMPORTED_MODULE_10__["SentdocsComponent"] },
+            { path: 'received', component: _admin_profile_received_received_component__WEBPACK_IMPORTED_MODULE_12__["ReceivedComponent"] },
+            { path: 'messages', component: _admin_profile_messages_messages_component__WEBPACK_IMPORTED_MODULE_13__["MessagesComponent"] },
+            { path: 'upload', component: _admin_profile_adminuploads_adminuploads_component__WEBPACK_IMPORTED_MODULE_14__["AdminuploadsComponent"] },
             { path: '**', redirectTo: 'allusers', pathMatch: 'full' },
-        ] },
-    { path: 'userprofile', component: _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_6__["UserProfileComponent"], canActivate: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]],
+        ]
+    },
+    { path: 'user/:id', component: _admin_profile_profile_view_profile_view_component__WEBPACK_IMPORTED_MODULE_16__["ProfileViewComponent"], canActivate: [_auth_role_guard_service_guard__WEBPACK_IMPORTED_MODULE_15__["RoleGuardServiceGuard"]], data: {
+            expectedRole: 'admin'
+        } },
+    {
+        path: 'userprofile', component: _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_6__["UserProfileComponent"], canActivate: [_auth_role_guard_service_guard__WEBPACK_IMPORTED_MODULE_15__["RoleGuardServiceGuard"]], data: {
+            expectedRole: 'user'
+        },
         children: [
-            { path: 'userHome', component: _file_upload_file_upload_component__WEBPACK_IMPORTED_MODULE_8__["FileUploadComponent"] },
+            { path: 'userHome', component: _file_upload_file_upload_component__WEBPACK_IMPORTED_MODULE_7__["FileUploadComponent"] },
             //   {path: 'settings', component: SettingsComponent},
-            { path: 'gallery', component: _user_profile_receive_receive_component__WEBPACK_IMPORTED_MODULE_12__["ReceiveComponent"] },
+            { path: 'gallery', component: _user_profile_receive_receive_component__WEBPACK_IMPORTED_MODULE_11__["ReceiveComponent"] },
             { path: '', redirectTo: 'userHome', pathMatch: 'full' },
         ]
     },
@@ -785,7 +1014,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    text-decoration: none;\r\n    list-style: none;\r\n}\r\n\r\nbody {\r\n    width: 100%;\r\n    height: 100vh;\r\n    /* background: url(Hero.jpg) no-repeat 50% 50%; */\r\n    background-size: cover;\r\n    display: table;\r\n}\r\n\r\n.content {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\r\n}\r\n\r\n.content h1 {\r\n    color: #fff;\r\n    font-family: \"Poppins\";\r\n    font-weight: 200;\r\n    font-size: 40px;\r\n}\r\n\r\nnav {\r\n    width: 100%;\r\n    background: #094978;\r\n    height: 70px;\r\n    position: static;\r\n    z-index: 1;\r\n}\r\n\r\nnav #brand {\r\n    float: left;\r\n    display: block;\r\n    margin-left: 84px;\r\n    font-size: 30px;\r\n    line-height: 70px;\r\n    font-weight: bold;\r\n}\r\n\r\nnav #brand a {\r\n    color: #fff;\r\n    transition: all 0.3s ease-out;\r\n    font-family: \"Poppins\";\r\n    font-weight: 300;\r\n}\r\n\r\nnav #menu {\r\n    float: left;\r\n    left: 35%;\r\n    position: relative;\r\n}\r\n\r\nnav #menu li {\r\n    display: inline-block;\r\n    padding: 0px 30px;\r\n    cursor: pointer;\r\n    line-height: 70px;\r\n    position: relative;\r\n    transition: all 0.3s ease-out;\r\n}\r\n\r\nnav #menu li a {\r\n    color: #fff;\r\n    font-family: \"Poppins\";\r\n    font-weight: 200;\r\n}\r\n\r\n#toggle {\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 14px;\r\n    z-index: 999;\r\n    width: 40px;\r\n    height: 40px;\r\n    cursor: pointer;\r\n    float: right;\r\n    transition: all 0.3s ease-out;\r\n    visibility: hidden;\r\n    opacity: 0;\r\n}\r\n\r\n#toggle .span {\r\n    height: 3px;\r\n    background: #fff;\r\n    transition: all 0.3s ease-out;\r\n    -webkit-backface-visibility: hidden;\r\n            backface-visibility: hidden;\r\n    margin: 5px auto;\r\n}\r\n\r\n#toggle.on #one {\r\n    -webkit-transform: rotate(45deg) translateX(2px) translateY(4px);\r\n            transform: rotate(45deg) translateX(2px) translateY(4px);\r\n}\r\n\r\n#toggle.on #two {\r\n    opacity: 0;\r\n}\r\n\r\n#toggle.on #three {\r\n    -webkit-transform: rotate(-45deg) translateX(8px) translateY(-10px);\r\n            transform: rotate(-45deg) translateX(8px) translateY(-10px);\r\n}\r\n\r\n#resize {\r\n    z-index: 1;\r\n    top: 0px;\r\n    position: absolute;\r\n    background: #000;\r\n    width: 100%;\r\n    height: 100%;\r\n    visibility: hidden;\r\n    opacity: 0;\r\n    transition: all 1s ease-out;\r\n    display: table;\r\n}\r\n\r\n#resize #menu {\r\n    height: 90px;\r\n    display: table-cell;\r\n    vertical-align: center;\r\n}\r\n\r\n#resize #menu li {\r\n    display: block;\r\n    text-align: center;\r\n    padding: 20px 0;\r\n    font-size: 50px;\r\n    min-height: 50px;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n    transition: all 0.3s ease-out;\r\n}\r\n\r\n#resize li:nth-child(1) {\r\n    margin-top:140px;\r\n}\r\n\r\n#resize #menu li a {\r\n    color: #fff;\r\n}\r\n\r\n#resize.active {\r\n    visibility: visible;\r\n    opacity: 0.99;\r\n}\r\n\r\n@media(max-width: 768px) {\r\n    #toggle {\r\n          visibility: visible;\r\n          opacity: 1;\r\n          margin-top: 6px;\r\n    }\r\n\r\n    nav #brand {\r\n          margin-left: 18px;\r\n    }\r\n\r\n    #menu a {\r\n          font-family: \"Poppins\";\r\n          font-weight: 200;\r\n          font-size: 20px;\r\n    }\r\n\r\n    nav #menu {\r\n          display: none;\r\n    }\r\n}\r\n\r\n@media(min-width: 768px) {\r\n    #resize {\r\n          visibility: hidden !important;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0lBQ1YsV0FBVztJQUNYLHNCQUFzQjtJQUN0QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osY0FBYztJQUNkLGtEQUFrRDtJQUNsRCx1QkFBdUI7SUFDdkIsZUFBZTtDQUNsQjs7QUFFRDtJQUNJLG1CQUFtQjtJQUNuQixTQUFTO0lBQ1QsVUFBVTtJQUNWLHlDQUFpQztZQUFqQyxpQ0FBaUM7Q0FDcEM7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixnQkFBZ0I7Q0FDbkI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osb0JBQW9CO0lBQ3BCLGFBQWE7SUFDYixpQkFBaUI7SUFDakIsV0FBVztDQUNkOztBQUVEO0lBQ0ksWUFBWTtJQUNaLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixrQkFBa0I7Q0FDckI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osOEJBQThCO0lBQzlCLHVCQUF1QjtJQUN2QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxZQUFZO0lBQ1osVUFBVTtJQUNWLG1CQUFtQjtDQUN0Qjs7QUFFRDtJQUNJLHNCQUFzQjtJQUN0QixrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsOEJBQThCO0NBQ2pDOztBQUVEO0lBQ0ksWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLFVBQVU7SUFDVixhQUFhO0lBQ2IsWUFBWTtJQUNaLGFBQWE7SUFDYixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsV0FBVztDQUNkOztBQUVEO0lBQ0ksWUFBWTtJQUNaLGlCQUFpQjtJQUNqQiw4QkFBOEI7SUFDOUIsb0NBQTRCO1lBQTVCLDRCQUE0QjtJQUM1QixpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxpRUFBeUQ7WUFBekQseURBQXlEO0NBQzVEOztBQUVEO0lBQ0ksV0FBVztDQUNkOztBQUVEO0lBQ0ksb0VBQTREO1lBQTVELDREQUE0RDtDQUMvRDs7QUFFRDtJQUNJLFdBQVc7SUFDWCxTQUFTO0lBQ1QsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixZQUFZO0lBQ1osYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsNEJBQTRCO0lBQzVCLGVBQWU7Q0FDbEI7O0FBRUQ7SUFDSSxhQUFhO0lBQ2Isb0JBQW9CO0lBQ3BCLHVCQUF1QjtDQUMxQjs7QUFFRDtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQiw4QkFBOEI7Q0FDakM7O0FBRUQ7SUFDSSxpQkFBaUI7Q0FDcEI7O0FBRUQ7SUFDSSxZQUFZO0NBQ2Y7O0FBRUQ7SUFDSSxvQkFBb0I7SUFDcEIsY0FBYztDQUNqQjs7QUFHRDtJQUNJO1VBQ00sb0JBQW9CO1VBQ3BCLFdBQVc7VUFDWCxnQkFBZ0I7S0FDckI7O0lBRUQ7VUFDTSxrQkFBa0I7S0FDdkI7O0lBRUQ7VUFDTSx1QkFBdUI7VUFDdkIsaUJBQWlCO1VBQ2pCLGdCQUFnQjtLQUNyQjs7SUFFRDtVQUNNLGNBQWM7S0FDbkI7Q0FDSjs7QUFFRDtJQUNJO1VBQ00sOEJBQThCO0tBQ25DO0NBQ0oiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIioge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbn1cclxuXHJcbmJvZHkge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMHZoO1xyXG4gICAgLyogYmFja2dyb3VuZDogdXJsKEhlcm8uanBnKSBuby1yZXBlYXQgNTAlIDUwJTsgKi9cclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgICBkaXNwbGF5OiB0YWJsZTtcclxufVxyXG5cclxuLmNvbnRlbnQge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiA1MCU7XHJcbiAgICBsZWZ0OiA1MCU7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxufVxyXG5cclxuLmNvbnRlbnQgaDEge1xyXG4gICAgY29sb3I6ICNmZmY7XHJcbiAgICBmb250LWZhbWlseTogXCJQb3BwaW5zXCI7XHJcbiAgICBmb250LXdlaWdodDogMjAwO1xyXG4gICAgZm9udC1zaXplOiA0MHB4O1xyXG59XHJcblxyXG5uYXYge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDk0OTc4O1xyXG4gICAgaGVpZ2h0OiA3MHB4O1xyXG4gICAgcG9zaXRpb246IHN0YXRpYztcclxuICAgIHotaW5kZXg6IDE7XHJcbn1cclxuXHJcbm5hdiAjYnJhbmQge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIG1hcmdpbi1sZWZ0OiA4NHB4O1xyXG4gICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDcwcHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG5cclxubmF2ICNicmFuZCBhIHtcclxuICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbiAgICBmb250LWZhbWlseTogXCJQb3BwaW5zXCI7XHJcbiAgICBmb250LXdlaWdodDogMzAwO1xyXG59XHJcblxyXG5uYXYgI21lbnUge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBsZWZ0OiAzNSU7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbm5hdiAjbWVudSBsaSB7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICBwYWRkaW5nOiAwcHggMzBweDtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGxpbmUtaGVpZ2h0OiA3MHB4O1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbn1cclxuXHJcbm5hdiAjbWVudSBsaSBhIHtcclxuICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgZm9udC1mYW1pbHk6IFwiUG9wcGluc1wiO1xyXG4gICAgZm9udC13ZWlnaHQ6IDIwMDtcclxufVxyXG5cclxuI3RvZ2dsZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICByaWdodDogMjBweDtcclxuICAgIHRvcDogMTRweDtcclxuICAgIHotaW5kZXg6IDk5OTtcclxuICAgIHdpZHRoOiA0MHB4O1xyXG4gICAgaGVpZ2h0OiA0MHB4O1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XHJcbiAgICBvcGFjaXR5OiAwO1xyXG59XHJcblxyXG4jdG9nZ2xlIC5zcGFuIHtcclxuICAgIGhlaWdodDogM3B4O1xyXG4gICAgYmFja2dyb3VuZDogI2ZmZjtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2Utb3V0O1xyXG4gICAgYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgbWFyZ2luOiA1cHggYXV0bztcclxufVxyXG5cclxuI3RvZ2dsZS5vbiAjb25lIHtcclxuICAgIHRyYW5zZm9ybTogcm90YXRlKDQ1ZGVnKSB0cmFuc2xhdGVYKDJweCkgdHJhbnNsYXRlWSg0cHgpO1xyXG59XHJcblxyXG4jdG9nZ2xlLm9uICN0d28ge1xyXG4gICAgb3BhY2l0eTogMDtcclxufVxyXG5cclxuI3RvZ2dsZS5vbiAjdGhyZWUge1xyXG4gICAgdHJhbnNmb3JtOiByb3RhdGUoLTQ1ZGVnKSB0cmFuc2xhdGVYKDhweCkgdHJhbnNsYXRlWSgtMTBweCk7XHJcbn1cclxuXHJcbiNyZXNpemUge1xyXG4gICAgei1pbmRleDogMTtcclxuICAgIHRvcDogMHB4O1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgYmFja2dyb3VuZDogIzAwMDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICAgIHRyYW5zaXRpb246IGFsbCAxcyBlYXNlLW91dDtcclxuICAgIGRpc3BsYXk6IHRhYmxlO1xyXG59XHJcblxyXG4jcmVzaXplICNtZW51IHtcclxuICAgIGhlaWdodDogOTBweDtcclxuICAgIGRpc3BsYXk6IHRhYmxlLWNlbGw7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4jcmVzaXplICNtZW51IGxpIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgcGFkZGluZzogMjBweCAwO1xyXG4gICAgZm9udC1zaXplOiA1MHB4O1xyXG4gICAgbWluLWhlaWdodDogNTBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbn1cclxuXHJcbiNyZXNpemUgbGk6bnRoLWNoaWxkKDEpIHtcclxuICAgIG1hcmdpbi10b3A6MTQwcHg7XHJcbn1cclxuXHJcbiNyZXNpemUgI21lbnUgbGkgYSB7XHJcbiAgICBjb2xvcjogI2ZmZjtcclxufVxyXG5cclxuI3Jlc2l6ZS5hY3RpdmUge1xyXG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcclxuICAgIG9wYWNpdHk6IDAuOTk7XHJcbn1cclxuXHJcblxyXG5AbWVkaWEobWF4LXdpZHRoOiA3NjhweCkge1xyXG4gICAgI3RvZ2dsZSB7XHJcbiAgICAgICAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xyXG4gICAgICAgICAgb3BhY2l0eTogMTtcclxuICAgICAgICAgIG1hcmdpbi10b3A6IDZweDtcclxuICAgIH1cclxuXHJcbiAgICBuYXYgI2JyYW5kIHtcclxuICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxOHB4O1xyXG4gICAgfVxyXG5cclxuICAgICNtZW51IGEge1xyXG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiUG9wcGluc1wiO1xyXG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDIwMDtcclxuICAgICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIH1cclxuXHJcbiAgICBuYXYgI21lbnUge1xyXG4gICAgICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhKG1pbi13aWR0aDogNzY4cHgpIHtcclxuICAgICNyZXNpemUge1xyXG4gICAgICAgICAgdmlzaWJpbGl0eTogaGlkZGVuICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcbn0iXX0= */"
+module.exports = "body,h1,h2,h3,h4,h5,h6 {font-family: \"Raleway\", sans-serif}\r\n\r\nbody, html {\r\n  height: 100%;\r\n  line-height: 1.8;\r\n}\r\n\r\n/* Full height image header */\r\n\r\n.bgimg-1 {\r\n  background-position: center;\r\n  background-size: cover;\r\n  background-image: url(\"/w3images/mac.jpg\");\r\n  min-height: 100%;\r\n}\r\n\r\n.w3-bar .w3-button {\r\n  padding: 16px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsd0JBQXdCLGtDQUFrQyxDQUFDOztBQUUzRDtFQUNFLGFBQWE7RUFDYixpQkFBaUI7Q0FDbEI7O0FBRUQsOEJBQThCOztBQUM5QjtFQUNFLDRCQUE0QjtFQUM1Qix1QkFBdUI7RUFDdkIsMkNBQTJDO0VBQzNDLGlCQUFpQjtDQUNsQjs7QUFFRDtFQUNFLGNBQWM7Q0FDZiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSxoMSxoMixoMyxoNCxoNSxoNiB7Zm9udC1mYW1pbHk6IFwiUmFsZXdheVwiLCBzYW5zLXNlcmlmfVxyXG5cclxuYm9keSwgaHRtbCB7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG4gIGxpbmUtaGVpZ2h0OiAxLjg7XHJcbn1cclxuXHJcbi8qIEZ1bGwgaGVpZ2h0IGltYWdlIGhlYWRlciAqL1xyXG4uYmdpbWctMSB7XHJcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiL3czaW1hZ2VzL21hYy5qcGdcIik7XHJcbiAgbWluLWhlaWdodDogMTAwJTtcclxufVxyXG5cclxuLnczLWJhciAudzMtYnV0dG9uIHtcclxuICBwYWRkaW5nOiAxNnB4O1xyXG59Il19 */"
 
 /***/ }),
 
@@ -796,7 +1025,7 @@ module.exports = "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    text-decoratio
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n      <meta charset=\"UTF-8\">\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n      <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n      <title>Smooth Fade-Up Responsive Navigation</title>\n      <!-- <link rel=\"stylesheet\" href=\"style.css\"> -->\n      <script src=\"http://code.jquery.com/jquery-3.3.1.js\"></script>\n      <link href=\"https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900\" rel=\"stylesheet\">\n      <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.5.0/css/all.css\" integrity=\"sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU\" crossorigin=\"anonymous\">\n</head>\n<body>\n    <!-- <script src=\"http://maps.googleapis.com/maps/api/js?key=AIzaSyDySdsZG3tJO4FJqgu24ujKy8kIdlexmsE&v=3.exp&libraries=places\" async defer></script> -->\n\n      <nav>\n            <span id=\"brand\">\n                  <a href=\"www.exigo.ewebsolutionlk.com\">EXIGO MANAGEMENT SERVICES</a>\n            </span> \n\n            <ul id=\"menu\">\n                        <!-- <li *ngIf=\"isAdmin() && state\" ><a routerLink=\"/reg\">Add user</a></li> -->\n                <li><a href=\"www.exigo.ewebsolutionlk.com\" class=\"active\">Home</a></li>\n                <!-- <li ><a routerLink=\"/resetpassword\">forgotten password</a></li> -->\n                <li *ngIf=\"state\" ><a (click)=\"click()\" routerLink=\"/login\">Signout</a></li>\n                <li *ngIf=\"state\" ><a routerLink=\"/login\">profile</a></li>\n                <li *ngIf=\"!state\" ><a routerLink=\"/login\">SignIn</a></li>\n                <li *ngIf=\"isAdmin\"><a routerLink=\"/reg\">Add user</a></li>\n            </ul>\n\n            <div (click)=\"js()\" id=\"toggle\">\n                  <div class=\"span\" id=\"one\"></div>\n                  <div class=\"span\" id=\"two\"></div>\n                  <div class=\"span\" id=\"three\"></div>\n            </div>\n      </nav>\n\n      <div id=\"resize\">\n            <ul id=\"menu\">\n                        <li><a href=\"www.exigo.ewebsolutionlk.com\" class=\"active\">Home</a></li>\n                        <!-- <li ><a routerLink=\"/resetpassword\">forgotten password</a></li> -->\n                        <li *ngIf=\"state\" ><a (click)=\"click()\" routerLink=\"/login\">Signout</a></li>\n                        <li *ngIf=\"state\" ><a routerLink=\"/login\">profile</a></li>\n                        <li *ngIf=\"!state\" ><a routerLink=\"/login\">SignIn</a></li>\n                        <li *ngIf=\"isAdmin\"><a routerLink=\"/reg\">Add user</a></li>\n            </ul>\n      </div>\n\n      <div style=\"padding:0 16px;\">\n          <router-outlet></router-outlet>\n          <!-- <app-file-upload></app-file-upload> -->\n      </div>\n\n    \n</body>\n</html>"
+module.exports = "<body>\n      <!-- Navbar (sit on top) -->\n      <div class=\"w3-top\">\n            <div class=\"w3-bar w3-white w3-card\" id=\"myNavbar\">\n                  <a href=\"#home\" class=\"w3-bar-item w3-button w3-wide\">EXIGO MANAGEMENT SERVICES</a>\n                  <!-- Right-sided navbar links -->\n                  <div class=\"w3-right w3-hide-small\">\n                        <a href=\"www.exigo.ewebsolutionlk.com\" class=\"w3-bar-item w3-button\">\n                              <i class=\"fa fa-th\"></i> HOME</a>\n                        <a *ngIf=\"state\" routerLink=\"/login\" class=\"w3-bar-item w3-button\">\n                              <i class=\"fa fa-user\"></i> PROFILE</a>\n                        <a *ngIf=\"!state\" routerLink=\"/login\" class=\"w3-bar-item w3-button\">\n                              <i class=\"fa fa-sign-in\"></i> Sign In</a>\n                        <a *ngIf=\"isAdmin\" routerLink=\"/reg\" class=\"w3-bar-item w3-button\">\n                              <i class=\"fa fa-plus-square\"></i> ADD USERS</a>\n                        <a *ngIf=\"state\" (click)=\"click()\" routerLink=\"/login\" class=\"w3-bar-item w3-button\">\n                              <i class=\"fa fa-sign-out\"></i> Sign Out</a>\n\n\n                  </div>\n                  <!-- Hide right-floated links on small screens and replace them with a menu icon -->\n\n                  <a href=\"javascript:void(0)\" class=\"w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium\" (click)=\"w3_open()\">\n                        <i class=\"fa fa-bars\"></i>\n                  </a>\n            </div>\n      </div>\n\n      <!-- Sidebar on small screens when clicking the menu icon -->\n      <nav class=\"w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large\" style=\"display:none\" id=\"mySidebar\">\n            <a href=\"www.exigo.ewebsolutionlk.com\" class=\"w3-bar-item w3-button\">HOME</a>\n\n            <a (click)=\"w3_close()\" *ngIf=\"state\" routerLink=\"/login\" class=\"w3-bar-item w3-button\">\n                  <i class=\"fa fa-user\"></i> PROFILE</a>\n            <a (click)=\"w3_close()\" *ngIf=\"!state\" routerLink=\"/login\" class=\"w3-bar-item w3-button\">\n                  <i class=\"fa fa-sign-in\"></i> Sign In</a>\n            <a (click)=\"w3_close()\" *ngIf=\"isAdmin\" routerLink=\"/reg\" class=\"w3-bar-item w3-button\">\n                  <i class=\"fa fa-plus-square\"></i>ADD USERS</a>\n            <a (click)=\"w3_close()\" *ngIf=\"state\" (click)=\"click()\" routerLink=\"/login\" class=\"w3-bar-item w3-button\">\n                  <i class=\"fa fa-sign-out\"></i> Sign Out</a>\n\n\n      </nav>\n\n\n\n      <!-- About Section -->\n      <div class=\"w3-container w3-center\" style=\"padding:60px 16px;align-content: center;\" id=\"about\">\n            <router-outlet></router-outlet>\n      </div>\n\n\n</body>"
 
 /***/ }),
 
@@ -857,6 +1086,27 @@ var AppComponent = /** @class */ (function () {
                 this.isAdmin = true;
         }
     };
+    // isAdmin(){
+    //  let token= this.service.getToken();
+    //  let tokenPayload=decode(token)
+    //  if(tokenPayload.role=="admin")
+    //  return true;
+    //  return false
+    // }
+    AppComponent.prototype.w3_open = function () {
+        if (document.getElementById("mySidebar").style.display === 'block') {
+            document.getElementById("mySidebar").style.display = 'none';
+        }
+        else {
+            document.getElementById("mySidebar").style.display = 'block';
+        }
+    };
+    // Close the sidebar with the close button
+    AppComponent.prototype.w3_close = function () {
+        document.getElementById("mySidebar").style.display = "none";
+    };
+    AppComponent.prototype.onClick = function (element) {
+    };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
@@ -907,12 +1157,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_profile_adminuploads_adminuploads_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./admin-profile/adminuploads/adminuploads.component */ "./src/app/admin-profile/adminuploads/adminuploads.component.ts");
 /* harmony import */ var _admin_profile_received_received_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./admin-profile/received/received.component */ "./src/app/admin-profile/received/received.component.ts");
 /* harmony import */ var _admin_profile_messages_messages_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./admin-profile/messages/messages.component */ "./src/app/admin-profile/messages/messages.component.ts");
+/* harmony import */ var _admin_profile_profile_view_profile_view_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./admin-profile/profile-view/profile-view.component */ "./src/app/admin-profile/profile-view/profile-view.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -957,7 +1209,8 @@ var AppModule = /** @class */ (function () {
                 _user_profile_receive_receive_component__WEBPACK_IMPORTED_MODULE_20__["ReceiveComponent"],
                 _admin_profile_adminuploads_adminuploads_component__WEBPACK_IMPORTED_MODULE_21__["AdminuploadsComponent"],
                 _admin_profile_received_received_component__WEBPACK_IMPORTED_MODULE_22__["ReceivedComponent"],
-                _admin_profile_messages_messages_component__WEBPACK_IMPORTED_MODULE_23__["MessagesComponent"]
+                _admin_profile_messages_messages_component__WEBPACK_IMPORTED_MODULE_23__["MessagesComponent"],
+                _admin_profile_profile_view_profile_view_component__WEBPACK_IMPORTED_MODULE_24__["ProfileViewComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1163,7 +1416,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n          <br>\r\n            <form>\r\n                <div class=\"form-group\">\r\n                    <label for=\"multiple\">Choose file(s)</label>\r\n                    <input type=\"file\" class=\"form-control\" name=\"multiple\" ng2FileSelect [uploader]=\"uploader\" multiple  />\r\n                </div>            \r\n            </form>\r\n        </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"col-md-8\">\r\n             File(s) Selected: {{ uploader?.queue?.length }}\r\n            <table class=\"table\">\r\n                <thead>\r\n                <tr>\r\n                    <th width=\"50%\">Name</th>\r\n                    <th>Size</th>\r\n                    <th>Progress</th>\r\n                    <th>Status</th>\r\n                    <th>Actions</th>\r\n                </tr>\r\n                </thead>\r\n                <tbody>\r\n                <tr *ngFor=\"let item of uploader.queue\">\r\n                    <td><strong>{{ item.file.name }}</strong></td>\r\n                    <td nowrap>{{ item.file.size/1024/1024 | number:'.2' }} MB</td>\r\n                    <td>\r\n                        <div class=\"progress\" style=\"margin-bottom: 0;\">\r\n                            <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': item.progress + '%' }\"></div>\r\n                        </div>\r\n                    </td>\r\n                    <td class=\"text-center\">\r\n                        <span *ngIf=\"item.isSuccess\"><i class=\"fa fa-check\"></i></span>\r\n                        <span *ngIf=\"item.isCancel\"><i class=\"fa fa-ban\"></i></span>\r\n                        <span *ngIf=\"item.isError\"><i class=\"fa fa-times\"></i></span>\r\n                    </td>\r\n                    <td nowrap>\r\n                        <button type=\"button\" class=\"btn btn-success btn-xs\"\r\n                                (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">\r\n                            <span class=\"fa fa-upload\"></span> Upload\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-warning btn-xs\"\r\n                                (click)=\"item.cancel()\" [disabled]=\"!item.isUploading\">\r\n                            <span class=\"fa fa-ban\"></span> Cancel\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-danger btn-xs\"\r\n                                (click)=\"item.remove()\">\r\n                            <span class=\"fa fa-trash\"></span> Remove\r\n                        </button>\r\n                    </td>\r\n                </tr>\r\n                </tbody>\r\n            </table>\r\n  \r\n            <div>\r\n                <hr>\r\n                <div>\r\n                    Total progress:\r\n                    <div class=\"progress\">\r\n                        <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': uploader.progress + '%' }\"></div>\r\n                    </div>\r\n                    <hr>\r\n                </div>\r\n                <button type=\"button\" class=\"btn btn-success btn-s\"\r\n                        (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">\r\n                    <span class=\"fa fa-upload\"></span> Upload all\r\n                </button>\r\n                <button type=\"button\" class=\"btn btn-warning btn-s\"\r\n                        (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">\r\n                    <span class=\"fa fa-ban\"></span> Cancel all\r\n                </button>\r\n                <button type=\"button\" class=\"btn btn-danger btn-s\"\r\n                        (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">\r\n                    <span class=\"fa fa-trash\"></span> Remove all\r\n                </button>\r\n            </div>\r\n        </div>\r\n  </div>\r\n  <hr>\r\n  \r\n  <div class=\"container\">\r\n      <table class=\"table table-hover\">\r\n          <thead>\r\n            <tr>\r\n              <th>File Name</th>\r\n              <th>Date</th>\r\n              <th>Time</th>\r\n              <th>Link</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngFor=\"let file of files\">\r\n              <td>{{ file.originalname }}</td>\r\n              <td>{{file.time | date:'MMM dd, yyyy'}}</td>\r\n          <td>{{ file.time | date:'hh:mm' }}</td>\r\n              <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType)\">Download</button></td>\r\n            </tr>   \r\n          </tbody>\r\n        </table>\r\n    </div>\r\n    "
+module.exports = "<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n          <br>\r\n            <form>\r\n                <div class=\"form-group\">\r\n                    <label for=\"multiple\">Choose file(s)</label>\r\n                    <input type=\"file\" class=\"form-control\" name=\"multiple\" ng2FileSelect [uploader]=\"uploader\" multiple  />\r\n                </div>            \r\n            </form>\r\n        </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"col-md-8\">\r\n             File(s) Selected: {{ uploader?.queue?.length }}\r\n            <table class=\"table\">\r\n                <thead>\r\n                <tr>\r\n                    <th width=\"50%\">Name</th>\r\n                    <th>Size</th>\r\n                    <th>Progress</th>\r\n                    <th>Status</th>\r\n                    <th>Actions</th>\r\n                </tr>\r\n                </thead>\r\n                <tbody>\r\n                <tr *ngFor=\"let item of uploader.queue\">\r\n                    <td><strong>{{ item.file.name }}</strong></td>\r\n                    <td nowrap>{{ item.file.size/1024/1024 | number:'.2' }} MB</td>\r\n                    <td>\r\n                        <div class=\"progress\" style=\"margin-bottom: 0;\">\r\n                            <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': item.progress + '%' }\"></div>\r\n                        </div>\r\n                    </td>\r\n                    <td class=\"text-center\">\r\n                        <span *ngIf=\"item.isSuccess\"><i class=\"fa fa-check\"></i></span>\r\n                        <span *ngIf=\"item.isCancel\"><i class=\"fa fa-ban\"></i></span>\r\n                        <span *ngIf=\"item.isError\"><i class=\"fa fa-times\"></i></span>\r\n                    </td>\r\n                    <td nowrap>\r\n                        <button type=\"button\" class=\"btn btn-success btn-xs\"\r\n                                (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">\r\n                            <span class=\"fa fa-upload\"></span> Upload\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-warning btn-xs\"\r\n                                (click)=\"item.cancel()\" [disabled]=\"!item.isUploading\">\r\n                            <span class=\"fa fa-ban\"></span> Cancel\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-danger btn-xs\"\r\n                                (click)=\"item.remove()\">\r\n                            <span class=\"fa fa-trash\"></span> Remove\r\n                        </button>\r\n                    </td>\r\n                </tr>\r\n                </tbody>\r\n            </table>\r\n  \r\n            <div>\r\n                <hr>\r\n                <div>\r\n                    Total progress:\r\n                    <div class=\"progress\">\r\n                        <div class=\"progress-bar\" role=\"progressbar\" [ngStyle]=\"{ 'width': uploader.progress + '%' }\"></div>\r\n                    </div>\r\n                    <hr>\r\n                </div>\r\n                <button type=\"button\" class=\"btn btn-success btn-s\"\r\n                        (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">\r\n                    <span class=\"fa fa-upload\"></span> Upload all\r\n                </button>\r\n                <button type=\"button\" class=\"btn btn-warning btn-s\"\r\n                        (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">\r\n                    <span class=\"fa fa-ban\"></span> Cancel all\r\n                </button>\r\n                <button type=\"button\" class=\"btn btn-danger btn-s\"\r\n                        (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">\r\n                    <span class=\"fa fa-trash\"></span> Remove all\r\n                </button>\r\n            </div>\r\n        </div>\r\n  </div>\r\n  <hr>\r\n  \r\n  <div class=\"container\">\r\n      <table class=\"table table-hover\">\r\n          <thead>\r\n            <tr>\r\n              <th>File Name</th>\r\n              <th>Date</th>\r\n              <th>Time</th> \r\n              <th>Link</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngFor=\"let file of files\">\r\n              <td>{{ file.originalname }}</td>\r\n              <td>{{file.time | date:'MMM dd, yyyy'}}</td>\r\n          <td>{{ file.time | date:'hh:mm' }}</td>\r\n              <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType,file.originalname)\"><i class=\"fa fa-download\"></i> Download</button></td>\r\n            </tr>   \r\n          </tbody>\r\n        </table>\r\n    </div>\r\n    "
 
 /***/ }),
 
@@ -1185,6 +1438,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../user-profile/user-profile.component */ "./src/app/user-profile/user-profile.component.ts");
 /* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jwt-decode */ "./node_modules/jwt-decode/lib/index.js");
 /* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(jwt_decode__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(file_saver__WEBPACK_IMPORTED_MODULE_6__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1194,6 +1449,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -1231,14 +1487,15 @@ var FileUploadComponent = /** @class */ (function () {
         });
         this.uploader = new ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__["FileUploader"]({ url: this.url, itemAlias: 'photo' });
     };
-    FileUploadComponent.prototype.downloadPdf = function (filename, contentType) {
+    FileUploadComponent.prototype.downloadPdf = function (filename, contentType, originalname) {
         this.FileService.downloadPDF(filename, contentType).subscribe(function (res) {
             // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
             // console.log(file)
             var fileURL = URL.createObjectURL(file);
             // console.log(fileURL)
-            window.open(fileURL);
+            // window.open(fileURL);
+            Object(file_saver__WEBPACK_IMPORTED_MODULE_6__["saveAs"])(file, originalname);
             // window.open('/download');
         });
     };
@@ -1268,7 +1525,7 @@ var FileUploadComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".b{\r\n    width: 50%;\r\n    margin: 60px auto;\r\n    height: 500px;\r\n    background: #fff;\r\n    /*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsY0FBYztJQUNkLGlCQUFpQjtJQUNqQiwrQ0FBK0M7Q0FDbEQiLCJmaWxlIjoic3JjL2FwcC9sb2dpbi9sb2dpbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJ7XHJcbiAgICB3aWR0aDogNTAlO1xyXG4gICAgbWFyZ2luOiA2MHB4IGF1dG87XHJcbiAgICBoZWlnaHQ6IDUwMHB4O1xyXG4gICAgYmFja2dyb3VuZDogI2ZmZjtcclxuICAgIC8qYm94LXNoYWRvdzogMTBweCAxMHB4ICNjY2MsLTEwcHggMjBweCAjZGRkOyovXHJcbn0iXX0= */"
+module.exports = "* {box-sizing: border-box}\r\n\r\n/* style the container */\r\n\r\n.container {\r\n  position: relative;\r\n  border-radius: 5px;\r\n  background-color: #f2f2f2;\r\n  padding: 20px 0 30px 0;\r\n}\r\n\r\n/* style inputs and link buttons */\r\n\r\ninput,\r\n.btn {\r\n  width: 100%;\r\n  padding: 12px;\r\n  border: none;\r\n  border-radius: 4px;\r\n  margin: 5px 0;\r\n  opacity: 0.85;\r\n  display: inline-block;\r\n  font-size: 17px;\r\n  line-height: 20px;\r\n  text-decoration: none; /* remove underline from anchors */\r\n}\r\n\r\ninput:hover,\r\n.btn:hover {\r\n  opacity: 1;\r\n}\r\n\r\n/* add appropriate colors to fb, twitter and google buttons */\r\n\r\n.fb {\r\n  background-color: #3B5998;\r\n  color: white;\r\n}\r\n\r\n.twitter {\r\n  background-color: #55ACEE;\r\n  color: white;\r\n}\r\n\r\n.google {\r\n  background-color: #dd4b39;\r\n  color: white;\r\n}\r\n\r\n/* style the submit button */\r\n\r\ninput[type=submit] {\r\n  background-color: #4CAF50;\r\n  color: white;\r\n  cursor: pointer;\r\n}\r\n\r\ninput[type=submit]:hover {\r\n  background-color: #45a049;\r\n}\r\n\r\n/* Two-column layout */\r\n\r\n.col {\r\n  float: none;\r\n  width: 50%;\r\n  margin: auto;\r\n  padding: 0 50px;\r\n  margin-top: 6px;\r\n  align-content: center;\r\n}\r\n\r\n/* Clear floats after the columns */\r\n\r\n.row:after {\r\n  content: \"\";\r\n  display: table;\r\n  clear: both;\r\n}\r\n\r\n/* vertical line */\r\n\r\n.vl {\r\n  position: absolute;\r\n  left: 50%;\r\n  -webkit-transform: translate(-50%);\r\n          transform: translate(-50%);\r\n  border: 2px solid #ddd;\r\n  height: 175px;\r\n}\r\n\r\n/* text inside the vertical line */\r\n\r\n.inner {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translate(-50%, -50%);\r\n          transform: translate(-50%, -50%);\r\n  background-color: #f1f1f1;\r\n  border: 1px solid #ccc;\r\n  border-radius: 50%;\r\n  padding: 8px 10px;\r\n}\r\n\r\n/* hide some text on medium and large screens */\r\n\r\n.hide-md-lg {\r\n  display: none;\r\n}\r\n\r\n/* bottom container */\r\n\r\n.bottom-container {\r\n  text-align: center;\r\n  background-color: #666;\r\n  border-radius: 0px 0px 4px 4px;\r\n}\r\n\r\n/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */\r\n\r\n@media screen and (max-width: 650px) {\r\n  .col {\r\n    width: 100%;\r\n    margin-top: 0;\r\n  }\r\n  /* hide the vertical line */\r\n  .vl {\r\n    display: none;\r\n  }\r\n  /* show the hidden text on small screens */\r\n  .hide-md-lg {\r\n    display: block;\r\n    text-align: center;\r\n  }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxHQUFHLHNCQUFzQixDQUFDOztBQUUxQix5QkFBeUI7O0FBQ3pCO0VBQ0UsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQiwwQkFBMEI7RUFDMUIsdUJBQXVCO0NBQ3hCOztBQUVELG1DQUFtQzs7QUFDbkM7O0VBRUUsWUFBWTtFQUNaLGNBQWM7RUFDZCxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGNBQWM7RUFDZCxjQUFjO0VBQ2Qsc0JBQXNCO0VBQ3RCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsc0JBQXNCLENBQUMsbUNBQW1DO0NBQzNEOztBQUVEOztFQUVFLFdBQVc7Q0FDWjs7QUFFRCw4REFBOEQ7O0FBQzlEO0VBQ0UsMEJBQTBCO0VBQzFCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLDBCQUEwQjtFQUMxQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSwwQkFBMEI7RUFDMUIsYUFBYTtDQUNkOztBQUVELDZCQUE2Qjs7QUFDN0I7RUFDRSwwQkFBMEI7RUFDMUIsYUFBYTtFQUNiLGdCQUFnQjtDQUNqQjs7QUFFRDtFQUNFLDBCQUEwQjtDQUMzQjs7QUFFRCx1QkFBdUI7O0FBQ3ZCO0VBQ0UsWUFBWTtFQUNaLFdBQVc7RUFDWCxhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixzQkFBc0I7Q0FDdkI7O0FBRUQsb0NBQW9DOztBQUNwQztFQUNFLFlBQVk7RUFDWixlQUFlO0VBQ2YsWUFBWTtDQUNiOztBQUVELG1CQUFtQjs7QUFDbkI7RUFDRSxtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLG1DQUEyQjtVQUEzQiwyQkFBMkI7RUFDM0IsdUJBQXVCO0VBQ3ZCLGNBQWM7Q0FDZjs7QUFFRCxtQ0FBbUM7O0FBQ25DO0VBQ0UsbUJBQW1CO0VBQ25CLFNBQVM7RUFDVCx5Q0FBaUM7VUFBakMsaUNBQWlDO0VBQ2pDLDBCQUEwQjtFQUMxQix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLGtCQUFrQjtDQUNuQjs7QUFFRCxnREFBZ0Q7O0FBQ2hEO0VBQ0UsY0FBYztDQUNmOztBQUVELHNCQUFzQjs7QUFDdEI7RUFDRSxtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLCtCQUErQjtDQUNoQzs7QUFFRCxnSkFBZ0o7O0FBQ2hKO0VBQ0U7SUFDRSxZQUFZO0lBQ1osY0FBYztHQUNmO0VBQ0QsNEJBQTRCO0VBQzVCO0lBQ0UsY0FBYztHQUNmO0VBQ0QsMkNBQTJDO0VBQzNDO0lBQ0UsZUFBZTtJQUNmLG1CQUFtQjtHQUNwQjtDQUNGIiwiZmlsZSI6InNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIioge2JveC1zaXppbmc6IGJvcmRlci1ib3h9XHJcblxyXG4vKiBzdHlsZSB0aGUgY29udGFpbmVyICovXHJcbi5jb250YWluZXIge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YyZjJmMjtcclxuICBwYWRkaW5nOiAyMHB4IDAgMzBweCAwO1xyXG59IFxyXG5cclxuLyogc3R5bGUgaW5wdXRzIGFuZCBsaW5rIGJ1dHRvbnMgKi9cclxuaW5wdXQsXHJcbi5idG4ge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIHBhZGRpbmc6IDEycHg7XHJcbiAgYm9yZGVyOiBub25lO1xyXG4gIGJvcmRlci1yYWRpdXM6IDRweDtcclxuICBtYXJnaW46IDVweCAwO1xyXG4gIG9wYWNpdHk6IDAuODU7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIGZvbnQtc2l6ZTogMTdweDtcclxuICBsaW5lLWhlaWdodDogMjBweDtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7IC8qIHJlbW92ZSB1bmRlcmxpbmUgZnJvbSBhbmNob3JzICovXHJcbn1cclxuXHJcbmlucHV0OmhvdmVyLFxyXG4uYnRuOmhvdmVyIHtcclxuICBvcGFjaXR5OiAxO1xyXG59XHJcblxyXG4vKiBhZGQgYXBwcm9wcmlhdGUgY29sb3JzIHRvIGZiLCB0d2l0dGVyIGFuZCBnb29nbGUgYnV0dG9ucyAqL1xyXG4uZmIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMzQjU5OTg7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG4udHdpdHRlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzU1QUNFRTtcclxuICBjb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbi5nb29nbGUge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNkZDRiMzk7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG4vKiBzdHlsZSB0aGUgc3VibWl0IGJ1dHRvbiAqL1xyXG5pbnB1dFt0eXBlPXN1Ym1pdF0ge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM0Q0FGNTA7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxufVxyXG5cclxuaW5wdXRbdHlwZT1zdWJtaXRdOmhvdmVyIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDVhMDQ5O1xyXG59XHJcblxyXG4vKiBUd28tY29sdW1uIGxheW91dCAqL1xyXG4uY29sIHtcclxuICBmbG9hdDogbm9uZTtcclxuICB3aWR0aDogNTAlO1xyXG4gIG1hcmdpbjogYXV0bztcclxuICBwYWRkaW5nOiAwIDUwcHg7XHJcbiAgbWFyZ2luLXRvcDogNnB4O1xyXG4gIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLyogQ2xlYXIgZmxvYXRzIGFmdGVyIHRoZSBjb2x1bW5zICovXHJcbi5yb3c6YWZ0ZXIge1xyXG4gIGNvbnRlbnQ6IFwiXCI7XHJcbiAgZGlzcGxheTogdGFibGU7XHJcbiAgY2xlYXI6IGJvdGg7XHJcbn1cclxuXHJcbi8qIHZlcnRpY2FsIGxpbmUgKi9cclxuLnZsIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgbGVmdDogNTAlO1xyXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUpO1xyXG4gIGJvcmRlcjogMnB4IHNvbGlkICNkZGQ7XHJcbiAgaGVpZ2h0OiAxNzVweDtcclxufVxyXG5cclxuLyogdGV4dCBpbnNpZGUgdGhlIHZlcnRpY2FsIGxpbmUgKi9cclxuLmlubmVyIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiA1MCU7XHJcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YxZjFmMTtcclxuICBib3JkZXI6IDFweCBzb2xpZCAjY2NjO1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICBwYWRkaW5nOiA4cHggMTBweDtcclxufVxyXG5cclxuLyogaGlkZSBzb21lIHRleHQgb24gbWVkaXVtIGFuZCBsYXJnZSBzY3JlZW5zICovXHJcbi5oaWRlLW1kLWxnIHtcclxuICBkaXNwbGF5OiBub25lO1xyXG59XHJcblxyXG4vKiBib3R0b20gY29udGFpbmVyICovXHJcbi5ib3R0b20tY29udGFpbmVyIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzY2NjtcclxuICBib3JkZXItcmFkaXVzOiAwcHggMHB4IDRweCA0cHg7XHJcbn1cclxuXHJcbi8qIFJlc3BvbnNpdmUgbGF5b3V0IC0gd2hlbiB0aGUgc2NyZWVuIGlzIGxlc3MgdGhhbiA2NTBweCB3aWRlLCBtYWtlIHRoZSB0d28gY29sdW1ucyBzdGFjayBvbiB0b3Agb2YgZWFjaCBvdGhlciBpbnN0ZWFkIG9mIG5leHQgdG8gZWFjaCBvdGhlciAqL1xyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2NTBweCkge1xyXG4gIC5jb2wge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBtYXJnaW4tdG9wOiAwO1xyXG4gIH1cclxuICAvKiBoaWRlIHRoZSB2ZXJ0aWNhbCBsaW5lICovXHJcbiAgLnZsIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIC8qIHNob3cgdGhlIGhpZGRlbiB0ZXh0IG9uIHNtYWxsIHNjcmVlbnMgKi9cclxuICAuaGlkZS1tZC1sZyB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -1279,7 +1536,7 @@ module.exports = ".b{\r\n    width: 50%;\r\n    margin: 60px auto;\r\n    height
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<section  style=\"background:#efefe9;\">\n    \n  <div class=\"container\">\n      \n      <div class=\"b\">\n          \n              <form #signInForm=\"ngForm\" (ngSubmit)=\"signInForm.valid && onSubmit(signInForm)\">\n                <div class=\"tab-pane fade in active\">\n                  <div class='row'>\n                    <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>\n                        <div class=\"form-group\">\n                          <label class=\"control-label\" for=\"email\">Email</label>\n                          <input class=\"form-control input-md\" #email=\"ngModel\" required pattern=\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$\" id=\"email\" name=\"email\" type=\"text\" placeholder=\"Email\" [(ngModel)]=\"model.email\">\n                          <div *ngIf=\"signInForm.submitted && email.errors?.pattern\">\n                            <label class=\"validation-message\">Invalid email address.</label>\n                          </div>\n                        </div>\n                        <div class=\"form-group\">\n                          <label class=\"control-label\" for=\"password\">Password</label>  \n                          <input class=\"form-control input-md\" #password=\"ngModel\" pattern=\".{6,}\" required id=\"password\" name=\"password\" type=\"password\" placeholder=\"password\" [(ngModel)]=\"model.password\">   \n                          <div *ngIf=\"signInForm.submitted && password.errors?.minlength\">\n                            <label class=\"validation-message\">Minimum 4 characters.</label>\n                          </div><br>\n                          <div><strong>\n                            <a href=\"/resetpassword\">Forgot password</a></strong>\n                          </div> <br> \n                          <div>\n                            Don't have an account?<a href=\"/reg\">\n                              Sign up\n                            </a>\n                          </div>\n                        </div>\n                      <input type=\"submit\" class=\"btn btn-success btn-outline-rounded btn-info \" value=\"Sign In\">\n                    </div>\n                  </div>\n                </div>\n\n              </form>  \n              <div class=\"alert\" *ngIf=\"serverErrorMessages\">\n                {{serverErrorMessages}}\n              </div>\n\n          </div>\n          <!-- End Content Area -->\n      </div>\n\n      \n  \n</section>"
+module.exports = "<div class=\"container\" style=\"align-content: center;\">\n    <form  #signInForm=\"ngForm\" (ngSubmit)=\"signInForm.valid && onSubmit(signInForm)\">\n      <div >\n        <h2 style=\"text-align:center\">Login</h2>\n        \n  \n        <div  class=\"col\">\n        \n  \n          <!-- <input type=\"text\" name=\"username\" placeholder=\"Username\" required> -->\n\n          <div class=\"form-group\">\n              <label>Email</label>\n              <input class=\"form-control\" #email=\"ngModel\" required pattern=\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$\" id=\"email\" name=\"email\" type=\"text\" placeholder=\"Email\" [(ngModel)]=\"model.email\">\n              <div *ngIf=\"signInForm.submitted && email.errors?.pattern\">\n                <div class=\"w3-panel w3-red\" *ngIf=\"serverErrorMessages\">\n                    Invalid email address.\n                  </div>\n              </div>\n            </div>\n\n          <!-- <input type=\"password\" name=\"password\" placeholder=\"Password\" required> -->\n\n          <div class=\"form-group\">\n              <label>Password</label>  \n              <input class=\"form-control \" #password=\"ngModel\" pattern=\".{6,}\" required id=\"password\" name=\"password\" type=\"password\" placeholder=\"password\" [(ngModel)]=\"model.password\">   \n              <div *ngIf=\"signInForm.submitted && password.errors?.minlength\">\n                <label class=\"w3-panel w3-red\">Minimum 4 characters.</label>\n              </div><br>\n              <div><strong>\n                <a href=\"/resetpassword\">Forgot password</a></strong>\n              </div> <br> \n              <div class=\"w3-panel w3-red\" *ngIf=\"serverErrorMessages\">\n                  {{serverErrorMessages}}\n                </div>\n            </div>\n            <i *ngIf=\"loading\" class=\"fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom\"></i> \n          <input type=\"submit\" value=\"Login\">\n        </div>\n  \n      </div>\n    </form>\n  </div>\n"
 
 /***/ }),
 
@@ -1323,8 +1580,10 @@ var LoginComponent = /** @class */ (function () {
             password: ''
         };
         this.roll = '';
+        this.loading = false;
     }
     LoginComponent.prototype.ngOnInit = function () {
+        this.loading = false;
         var token = this.service.getToken();
         var tokenPayload = jwt_decode__WEBPACK_IMPORTED_MODULE_4___default()(token);
         if (this.service.isLoggedIn())
@@ -1336,10 +1595,12 @@ var LoginComponent = /** @class */ (function () {
     };
     LoginComponent.prototype.onSubmit = function (form) {
         var _this = this;
+        this.loading = true;
         this.service.login(form.value).subscribe(function (res) {
             _this.service.setToken(res['token']);
             var token = _this.service.getToken();
             var tokenPayload = jwt_decode__WEBPACK_IMPORTED_MODULE_4___default()(token);
+            _this.loading = false;
             // console.log(tokenPayload.role);
             if (tokenPayload.role == "admin") {
                 _this.router.navigateByUrl('/admin');
@@ -1354,6 +1615,9 @@ var LoginComponent = /** @class */ (function () {
             _this.state.ngOnInit();
         }, function (err) {
             _this.serverErrorMessages = err.error.message;
+            _this.loading = false;
+            // setTimeout(this.serverErrorMessages = '', 3000);
+            // this.serverErrorMessages=''
         });
     };
     LoginComponent = __decorate([
@@ -1389,7 +1653,7 @@ module.exports = ".b{\r\n    width: 90%;\r\n    margin: 6px auto;\r\n    height:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<section  style=\"background:#efefe9;\">\n    \n  <div class=\"container\">\n      \n      <div class=\"b\">\n          \n              <form #resetpw=\"ngForm\" (ngSubmit)=\"resetpw.valid && onSubmit()\">\n                <div class=\"tab-pane fade in active\">\n                  <div class='row'>\n                    <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>\n                      <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"newpassword\">New newPassword</label>  \n                        <input class=\"form-control input-md\" #newpassword=\"ngModel\" pattern=\".{6,}\" required id=\"newpassword\" name=\"newpassword\" type=\"password\" placeholder=\"Create newpassword\" [(ngModel)]=\"model.newpassword\">   \n                        <div class=\"alert alert-danger\" [hidden]=\"newpassword.valid\">Password must be at least 6 characters long</div>\n                    </div>\n                    <div class=\"form-group\">\n                      <label class=\"control-label\" for=\"confirmnewPassword\">Repeat newPassword</label>  \n                      <input  class=\"form-control input-md\" #confirmnewPassword=\"ngModel\" required id=\"confirmnewPassword\" name=\"confirmnewPassword\" type=\"password\" placeholder=\"Repeat newpassword\" [(ngModel)]=\"model.confirmnewPassword\">\n                      <div class=\"alert alert-danger\" *ngIf=\"newpassword.value!=confirmnewPassword.value\">Password not match</div>\n                  </div>\n                  <div>\n                    <label class=\"validation-message\">{{msg}}</label>\n                  </div>\n                      <input type=\"submit\" [disabled]=\"!resetpw.valid || (newpassword.value!=confirmnewPassword.value)\" class=\"btn btn-success btn-outline-rounded btn-info \" value=\"confirm\">\n                    </div>\n                  </div>\n                </div>\n\n              </form>  \n              \n\n          </div>\n          <!-- End Content Area -->\n      </div>\n\n      \n  \n</section>"
+module.exports = "\n<section  style=\"background:#efefe9;\">\n    \n  <div class=\"container\">\n      \n      <div class=\"b\">\n          \n              <form #resetpw=\"ngForm\" (ngSubmit)=\"resetpw.valid && onSubmit()\">\n                <div class=\"tab-pane fade in active\">\n                  <div class='row'>\n                    <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>\n                      <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"newpassword\">New Password</label>  \n                        <input class=\"form-control input-md\" #newpassword=\"ngModel\" pattern=\".{6,}\" required id=\"newpassword\" name=\"newpassword\" type=\"password\" placeholder=\"Create newpassword\" [(ngModel)]=\"model.newpassword\">   \n                        <div class=\"alert alert-danger\" [hidden]=\"newpassword.valid\">Password must be at least 6 characters long</div>\n                    </div>\n                    <div class=\"form-group\">\n                      <label class=\"control-label\" for=\"confirmnewPassword\">Repeat Password</label>  \n                      <input  class=\"form-control input-md\" #confirmnewPassword=\"ngModel\" required id=\"confirmnewPassword\" name=\"confirmnewPassword\" type=\"password\" placeholder=\"Repeat newpassword\" [(ngModel)]=\"model.confirmnewPassword\">\n                      <div class=\"alert alert-danger\" *ngIf=\"newpassword.value!=confirmnewPassword.value\">Password not match</div>\n                  </div>\n                  <div>\n                    <label class=\"validation-message\">{{msg}}</label>\n                  </div>\n                      <input type=\"submit\" [disabled]=\"!resetpw.valid || (newpassword.value!=confirmnewPassword.value)\" class=\"btn btn-success btn-outline-rounded btn-info \" value=\"confirm\">\n                    </div>\n                  </div>\n                </div>\n\n              </form>  \n              \n\n          </div>\n          <!-- End Content Area -->\n      </div>\n\n      \n  \n</section>"
 
 /***/ }),
 
@@ -1494,7 +1758,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<section  style=\"background:#efefe9;\">\n    \n  <div class=\"container\">\n      \n      <div class=\"b\">\n          \n              <form #regForm=\"ngForm\" >\n                <div class=\"tab-pane fade in active\">\n                  <div class=\"row\">\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"firstname\">First Name</label>  \n                            <input class=\"form-control input-md\" #firstname=\"ngModel\" required id=\"firstname\" name=\"firstname\" type=\"text\" placeholder=\"First Name\" [(ngModel)]=\"personal.firstName\">   \n                            <div class=\"alert alert-danger\" [hidden]=\"firstname.valid\">First Name is required</div>\n                        </div>\n                    </div>\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"lastname\">Last Name</label>  \n                            <input class=\"form-control input-md\" #lastname=\"ngModel\" required id=\"lastname\" name=\"lastname\" type=\"text\" placeholder=\"Last Name\" [(ngModel)]=\"personal.lastName\">\n                            <div class=\"alert alert-danger\"  [hidden]=\"lastname.valid\">Last Name is required</div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"email\">Email</label>\n                    <input class=\"form-control input-md\" #email=\"ngModel\" required pattern=\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$\" id=\"email\" name=\"email\" type=\"text\" placeholder=\"Email\" [(ngModel)]=\"personal.email\">\n                    <div class=\"alert alert-danger\" [hidden]=\"email.valid\">Email is required and must be valid</div>\n                </div>\n                <div class=\"form-group\">\n                  <label class=\"control-label\" for=\"tel\">Tel</label>\n                  <input class=\"form-control input-md\" #tel=\"ngModel\" required id=\"tel\" name=\"tel\" type=\"text\" placeholder=\"Tel\" [(ngModel)]=\"personal.tel\">\n                  <div class=\"alert alert-danger\" [hidden]=\"tel.valid\">Tel is required</div>\n              </div>\n              <div class=\"form-group\">\n                  <label class=\"control-label\" for=\"nic\">NIC</label>\n                  <input class=\"form-control input-md\" #nic=\"ngModel\" required id=\"nic\" name=\"nic\" type=\"text\" placeholder=\"NIC\" [(ngModel)]=\"personal.nic\">\n                  <div class=\"alert alert-danger\" [hidden]=\"nic.valid\">NIC is required</div>\n              </div>\n              <div class=\"row\">\n                  <div class='col-xs-12 col-sm-6'>\n                      <div class=\"form-group\">\n                          <label class=\"control-label\" for=\"password\">Create Password</label>  \n                          <input class=\"form-control input-md\" #password=\"ngModel\" pattern=\".{6,}\" required id=\"password\" name=\"password\" type=\"password\" placeholder=\"Create password\" [(ngModel)]=\"personal.password\">   \n                          <div class=\"alert alert-danger\" [hidden]=\"password.valid\">Password must be at least 6 characters long</div>\n                      </div>\n                  </div>\n                  <div class='col-xs-12 col-sm-6'>\n                      <div class=\"form-group\">\n                          <label class=\"control-label\" for=\"confirmPassword\">Repeat Password</label>  \n                          <input  class=\"form-control input-md\" #confirmPassword=\"ngModel\" required id=\"confirmPassword\" name=\"confirmPassword\" type=\"password\" placeholder=\"Repeat password\" [(ngModel)]=\"personal.confirmPassword\">\n                          <div class=\"alert alert-danger\" *ngIf=\"password.value!=confirmPassword.value\">Password not match</div>\n                      </div>\n                  </div>\n              </div>\n                    \n                <div class=\"form-group text-center\">\n                    <button class=\"btn btn-success btn-outline-rounded btn-info \" [disabled]=\"!regForm.valid || (password.value!=confirmPassword.value)\"  (click)=\"save()\"> Submit <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span></button>\n                </div>\n                </div>\n\n              </form>  \n              <div class=\"alert\" *ngIf=\"serverErrorMessages\">\n                {{serverErrorMessages}}\n              </div>\n\n          </div>\n          <!-- End Content Area -->\n      </div>\n\n      \n  \n</section>"
+module.exports = "<section style=\"background:#efefe9;\">\n\n    <div class=\"container\">\n\n        <div class=\"b\">\n\n            <form #regForm=\"ngForm\">\n                <div class=\"tab-pane fade in active\">\n                    <div class=\"row\">\n                        <div class='col-xs-12 col-sm-6'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"firstname\">First Name</label>\n                                <input class=\"form-control input-md\" #firstname=\"ngModel\" required id=\"firstname\" name=\"firstname\" type=\"text\" placeholder=\"First Name\"\n                                    [(ngModel)]=\"personal.firstName\">\n                                <div class=\"alert alert-danger\" [hidden]=\"firstname.valid\">First Name is required</div>\n                            </div>\n                        </div>\n                        <div class='col-xs-12 col-sm-6'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"lastname\">Last Name</label>\n                                <input class=\"form-control input-md\" #lastname=\"ngModel\" required id=\"lastname\" name=\"lastname\" type=\"text\" placeholder=\"Last Name\"\n                                    [(ngModel)]=\"personal.lastName\">\n                                <div class=\"alert alert-danger\" [hidden]=\"lastname.valid\">Last Name is required</div>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"companyname\">Company Name</label>\n                        <input class=\"form-control input-md\" #companyname=\"ngModel\" required id=\"companyname\" name=\"companyname\" type=\"text\" placeholder=\"Company Name\"\n                            [(ngModel)]=\"personal.companyname\">\n                        <div class=\"alert alert-danger\" [hidden]=\"companyname.valid\">Company Name must be valid</div>\n                    </div>\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"email\">Email</label>\n                        <input class=\"form-control input-md\" #email=\"ngModel\" required pattern=\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$\" id=\"email\" name=\"email\"\n                            type=\"text\" placeholder=\"Email\" [(ngModel)]=\"personal.email\">\n                        <div class=\"alert alert-danger\" [hidden]=\"email.valid\">Email is required and must be valid</div>\n                    </div>\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"tel\">Tel</label>\n                        <input class=\"form-control input-md\" #tel=\"ngModel\" required id=\"tel\" name=\"tel\" type=\"text\" placeholder=\"Tel\" [(ngModel)]=\"personal.tel\">\n                        <div class=\"alert alert-danger\" [hidden]=\"tel.valid\">Tel is required</div>\n                    </div>\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"nic\">NIC</label>\n                        <input class=\"form-control input-md\" #nic=\"ngModel\" required id=\"nic\" name=\"nic\" type=\"text\" placeholder=\"NIC\" [(ngModel)]=\"personal.nic\">\n                        <div class=\"alert alert-danger\" [hidden]=\"nic.valid\">NIC is required</div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-12 col-sm-6'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"password\">Create Password</label>\n                                <input class=\"form-control input-md\" #password=\"ngModel\" pattern=\".{6,}\" required id=\"password\" name=\"password\" type=\"password\"\n                                    placeholder=\"Create password\" [(ngModel)]=\"personal.password\">\n                                <div class=\"alert alert-danger\" [hidden]=\"password.valid\">Password must be at least 6 characters long</div>\n                            </div>\n                        </div>\n                        <div class='col-xs-12 col-sm-6'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"confirmPassword\">Repeat Password</label>\n                                <input class=\"form-control input-md\" #confirmPassword=\"ngModel\" required id=\"confirmPassword\" name=\"confirmPassword\" type=\"password\"\n                                    placeholder=\"Repeat password\" [(ngModel)]=\"personal.confirmPassword\">\n                                <div class=\"alert alert-danger\" *ngIf=\"password.value!=confirmPassword.value\">Password not match</div>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"form-group text-center\">\n                        <button class=\"btn btn-success btn-outline-rounded btn-info \" [disabled]=\"!regForm.valid || (password.value!=confirmPassword.value)\"\n                            (click)=\"save()\"> Submit\n                            <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span>\n                        </button>\n                    </div>\n                </div>\n\n            </form>\n            <div class=\"alert\" *ngIf=\"serverErrorMessages\">\n                {{serverErrorMessages}}\n            </div>\n\n        </div>\n        <!-- End Content Area -->\n    </div>\n\n\n\n</section>"
 
 /***/ }),
 
@@ -1534,7 +1798,8 @@ var RegistrationComponent = /** @class */ (function () {
             tel: '',
             nic: '',
             password: '',
-            confirmPassword: ''
+            confirmPassword: '',
+            companyname: ''
         };
         this.serverErrorMessages = '';
     }
@@ -1696,6 +1961,9 @@ var FilesService = /** @class */ (function () {
     FilesService.prototype.downloadPDF = function (filename, filetype) {
         return this.http.get('http://node.exigoms.com/api/adminfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
     };
+    FilesService.prototype.downloaduserPDF = function (filename, filetype) {
+        return this.http.get('http://node.exigoms.com/api/userfile/' + filename, { responseType: _angular_http__WEBPACK_IMPORTED_MODULE_1__["ResponseContentType"].Blob });
+    };
     FilesService.prototype.showFileNames = function (id) {
         return this.http.get('http://node.exigoms.com/api/files/' + id);
     };
@@ -1757,6 +2025,9 @@ var RegserviceService = /** @class */ (function () {
     };
     RegserviceService.prototype.getUserProfile = function () {
         return this.http.get(this.url + '/userProfile');
+    };
+    RegserviceService.prototype.getUser = function (id) {
+        return this.http.get(this.url + '/user/' + id);
     };
     RegserviceService.prototype.rstpw = function (email) {
         return this.http.put(this.url + '/rstpw', email);
@@ -1870,7 +2141,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <table class=\"table table-hover\">\n      <thead>\n        <tr>\n          <th>File Name</th>\n          <th>Date</th>\n          <th>Time</th>\n          <th>Link</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let file of files\">\n          <td>{{ file.originalname }}</td>\n          <td>{{file.time | date:'MMM dd, yyyy'}}</td>\n          <td>{{ file.time | date:'hh:mm' }}</td>\n          <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType)\">Download</button></td>\n        </tr>   \n      </tbody>\n    </table>\n</div>"
+module.exports = "<i *ngIf=\"loading\" class=\"fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom\"></i> \n\n<div class=\"container\">\n  <table class=\"table table-hover\">\n      <thead>\n        <tr>\n          <th>File Name</th>\n          <th>Date</th>\n          <th>Time</th>\n          <th>Link</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let file of files\">\n          <td>{{ file.originalname }}</td>\n          <td>{{file.time | date:'MMM dd, yyyy'}}</td>\n          <td>{{ file.time | date:'hh:mm' }}</td>\n          <td><button class=\"btn btn-primary button\" (click)=\"downloadPdf(file.filename, file.contentType,file.originalname)\"><i class=\"fa fa-download\"></i> Download</button></td>\n        </tr>   \n      </tbody>\n    </table>\n</div>"
 
 /***/ }),
 
@@ -1888,6 +2159,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _servers_regservice_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../servers/regservice.service */ "./src/app/servers/regservice.service.ts");
 /* harmony import */ var _servers_files_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../servers/files.service */ "./src/app/servers/files.service.ts");
 /* harmony import */ var _user_profile_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../user-profile.component */ "./src/app/user-profile/user-profile.component.ts");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(file_saver__WEBPACK_IMPORTED_MODULE_4__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1901,6 +2174,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var ReceiveComponent = /** @class */ (function () {
     function ReceiveComponent(FileService, service, user) {
         this.FileService = FileService;
@@ -1908,6 +2182,7 @@ var ReceiveComponent = /** @class */ (function () {
         this.user = user;
         this.files = [];
         this.id = this.user.userId;
+        this.loading = true;
     }
     ReceiveComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1923,15 +2198,17 @@ var ReceiveComponent = /** @class */ (function () {
                 // console.log(response.json()[i].mimetype)
             }
         });
+        this.loading = false;
     };
-    ReceiveComponent.prototype.downloadPdf = function (filename, contentType) {
+    ReceiveComponent.prototype.downloadPdf = function (filename, contentType, originalname) {
         this.FileService.downloadPDF(filename, contentType).subscribe(function (res) {
             // console.log(res)
             var file = new Blob([res.blob()], { type: contentType });
             // console.log(file)
             var fileURL = URL.createObjectURL(file);
             // console.log(fileURL)
-            window.open(fileURL);
+            // window.open(fileURL);
+            Object(file_saver__WEBPACK_IMPORTED_MODULE_4__["saveAs"])(file, originalname);
             // window.open('/download');
         });
     };
@@ -1968,7 +2245,7 @@ module.exports = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nbody{\r\n    margin-top:20px;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\" rel=\"stylesheet\">\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-lg-3 col-md-4\">\n            <div class=\"text-center card-box\">\n                <div class=\"member-card\">\n                    <div class=\"thumb-xl member-thumb m-b-10 center-block\">\n                        <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" class=\"img-circle img-thumbnail\" alt=\"profile-image\">\n                    </div>\n\n                    <div class=\"\">\n                        <h4 class=\"m-b-5\">{{userDetails.firstName}} {{userDetails.lastName}}</h4>\n                        <p class=\"text-muted\">@{{userDetails.firstName}}</p>\n                    </div>\n\n                    \n                    <div class=\"text-left m-t-40\">\n                        <p class=\"text-muted font-13\">\n                            <strong>Full Name :</strong>\n                            <span class=\"m-l-15\">{{userDetails.firstName}} {{userDetails.lastName}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>Mobile :</strong>\n                            <span class=\"m-l-15\">{{userDetails.tel}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>Email :</strong>\n                            <span class=\"m-l-15\">{{userDetails.email}}</span>\n                        </p>\n                        <p class=\"text-muted font-13\">\n                            <strong>Location :</strong>\n                            <span class=\"m-l-15\">{{userDetails.city}}</span>\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!-- end card-box -->\n\n\n        </div>\n        <!-- end col -->\n\n\n        <div class=\"col-md-8 col-lg-9\">\n            <div class=\"\">\n                <div class=\"\">\n                    <ul class=\"nav nav-tabs navtab-custom\" role=\"tabpanel\">\n\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" routerLink=\"/userprofile/userHome\">send</a>\n                        </li>\n                            \n\n                        <li class=\"nav-item\">\n                                <a class=\"nav-link\" routerLink=\"/userprofile/gallery\">Receive</a>\n                            </li>\n                        <!-- <li class=\"\">\n                            <a routerLink=\"/userprofile/settings\" data-toggle=\"tab\" aria-expanded=\"false\">\n                                <span class=\"visible-xs\"><i class=\"fa fa-cog\"></i></span>\n                                <span class=\"hidden-xs\">SETTINGS</span>\n                            </a>\n                        </li> -->\n                    </ul>\n                    <div class=\"tab-content tab-pane\">\n\n                        <router-outlet></router-outlet>\n                        <!-- <app-file-upload></app-file-upload> -->\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- end col -->\n    </div>\n    <!-- end row -->\n</div>"
+module.exports = "<body class=\"w3-light-grey w3-content\" style=\"max-width:1600px\">\n\n    <!-- Sidebar/menu -->\n    <nav class=\"w3-sidebar w3-collapse w3-white w3-animate-left\" style=\"z-index:3;width:300px;\" id=\"mySidebarprofile\">\n        <br>\n        <div class=\"w3-container\">\n            <a (click)=\"w3_close()\" class=\"w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey\" title=\"close menu\">\n                <i class=\"fa fa-remove\"></i>\n            </a>\n            <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" style=\"width:45%;\" class=\"w3-round\">\n            <br>\n            <br>\n            <h4>\n                <b>{{userDetails.firstName}} {{userDetails.lastName}}</b>\n            </h4>\n            <p class=\"w3-text-grey\">{{userDetails.companyname}}</p>\n        </div>\n        <div class=\"w3-bar-block\">\n            <a routerLink=\"/userprofile/userHome\" (click)=\"w3_close()\" class=\"w3-bar-item w3-button w3-padding w3-text-teal\">\n                <i class=\"fa fa-th-large fa-fw w3-margin-right\"></i>SEND</a>\n            <a routerLink=\"/userprofile/gallery\" (click)=\"w3_close()\" class=\"w3-bar-item w3-button w3-padding\">\n                <i class=\"fa fa-user fa-fw w3-margin-right\"></i>RECEIVE</a>\n\n        </div>\n    </nav>\n\n    <!-- Overlay effect when opening sidebar on small screens -->\n    <div class=\"w3-overlay w3-hide-large w3-animate-opacity\" (click)=\"w3_close()\" style=\"cursor:pointer\" title=\"close side menu\"\n        id=\"myOverlay\"></div>\n\n    <!-- !PAGE CONTENT! -->\n    <div class=\"w3-main\" style=\"margin-left:300px\">\n\n        <!-- Header -->\n        <header id=\"portfolio\">\n            <a href=\"#\">\n                <img src=\"https://bootdey.com/img/Content/avatar/avatar6.png\" style=\"width:65px;\" class=\"w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity\">\n            </a>\n            <span class=\"w3-button w3-hide-large w3-xxlarge w3-hover-text-grey\" (click)=\"w3_open()\">\n                <i class=\"fa fa-bars\"></i>\n            </span>\n            <i *ngIf=\"loading\" class=\"fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom\"></i>\n            <div class=\"w3-container\">\n                <h1>\n                    <b>{{userDetails.firstName}} {{userDetails.lastName}}</b>\n                </h1>\n                <div class=\"w3-section w3-bottombar w3-padding-16\">\n                    <!-- <span class=\"w3-margin-right\">Filter:</span>\n                        <button class=\"w3-button w3-black\">ALL</button>\n                        <button class=\"w3-button w3-white\">\n                            <i class=\"fa fa-diamond w3-margin-right\"></i>Design</button>\n                        <button class=\"w3-button w3-white w3-hide-small\">\n                            <i class=\"fa fa-photo w3-margin-right\"></i>Photos</button>\n                        <button class=\"w3-button w3-white w3-hide-small\">\n                            <i class=\"fa fa-map-pin w3-margin-right\"></i>Art</button> -->\n                </div>\n            </div>\n        </header>\n        <div class=\"w3-container\" style=\"margin-bottom:32px\">\n\n            <router-outlet></router-outlet>\n        </div>\n        <!-- End page content -->\n    </div>\n\n\n\n</body>"
 
 /***/ }),
 
@@ -2018,6 +2295,14 @@ var UserProfileComponent = /** @class */ (function () {
     UserProfileComponent.prototype.onLogout = function () {
         this.service.deleteToken();
         this.router.navigate(['/login']);
+    };
+    UserProfileComponent.prototype.w3_open = function () {
+        document.getElementById("mySidebarprofile").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    };
+    UserProfileComponent.prototype.w3_close = function () {
+        document.getElementById("mySidebarprofile").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
     };
     UserProfileComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({

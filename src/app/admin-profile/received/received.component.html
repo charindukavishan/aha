@@ -1,3 +1,4 @@
+<i *ngIf="loading" class="fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom"></i> 
 <div class="container">
     <table class="table table-hover">
         <thead>
@@ -16,9 +17,9 @@
             <td>{{file.time | date:'MMM dd, yyyy'}}</td>
         <td>{{ file.time | date:'hh:mm' }}</td>
         <!-- <td>{{ file.username }}</td> -->
-            <td><button class="btn btn-primary button" (click)="downloadPdf(file.filename, file.contentType)">Download</button></td>
+            <td><button class="btn btn-primary button" (click)="downloadPdf(file.filename, file.contentType,file.originalname)"><i class="fa fa-download"></i> Download</button></td>
           </tr>   
         </tbody>
       </table>
   </div>
-  
+   
